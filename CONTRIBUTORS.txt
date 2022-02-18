@@ -8,4 +8,8 @@
 # purposes.  The copyright owner does not offer any warranties or representations, nor do
 # they accept any liabilities with respect to them.
 
+
+- Rafael Corchuelo (corchu@us.es)
+- Inma Mayo (inmamayo00@gmail.com)
 - Javier Pacheco Márquez (javpacmar@alum.us.es)
+
