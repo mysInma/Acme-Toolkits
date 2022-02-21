@@ -1,4 +1,4 @@
-# NOTICE.txt
+# CONTRIBUTORS.txt
 #
 # Copyright (C) 2012-2022 Rafael Corchuelo.
 #
@@ -8,5 +8,8 @@
 # purposes.  The copyright owner does not offer any warranties or representations, nor do
 # they accept any liabilities with respect to them.
 
-- Rafael Corchuelo (corchu@us.es)
+
 - Carlos Cano Gómez (carcangom@alum.us.es)
+- Javier Pacheco Márquez (javpacmar@alum.us.es)
+- Badayco Rijo Hernández (badrijher@alum.us.es)
+- Inma Mayo (inmamayo00@gmail.com)
