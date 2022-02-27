@@ -10,10 +10,12 @@
 
 master.license.title = License
 master.license.text = \
-	You may use this system free of charge, as long as you carefully observe the \
-	existing applicable laws.  Please, note that we do not share any information \
-	about you with any other company.  We only use three cookies, namely: \
-	"JSESSIONID" to identify your work session, "remember" to let you authenticate \
-	automatically for a maximum of 31 days, and "language" to store your language \
-	preferences. Additionally, we store an item called "returnStack" in your browser's \
-	local storage to keep track of the document to which some buttons must return.
+​	[Sender.FirstName][Sender.LastName] has granted, with acceptance of this source code license \
+	agreement, [License.Total] total licenses to be used as permitted. These licenses shall be \
+	considered perpetual and non-transferrable. \
+	The licenses granted may be used by [Client.FirstName][Client.LastName] as well as any employees \
+ 	and subcontractors providing services for the Licensee. \
+	Throughout this agreement, “Software” shall be defined as all source codes, object codes, \
+	link libraries, utility programs, project files, scripts related to the software listed above. \
+	The Software shall remain the intellectual property of [Sender.FirstName][Sender.LastName] at \
+	 all times.\

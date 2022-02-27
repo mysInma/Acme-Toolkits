@@ -10,10 +10,12 @@
 
 master.license.title = Licencia
 master.license.text = \
-	Puede usar este sistema de forma completamente gratuita respetando las leyes \
-	que sean aplicables.  No compartimos ninguna información sobre Ud. con ninguna \
-	otra empresa.  Tan sólo usamos tres cookies, a saber: "JSESSIONID" para identificar \
-	su sesión de trabajo, "remember" para mantener su información de autentificación \
-	durante un máximo de 31 días y "language" para almacenar sus preferencias de \
-	lenguage.  Además, almacenamos un ítem llamado "returnStack" en el almacenamiento \
-	local de su navegador para saber dónde tienen que ir algunos botones.
+​	[Sender.FirstName][Sender.LastName] ha otorgado, con la aceptación de esta licencia de código fuente \
+	acuerdo, [License.Total] licencias totales que se usarán según lo permitido. Estas licencias serán \
+	considerado perpetuo e intransferible. \
+	Las licencias otorgadas podrán ser utilizadas por [Cliente.Nombre][Cliente.Apellido] así como cualquier empleado \
+  	y subcontratistas que prestan servicios para el Licenciatario.\
+	A lo largo de este acuerdo, "Software" se definirá como todos los códigos fuente, códigos objeto, \
+	bibliotecas de enlaces, programas de utilidad, archivos de proyecto, scripts relacionados con el software mencionado anteriormente. \
+	El Software seguirá siendo propiedad intelectual de [Remitente.Nombre][Remitente.Apellido] en \
+  	todo el tiempo. \
