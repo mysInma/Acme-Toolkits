@@ -10,12 +10,12 @@
 
 master.license.title = License
 master.license.text = \
-​	[Sender.FirstName][Sender.LastName] has granted, with acceptance of this source code license \
-	agreement, [License.Total] total licenses to be used as permitted. These licenses shall be \
+​	Desing & Testing has granted, with acceptance of this source code license \
+	agreement, total licenses to be used as permitted. These licenses shall be \
 	considered perpetual and non-transferrable. \
-	The licenses granted may be used by [Client.FirstName][Client.LastName] as well as any employees \
+	The licenses granted may be used by Acme Toolkits as well as any employees \
  	and subcontractors providing services for the Licensee. \
 	Throughout this agreement, “Software” shall be defined as all source codes, object codes, \
 	link libraries, utility programs, project files, scripts related to the software listed above. \
-	The Software shall remain the intellectual property of [Sender.FirstName][Sender.LastName] at \
+	The Software shall remain the intellectual property of Acme Toolkits at \
 	 all times.\
