@@ -10,12 +10,12 @@
 
 master.license.title = Licencia
 master.license.text = \
-​	[Sender.FirstName][Sender.LastName] ha otorgado, con la aceptación de esta licencia de código fuente \
-	acuerdo, [License.Total] licencias totales que se usarán según lo permitido. Estas licencias serán \
+​	Diseño & Pruebas ha otorgado, con la aceptación de esta licencia de código fuente \
+	acuerdo, licencias totales que se usarán según lo permitido. Estas licencias serán \
 	considerado perpetuo e intransferible. \
-	Las licencias otorgadas podrán ser utilizadas por [Cliente.Nombre][Cliente.Apellido] así como cualquier empleado \
+	Las licencias otorgadas podrán ser utilizadas por Acme Toolkits así como cualquier empleado \
   	y subcontratistas que prestan servicios para el Licenciatario.\
 	A lo largo de este acuerdo, "Software" se definirá como todos los códigos fuente, códigos objeto, \
 	bibliotecas de enlaces, programas de utilidad, archivos de proyecto, scripts relacionados con el software mencionado anteriormente. \
-	El Software seguirá siendo propiedad intelectual de [Remitente.Nombre][Remitente.Apellido] en \
+	El Software seguirá siendo propiedad intelectual de Acme Toolkits en \
   	todo el tiempo. \
