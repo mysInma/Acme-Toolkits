@@ -20,6 +20,7 @@
 	<acme:menu-left>
 		<acme:menu-option code="master.menu.anonymous" access="isAnonymous()">
 			<acme:menu-suboption code="master.menu.anonymous.favourite-link" action="http://www.example.com/"/>
+			<acme:menu-suboption code="47268679E: Cano Gomez, Carlos" action="https://github.com/carloscg00"/>
 			<acme:menu-suboption code="20102670A: Garcia Pastrana, Carmen" action="https://github.com/cargarpas1"/>
 			<acme:menu-suboption code="78764492A: Rijo Hernandez, Badayco" action="https://github.com/badrijher"/>
 			<acme:menu-suboption code="20604708C: Tinajero Herrera, Alba" action="https://github.com/albtinher"/>
