@@ -23,6 +23,9 @@ master.menu.anonymous.favourite-link = Enlace favorito
 # master.menu.administrator ###################################################
 
 master.menu.administrator = Administrador
+master.menu.administrator.announcement.list-all = Ver todos los anuncios
+master.menu.administrator.announcement.list-recent = Ver anuncios recientes
+master.menu.administrator.announcement.create = Crear anuncio
 master.menu.administrator.dashboard = Panel de indicadores
 master.menu.administrator.user-accounts = Cuentas de usuario
 master.menu.administrator.populate-initial = Poblar BD (inicial)
@@ -47,3 +50,8 @@ master.menu.user-account.provider = Datos de proveedor
 master.menu.user-account.become-provider = Hazte proveedor
 master.menu.user-account.consumer = Datos de consumidor
 master.menu.user-account.become-consumer = Hazte consumidor
+
+# master.menu.authenticated #######################################################
+
+master.menu.authenticated = Autentificado
+master.menu.authenticated.announcement.list = Ver anuncios

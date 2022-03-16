@@ -8,6 +8,17 @@
 # purposes.  The copyright owner does not offer any warranties or representations, nor do
 # they accept any liabilities with respect to them.
 
+# master.menu.administrator ###################################################
+
+master.menu.administrator = Administrador
+master.menu.administrator.announcement.list-all = Ver todos los anuncios
+master.menu.administrator.announcement.list-recent = Ver anuncios recientes
+master.menu.administrator.announcement.create = Crear anuncio
+
+# master.menu.authenticated #######################################################
+
+master.menu.authenticated = Autentificado
+master.menu.authenticated.announcement.list = Ver anuncios
 	
 # master.sign-in ##############################################################
 
