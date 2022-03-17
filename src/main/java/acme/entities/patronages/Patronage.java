@@ -4,17 +4,21 @@ import java.util.Date;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.OneToOne;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
-import javax.validation.constraints.Max;
+import javax.validation.Valid;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
 
+import org.hibernate.validator.constraints.Length;
 import org.hibernate.validator.constraints.URL;
 
 import acme.framework.entities.AbstractEntity;
+import acme.roles.Inventor;
+import acme.roles.Patron;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -35,7 +39,7 @@ public class Patronage extends AbstractEntity{
 	protected String code;
 	
 	@NotBlank
-	@Max(255)
+	@Length(max = 255)
 	protected String legalStuff;
 	
 	@Min(0)
@@ -49,7 +53,7 @@ public class Patronage extends AbstractEntity{
 	protected String link;
 	
 	//Relaciones
-	/*
+	
 	@NotNull
 	@Valid
 	@OneToOne(optional = false, mappedBy = "Patron")
@@ -62,7 +66,7 @@ public class Patronage extends AbstractEntity{
 	
 	protected Inventor inventor;
 	
-	*/
+	
 	
 
 }
