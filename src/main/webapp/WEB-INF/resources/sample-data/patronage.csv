@@ -1,0 +1,4 @@
+key,status,code,legal-stuff,budget,period-of-time,link,
+patronage-01,PROPOSED,PAT012AB,LegalStuff01,120000,2022/03/15 13:50,http://www.firstpatronage.com,
+patronage-02,ACCEPTED,PAT345CD,LegalStuff02,240000,2020/02/03 14:00,null,
+patronage-03,DENIED,PAT678EF,LegalStuff03,10000,2020/01/02 17:00,http://www.deniedpatronage.com,

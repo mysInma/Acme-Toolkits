@@ -1,0 +1,4 @@
+key,title,moment,status,text,info,
+announcement-01,Default announcement,2022/01/01 00:30,NOT_CRITICAL,This is a default announcement,null,
+announcement-02,Simple announcement,2022/02/02 12:00,NOT_CRITICAL,This is a simple announcement,null,
+announcement-03,Critical announcement, 2022/03/17 20:00,CRITICAL,This is a critical announcement,http://www.critical-announcement.com,
