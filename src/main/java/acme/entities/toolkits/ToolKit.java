@@ -1,17 +1,17 @@
-package acme.entities.components;
+package acme.entities.toolkits;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
 import javax.validation.Valid;
-import javax.validation.constraints.Max;
-import javax.validation.constraints.Min;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
 
+import org.hibernate.validator.constraints.Length;
 import org.hibernate.validator.constraints.URL;
 
+import acme.entities.components.Component;
 import acme.entities.tools.Tool;
 import acme.framework.entities.AbstractEntity;
 import lombok.Getter;
@@ -21,47 +21,44 @@ import lombok.Setter;
 @Getter
 @Setter
 
-
-public class Component extends AbstractEntity {
+public class ToolKit extends AbstractEntity{
 	
-	protected static final long serialVersionUID	= 1L;
+protected static final long serialVersionUID = 1L;
 	
-	
-	//Attributes
-	@NotBlank
-	@Max(100)
-	protected String name;
+	//Atributes
 	@Pattern(regexp= "^[A-Z]{3}-[0-9]{3}(-[A-Z])?$")
 	@Column(unique = true)
 	protected String code;
 	
 	@NotBlank
-	@Max(100)
-	protected String technology;
+	@Length(max=100)
+	protected String title;
 	
 	@NotBlank
-	@Max(255)
+	@Length(max=255)
 	protected String description;
 	
-	@Min(0)
-	protected Integer price;
+	@NotBlank
+	@Length(max=255)
+	protected String notes;
 	
 	@URL
 	protected String link;
 	
+	//Relaciones
 	
 	@NotNull
 	@Valid
-	@ManyToOne(optional = false)
+	@OneToMany(  mappedBy = "Component")
+	
+	protected Component component;
+	
+	@NotNull
+	@Valid
+	@OneToMany(  mappedBy = "Tool")
+	
 	protected Tool tool;
 	
 	
-	/*
-	@NotNull
-    @Valid
-    @OneToOne(optional = false)
 
-    protected Patron patron;
-	*/
-	
 }
