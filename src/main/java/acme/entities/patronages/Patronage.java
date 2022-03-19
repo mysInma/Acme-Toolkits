@@ -48,7 +48,11 @@ public class Patronage extends AbstractEntity{
 	
 	@NotNull
 	@Temporal(TemporalType.TIMESTAMP)
-	protected Date periodOfTime;
+	protected Date startDate;
+	
+	@NotNull
+	@Temporal(TemporalType.TIMESTAMP)
+	protected Date finishDate;
 	
 	@URL
 	protected String link;
