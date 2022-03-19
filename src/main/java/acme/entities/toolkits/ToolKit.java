@@ -2,17 +2,12 @@ package acme.entities.toolkits;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.OneToMany;
-import javax.validation.Valid;
 import javax.validation.constraints.NotBlank;
-import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
 
 import org.hibernate.validator.constraints.Length;
 import org.hibernate.validator.constraints.URL;
 
-import acme.entities.components.Component;
-import acme.entities.tools.Tool;
 import acme.framework.entities.AbstractEntity;
 import lombok.Getter;
 import lombok.Setter;
@@ -44,20 +39,6 @@ protected static final long serialVersionUID = 1L;
 	
 	@URL
 	protected String link;
-	
-	//Relaciones
-	
-	@NotNull
-	@Valid
-	@OneToMany(  mappedBy = "Component")
-	
-	protected Component component;
-	
-	@NotNull
-	@Valid
-	@OneToMany(  mappedBy = "Tool")
-	
-	protected Tool tool;
 	
 	
 
