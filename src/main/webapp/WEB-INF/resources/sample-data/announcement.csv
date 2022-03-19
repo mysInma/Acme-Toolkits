@@ -1,4 +1,4 @@
-key,title,moment,status,text,info,
-announcement-01,Default announcement,2022/01/01 00:30,NOT_CRITICAL,This is a default announcement,null,
-announcement-02,Simple announcement,2022/02/02 12:00,NOT_CRITICAL,This is a simple announcement,null,
-announcement-03,Critical announcement, 2022/03/17 20:00,CRITICAL,This is a critical announcement,http://www.critical-announcement.com,
+key,creation-moment,title,body,flag,link,
+announcement-01,2022/01/01 00:30,Default announcement,This is a default announcement.,NOT_CRITICAL,null,
+announcement-02,2022/02/02 12:00,Simple announcement,This is a simple announcement.,NOT_CRITICAL,null,
+announcement-03, 2022/03/17 20:00,Critical announcement,This is a critical announcement.,CRITICAL,http://www.critical-announcement.com,

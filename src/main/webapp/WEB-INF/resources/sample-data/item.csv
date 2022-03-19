@@ -1,0 +1,5 @@
+key,name,code,technology,description,price,link,type,key:inventor,
+item-01,MacBook Air,MAC-012-AP,Laptop,An Apple laptop that we use for work on the project.,969,null,TOOL,inventor-01,
+item-02,iPad,IPA-456-AP,Tablet,An Apple tablet that we use for presentations on group.,389,www.apple.com/ipad,TOOL,inventor-02,
+item-03,Magic Mouse,MAG-012-AP,Mouse,This is a mouse for work with a MacBook,69,null,COMPONENT,inventor-01,
+item-04,Apple Pencil,PEN-345-AP,Pencil,This is a pencil for work with an iPad,79,http://www.apple.com/pencil,COMPONENT,inventor-03,
