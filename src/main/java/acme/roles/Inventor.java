@@ -18,12 +18,6 @@ public class Inventor extends UserRole {
 	
 	// Relationships ----------------------------------------------------------
 	
-	/*
-	@NotNull
-    @Valid
-    @OneToOne(optional = false)
 	
-    protected Patronage patronage;
-    */
 
 }

@@ -1,6 +1,7 @@
 package acme.entities.specificUserRoles;
 
 import javax.persistence.Entity;
+import javax.validation.Valid;
 import javax.validation.constraints.NotBlank;
 
 import org.hibernate.validator.constraints.Length;
@@ -18,28 +19,32 @@ import lombok.Setter;
 
 public class SpecificUserRole extends AbstractEntity {
 	
-	protected static final long serialVersionUID = 1L;
-	
-	
-	//Atributes
-	
-	@NotBlank
-	@Length(max=100)
-	protected String company;
-	
-	@NotBlank
-	@Length(max=255)
-	protected String statement;
-	
-	@URL
-	protected String link;
-	
-	
+	// Serialisation identifier -----------------------------------------------
+		
+		protected static final long serialVersionUID = 1L;
+		
+		
+	// Attributes -------------------------------------------------------------
+		
+		@NotBlank
+		@Length(min=1, max=100)
+		protected String company;
+		
+		@NotBlank
+		@Length(min=1, max=255)
+		protected String statement;
+		
+		@URL
+		protected String link;
+		
+		
 	// Relationships ----------------------------------------------------------
-	
-	protected Patron patron;
-	
-	protected Inventor inventor;
+		
+		@Valid
+		protected Patron patron;
+		
+		@Valid
+		protected Inventor inventor;
 	
 
 }

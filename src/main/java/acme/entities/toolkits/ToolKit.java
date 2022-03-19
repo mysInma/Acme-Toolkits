@@ -18,28 +18,32 @@ import lombok.Setter;
 
 public class ToolKit extends AbstractEntity{
 	
-protected static final long serialVersionUID = 1L;
+	// Serialisation identifier -----------------------------------------------
 	
-	//Atributes
-	@Pattern(regexp= "^[A-Z]{3}-[0-9]{3}(-[A-Z])?$")
-	@Column(unique = true)
-	protected String code;
+		protected static final long serialVersionUID = 1L;
 	
-	@NotBlank
-	@Length(max=100)
-	protected String title;
-	
-	@NotBlank
-	@Length(max=255)
-	protected String description;
-	
-	@NotBlank
-	@Length(max=255)
-	protected String notes;
-	
-	@URL
-	protected String link;
-	
+	// Attributes -------------------------------------------------------------
+
+		@Pattern(regexp= "^[A-Z]{3}-[0-9]{3}(-[A-Z])?$")
+		@Column(unique = true)
+		@NotBlank
+		protected String code;
+		
+		@NotBlank
+		@Length(min=1, max=100)
+		protected String title;
+		
+		@NotBlank
+		@Length(min=1, max=255)
+		protected String description;
+		
+		@NotBlank
+		@Length(min=1, max=255)
+		protected String notes;
+		
+		@URL
+		protected String link;
+		
 	
 
 }
