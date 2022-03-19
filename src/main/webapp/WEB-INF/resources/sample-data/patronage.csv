@@ -1,4 +1,4 @@
-key,status,code,legal-stuff,budget,creation-moment,start-date,finish-date,link,key:patron,key:inventor,
-patronage-01,PROPOSED,PAT-012-AB,LegalStuff01,"EUR 120,000.00",2022/03/15 13:50,2022/03/25 00:00,2022/06/25 23:59,http://www.firstpatronage.com,patron-01,inventor-01,
-patronage-02,ACCEPTED,PAT-345-CD,LegalStuff02,"USD 240,000.00",2020/02/03 14:00,2022/03/01 00:00,2022/07/01 23:59,null,patron-02,inventor-02,
-patronage-03,DENIED,PAT-678-EF,LegalStuff03,"GBP 10,000.00",2020/01/02 17:00,2022/02/01 00:00,2022/02/28 23:59,http://www.deniedpatronage.com,patron-02,inventor-03,
+key,status,code,legal-stuff,budget,creation-moment,start-date,finish-date,link,key:patron,key:inventor
+patronage-01,PROPOSED,PAT-012-A,LegalStuff01,"EUR 120,000.00",2022/03/15 13:50,2022/03/25 00:00,2022/06/25 23:59,http://www.firstpatronage.com,patron-01,inventor-01
+patronage-02,ACCEPTED,PAT-345-C,LegalStuff02,"USD 240,000.00",2020/02/03 14:00,2022/03/01 00:00,2022/07/01 23:59,null,patron-02,inventor-02
+patronage-03,DENIED,PAT-678-E,LegalStuff03,"GBP 10,000.00",2020/01/02 17:00,2022/02/01 00:00,2022/02/28 23:59,http://www.deniedpatronage.com,patron-02,inventor-03

@@ -1,8 +1,8 @@
 key,enabled,identity,password,username
 user-account-anonymous-01,false,"UserIdentity{name: 'John', surname: 'Doe', email: 'john.doe@acme.com'}",HIDDEN-PASSWORD,anonymous
 user-account-administrator-01,true,"UserIdentity{name: 'Administrator', surname: 'Acme', email: 'administrator@acme.com'}",administrator,administrator
-user-account-patron-01,true,"UserIdentity{name: 'Patron01', surname: 'Acme', email: 'patron01@acme.com'}",patron01,patron01,
-user-account-patron-02,true,"UserIdentity{name: 'María', surname: 'Rodríguez', email: 'maria-rodriguez@acme.com'}",patron02,patron02,
-user-account-inventor-01,true,"UserIdentity{name: 'Inventor01', surname: 'Acme', email: 'inventor01@acme.com'}",inventor01,inventor01,
-user-account-inventor-02,true,"UserIdentity{name: 'Paco', surname: 'Díaz', email: 'paco-diaz@acme.com'}",inventor02,inventor02,
-user-account-inventor-03,true,"UserIdentity{name: 'Fernando', surname: 'Simón', email: 'fernando-simon@acme.com'}",inventor03,inventor03,
+user-account-patron-01,true,"UserIdentity{name: 'Patron01', surname: 'Acme', email: 'patron01@acme.com'}",patron01,patron01
+user-account-patron-02,true,"UserIdentity{name: 'María', surname: 'Rodríguez', email: 'maria-rodriguez@acme.com'}",patron02,patron02
+user-account-inventor-01,true,"UserIdentity{name: 'Inventor01', surname: 'Acme', email: 'inventor01@acme.com'}",inventor01,inventor01
+user-account-inventor-02,true,"UserIdentity{name: 'Paco', surname: 'Díaz', email: 'paco-diaz@acme.com'}",inventor02,inventor02
+user-account-inventor-03,true,"UserIdentity{name: 'Fernando', surname: 'Simón', email: 'fernando-simon@acme.com'}",inventor03,inventor03

@@ -1,6 +1,0 @@
-key,company,statement,link,key:patron,key:inventor,
-specific-user-role-01,Noentiendo Inc.,Statement 01,null,patron-01,null,
-specific-user-role-02,Pineapple LA.,Statement 02,null,patron-02,null,
-specific-user-role-03,Green Circle,Statement 03,http://www.greencircle.es,null,inventor-01, 
-specific-user-role-04,Microhard,Statement 04,http://www.microhard.com,null,inventor-02,
-specific-user-role-05,Real Betis Balompié,Statement 05,http://www.realbetisbalompie.es,null,inventor-03,
