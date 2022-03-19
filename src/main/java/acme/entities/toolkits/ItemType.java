@@ -1,6 +1,7 @@
-package acme.entities.item;
+package acme.entities.toolkits;
 
 
 public enum ItemType {
+	
 	TOOL, COMPONENT;
 }

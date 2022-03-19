@@ -2,7 +2,6 @@ package acme.entities.configuration;
 
 import javax.persistence.Entity;
 import javax.validation.constraints.NotBlank;
-import javax.validation.constraints.NotNull;
 
 import org.hibernate.validator.constraints.Range;
 
@@ -23,21 +22,23 @@ public class SystemConfiguration extends AbstractEntity {
 		
 		// Attributes ------------------------------------------------------------------
 		
-		@NotNull
-		protected String 				strongSpamWords;
-		
-		@NotNull
-		protected String 				weakSpamWords;
+		@NotBlank
+		protected String 				systemCurrency;
 		
 		@NotBlank
 		protected String 				acceptedCurrencies;
 		
 		@NotBlank
-		protected String 				defaultCurrency;
+		protected String 				strongSpamTerms;
 		
 		@Range(min=0,max=100)
-		protected double 				weakThreshold;
+		protected Double 				strongThreshold;
+		
+		@NotBlank
+		protected String 				weakSpamTerms;
 		
 		@Range(min=0,max=100)
-		protected double 				strongThreshold;
+		protected Double 				weakThreshold;
+		
+		
 }

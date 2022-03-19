@@ -21,28 +21,36 @@ import lombok.Setter;
 @Getter
 @Setter
 
-public class Chirp extends AbstractEntity{
-	
-	protected static final long serialVersionUID = 1L;
-	
-	//Atributes
-
-	@NotNull
-	@Temporal(TemporalType.TIMESTAMP)
-	@Past
-	protected Date creationMoment;
+public class Chirp extends AbstractEntity {
 	
 	
-	@NotBlank
-	@Length(max=100)
-	protected String title;
+	// Serialisation identifier -----------------------------------------------
+		
+		protected static final long serialVersionUID = 1L;
+		
+	// Attributes -------------------------------------------------------------
+	
+		@NotNull
+		@Temporal(TemporalType.TIMESTAMP)
+		@Past
+		protected Date 			creationMoment;
+		
+		
+		@NotBlank
+		@Length(min=1, max=100)
+		protected String		title;
+		
+		@NotBlank
+		@Length(min=1, max=100)
+		protected String 		author;
+		
+		@NotBlank
+		@Length(min=1, max=255)
+		protected String 		body;
+		
+		
+		@Email
+		protected String 		email;
 	
 	
-	@NotBlank
-	@Length(max=255)
-	protected String body;
-	
-	
-	@Email
-	protected String email;
 }

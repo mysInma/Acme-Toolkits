@@ -20,7 +20,7 @@ import lombok.Setter;
 @Entity
 @Getter
 @Setter
-public class Announcement extends AbstractEntity{
+public class Announcement extends AbstractEntity {
 	
 		// Serialisation identifier -----------------------------------------------
 
@@ -28,20 +28,20 @@ public class Announcement extends AbstractEntity{
 
 		// Attributes -------------------------------------------------------------
 
-		@NotBlank()
-		@Length(min=1, max=100)
-		protected String				title;
-
 		@Temporal(TemporalType.TIMESTAMP)
 		@Past
 		@NotNull
-		protected Date					moment;
+		protected Date					creationMoment;
+		
+		@NotBlank()
+		@Length(min=1, max=100)
+		protected String				title;
 
 		@NotBlank()
 		@Length(min=1, max=255)
 		protected String				body;
 		
-		@NotNull
+		
 		protected Boolean 				flag;
 
 		@URL
