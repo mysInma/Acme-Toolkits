@@ -8,7 +8,6 @@ import javax.persistence.OneToOne;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 import javax.validation.Valid;
-import javax.validation.constraints.Min;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
@@ -43,7 +42,6 @@ public class Patronage extends AbstractEntity{
 	@Length(max = 255)
 	protected String legalStuff;
 	
-	@Min(0)
 	protected Money budget;
 	
 	@NotNull

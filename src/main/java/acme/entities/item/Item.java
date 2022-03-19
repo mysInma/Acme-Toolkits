@@ -47,7 +47,6 @@ public class Item extends AbstractEntity {
 		@Length(min=1,max=255)
 		protected String 						description;
 		
-		@Valid
 		@NotNull
 		protected Money 						retailPrice;
 		
