@@ -11,7 +11,6 @@ import javax.validation.Valid;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Past;
-import javax.validation.constraints.Pattern;
 
 import org.hibernate.validator.constraints.Length;
 import org.hibernate.validator.constraints.URL;
@@ -47,7 +46,6 @@ public class PatronageReport extends AbstractEntity {
 	// Derived attributes -----------------------------------------------------
 		
 		@NotBlank
-		@Pattern(regexp= "^[A-Z]{3}-[0-9]{3}(-[A-Z])?$:[0-9]{4}")
 		public String getSequenceNumber() {
 			String result = "";
 			final String patron = this.getPatronage().getCode();

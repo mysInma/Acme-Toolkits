@@ -1,7 +1,5 @@
 package acme.entities.toolkits;
 
-import java.awt.Toolkit;
-
 import javax.persistence.Entity;
 import javax.persistence.ManyToOne;
 import javax.validation.Valid;
