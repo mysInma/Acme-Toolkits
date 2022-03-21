@@ -3,6 +3,7 @@ package acme.entities.patronages;
 
 import java.util.Date;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.ManyToOne;
 import javax.persistence.Temporal;
@@ -46,6 +47,8 @@ public class PatronageReport extends AbstractEntity {
 	// Derived attributes -----------------------------------------------------
 		
 		@NotBlank
+		@Pattern(regexp= "^[A-Z]{3}-[0-9]{3}(-[A-Z])?:[0-9]{4}$")
+		@Column(unique=true)
 		public String getSequenceNumber() {
 			String result = "";
 			final String patron = this.getPatronage().getCode();
