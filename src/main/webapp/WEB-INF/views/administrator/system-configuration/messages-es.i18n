@@ -1,0 +1,9 @@
+# i18n-es.i18n
+
+
+administrator.system-configuration.form.label.system-currency = Divisa por defecto
+administrator.system-configuration.form.label.accepted-currencies = Divisas aceptadas
+administrator.system-configuration.form.label.strong-spam-terms = Términos fuertes de spam
+administrator.system-configuration.form.label.strong-threshold= Umbral fuerte
+administrator.system-configuration.form.label.weak-spam-terms = Términos débiles de spam
+administrator.system-configuration.form.label.weak-threshold = Umbral débil
