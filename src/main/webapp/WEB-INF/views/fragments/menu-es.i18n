@@ -56,3 +56,4 @@ master.menu.user-account.become-consumer = Hazte consumidor
 
 master.menu.authenticated = Autentificado
 master.menu.authenticated.announcement.list = Ver anuncios
+master.menu.authenticated.system-configuration.show = Ver la configuración del sistema
