@@ -56,3 +56,4 @@ master.menu.user-account.become-consumer = Become a consumer
 
 master.menu.authenticated = Authenticated
 master.menu.authenticated.announcement.list = List announcements
+master.menu.authenticated.system-configuration.show = Show system configuration

@@ -1,0 +1,4 @@
+# i18n-es.i18n
+
+authenticated.system-configuration.form.label.system-currency = Divisa por defecto
+authenticated.system-configuration.form.label.accepted-currencies = Divisas aceptadas
