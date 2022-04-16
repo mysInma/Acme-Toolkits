@@ -12,7 +12,7 @@ any.item.form.label.name = Nombre:
 any.item.form.label.code = Código:
 any.item.form.label.technology = Tecnología:
 any.item.form.label.description = Descripción:
-any.item.form.label.price = Precio de Salida:
+any.item.form.label.price = Precio:
 any.item.form.label.link = Enlace:
 any.item.form.button.create = Item!
  
@@ -20,7 +20,7 @@ any.item.list.label.name = Nombre
 any.item.list.label.code = Código
 any.item.list.label.technology = Tecnología
 any.item.list.label.description = Descripción
-any.item.list.label.price = Precio de Salida
+any.item.list.label.price = Precio
 any.item.list.label.link = Enlace
 any.item.list.label.inventor = Inventor
 
@@ -28,7 +28,7 @@ any.item.form.label.name = Nombre
 any.item.form.label.code = Código
 any.item.form.label.technology = Tecnología
 any.item.form.label.description = Descripción
-any.item.form.label.price = Precio de Salida
+any.item.form.label.price = Precio
 any.item.form.label.link = Enlace
 any.item.form.label.inventor = Inventor
 
