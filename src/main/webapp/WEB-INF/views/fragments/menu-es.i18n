@@ -55,3 +55,8 @@ master.menu.user-account.become-consumer = Hazte consumidor
 
 master.menu.authenticated = Autentificado
 master.menu.authenticated.announcement.list = Ver anuncios
+
+# master.menu.authenticated.item #################################################
+
+master.menu.authenticated.item = Ítem
+master.menu.authenticated.item.list-component =  Lista de Componentes
