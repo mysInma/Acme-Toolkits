@@ -18,7 +18,16 @@ master.menu.sign-out = Sign out
 # master.menu.anonymous #######################################################
 
 master.menu.anonymous = Anonymous
-master.menu.anonymous.favourite-link = Favourite link
+
+master.menu.anonymous.list-chirp = List Chirps
+
+master.menu.anonymous.javpacmar-link = Javpacmar
+master.menu.anonymous.cargarpas1-link = Cargarpas1
+master.menu.anonymous.badrijher-link = Badrijher
+master.menu.anonymous.albtinher-link = Albtinher
+master.menu.anonymous.mysInma-link = MysInma
+master.menu.anonymous.carloscg00-link = Carlosgc00
+
 
 # master.menu.administrator ###################################################
 
@@ -62,11 +71,14 @@ master.menu.user-account.become-consumer = Become a consumer
 master.menu.authenticated = Authenticated
 master.menu.authenticated.announcement.list = List announcements
 
+
 # master.menu.anonymous.item #################################################
 
 master.menu.anonymous.item = Item
 master.menu.anonymus.item.list-tool = List Tools
 master.menu.anonymus.item.list-component = List Component
+
+master.menu.authenticated.list-chirp = List Chirps
 
 # master.menu.authenticated.item #################################################
 

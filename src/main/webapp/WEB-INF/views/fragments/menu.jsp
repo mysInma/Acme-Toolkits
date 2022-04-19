@@ -19,7 +19,6 @@
 <acme:menu-bar code="master.menu.home">
 	<acme:menu-left>
 		<acme:menu-option code="master.menu.anonymous" access="isAnonymous()">	
-		
 			<acme:menu-suboption code="master.menu.anonymus.item.list-tool" action="/any/item/list-tool"/>
 	   		<acme:menu-suboption code="master.menu.anonymus.item.list-component" action="/any/item/list-component"/>
 		
@@ -29,17 +28,28 @@
 			<acme:menu-suboption code="78764492A: Rijo Hernandez, Badayco" action="https://github.com/badrijher"/>
 			<acme:menu-suboption code="20604708C: Tinajero Herrera, Alba" action="https://github.com/albtinher"/>
 			<acme:menu-suboption code="76588577A: Mayo Salvatierra, Inmaculada" action="http://www.github.com/mysInma"/>
-			<acme:menu-suboption code="45150567A: Pacheco Marquez, Javier" action="https://github.com/javpacmar"/>
+			<acme:menu-suboption code="45150567A: Pacheco Marquez, Javier" action="https://github.com/javpacmar"/>		
+		
+			<acme:menu-suboption code="master.menu.anonymous.list-chirp" action="/any/chirp/list"/>
+			
+				
+			<acme:menu-suboption code="master.menu.anonymous.javpacmar-link" action="https://github.com/javpacmar"/>
+			<acme:menu-suboption code="master.menu.anonymous.cargarpas1-link" action="https://github.com/cargarpas1"/>
+			<acme:menu-suboption code="master.menu.anonymous.badrijher-link" action="https://github.com/badrijher"/>
+			<acme:menu-suboption code="master.menu.anonymous.albtinher-link" action="https://github.com/albtinher"/>
+			<acme:menu-suboption code="master.menu.anonymous.mysInma-link" action="http://www.github.com/mysInma"/>
+			<acme:menu-suboption code="master.menu.anonymous.carloscg00-link" action="https://github.com/carloscg00"/>
 		</acme:menu-option>
 
 		<acme:menu-option code="master.menu.authenticated" access="hasRole('Authenticated')">
 			<acme:menu-suboption code="master.menu.authenticated.announcement.list" action="/authenticated/announcement/list"/>
 			
 
-		<acme:menu-suboption code="master.menu.authenticated.item.list-component" action="/any/item/list-component"/>
-		<acme:menu-suboption code="master.menu.authenticated.item.list-tool" action="/any/item/list-tool"/>
+			<acme:menu-suboption code="master.menu.authenticated.item.list-component" action="/any/item/list-component"/>
+			<acme:menu-suboption code="master.menu.authenticated.item.list-tool" action="/any/item/list-tool"/>
+			<acme:menu-suboption code="master.menu.authenticated.list-chirp" action="/any/chirp/list"/>
 		
-		<acme:menu-suboption code="master.menu.authenticated.system-configuration.show" action="/authenticated/system-configuration/show"/>
+			<acme:menu-suboption code="master.menu.authenticated.system-configuration.show" action="/authenticated/system-configuration/show"/>
 
 		</acme:menu-option>
 
