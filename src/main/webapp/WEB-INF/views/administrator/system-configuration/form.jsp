@@ -5,12 +5,12 @@
 
 <acme:form>
 
-	<acme:input-textbox code="administrator.system-configuration.form.label.system-currency" path="system-currency"/>
-	<acme:input-textarea code="administrator.system-configuration.form.label.accepted-currencies" path="accepted-currencies"/>
-	<acme:input-textarea code="administrator.system-configuration.form.label.strong-spam-terms" path="strong-spam-terms"/>
-	<acme:input-double code="administrator.system-configuration.form.label.strong-threshold" path="strong-threshold"/>
-	<acme:input-textarea code="administrator.system-configuration.form.label.weak-spam-terms" path="weak-spam-terms"/>
-	<acme:input-double code="administrator.system-configuration.form.label.weak-threshold" path="weak-threshold"/>
+	<acme:input-textbox code="administrator.system-configuration.form.label.system-currency" path="systemCurrency"/>
+	<acme:input-textarea code="administrator.system-configuration.form.label.accepted-currencies" path="acceptedCurrencies"/>
+	<acme:input-textarea code="administrator.system-configuration.form.label.strong-spam-terms" path="strongSpamTerms"/>
+	<acme:input-double code="administrator.system-configuration.form.label.strong-threshold" path="strongThreshold"/>
+	<acme:input-textarea code="administrator.system-configuration.form.label.weak-spam-terms" path="weakSpamTerms"/>
+	<acme:input-double code="administrator.system-configuration.form.label.weak-threshold" path="weakThreshold"/>
 	
 
 </acme:form>
