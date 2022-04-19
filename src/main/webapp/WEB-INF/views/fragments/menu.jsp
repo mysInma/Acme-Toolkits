@@ -19,6 +19,8 @@
 <acme:menu-bar code="master.menu.home">
 	<acme:menu-left>
 		<acme:menu-option code="master.menu.anonymous" access="isAnonymous()">	
+			
+			<acme:menu-suboption code="master.menu.anonymus.toolkit.list" action="/any/toolkit/list"/>
 		
 			<acme:menu-suboption code="master.menu.anonymous.favourite-link" action="http://www.example.com/"/>
 			<acme:menu-suboption code="47268679E: Cano Gomez, Carlos" action="https://github.com/carloscg00"/>
@@ -31,7 +33,8 @@
 
 		<acme:menu-option code="master.menu.authenticated" access="hasRole('Authenticated')">
 			<acme:menu-suboption code="master.menu.authenticated.announcement.list" action="/authenticated/announcement/list"/>
-
+			
+		<acme:menu-suboption code="master.menu.authenticated.toolkit.list" action="/any/toolkit/list"/>
 		<acme:menu-suboption code="master.menu.authenticated.item.list-component" action="/any/item/list-component"/>
 		<acme:menu-suboption code="master.menu.authenticated.item.list-tool" action="/any/item/list-tool"/>
 		
