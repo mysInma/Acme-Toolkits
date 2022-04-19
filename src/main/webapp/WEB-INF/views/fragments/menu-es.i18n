@@ -53,6 +53,11 @@ master.menu.consumer.favourite-link = Enlace favorito
 
 # master.menu.user-account ####################################################
 
+master.menu.inventor = Inventor
+master.menu.inventor.item = Lista de ítems
+
+# master.menu.user-account ####################################################
+
 master.menu.user-account = Cuenta
 master.menu.user-account.general-data = Datos generales
 master.menu.user-account.provider = Datos de proveedor
@@ -65,8 +70,13 @@ master.menu.user-account.become-consumer = Hazte consumidor
 master.menu.authenticated = Autentificado
 master.menu.authenticated.announcement.list = Ver anuncios
 
-master.menu.authenticated.list-chirp = List Chirps
+# master.menu.anonymous.item #################################################
 
+master.menu.anonymous.item = Ítem
+master.menu.anonymus.item.list-tool = Lista de Herramientas
+master.menu.anonymus.item.list-component = Lista de Componentes
+
+master.menu.authenticated.list-chirp = List Chirps
 
 # master.menu.authenticated.item #################################################
 

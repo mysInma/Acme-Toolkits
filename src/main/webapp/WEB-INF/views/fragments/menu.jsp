@@ -19,8 +19,17 @@
 <acme:menu-bar code="master.menu.home">
 	<acme:menu-left>
 		<acme:menu-option code="master.menu.anonymous" access="isAnonymous()">	
-			
-			
+			<acme:menu-suboption code="master.menu.anonymus.item.list-tool" action="/any/item/list-tool"/>
+	   		<acme:menu-suboption code="master.menu.anonymus.item.list-component" action="/any/item/list-component"/>
+		
+			<acme:menu-suboption code="master.menu.anonymous.favourite-link" action="http://www.example.com/"/>
+			<acme:menu-suboption code="47268679E: Cano Gomez, Carlos" action="https://github.com/carloscg00"/>
+			<acme:menu-suboption code="20102670A: Garcia Pastrana, Carmen" action="https://github.com/cargarpas1"/>
+			<acme:menu-suboption code="78764492A: Rijo Hernandez, Badayco" action="https://github.com/badrijher"/>
+			<acme:menu-suboption code="20604708C: Tinajero Herrera, Alba" action="https://github.com/albtinher"/>
+			<acme:menu-suboption code="76588577A: Mayo Salvatierra, Inmaculada" action="http://www.github.com/mysInma"/>
+			<acme:menu-suboption code="45150567A: Pacheco Marquez, Javier" action="https://github.com/javpacmar"/>		
+		
 			<acme:menu-suboption code="master.menu.anonymous.list-chirp" action="/any/chirp/list"/>
 			
 				
@@ -34,6 +43,7 @@
 
 		<acme:menu-option code="master.menu.authenticated" access="hasRole('Authenticated')">
 			<acme:menu-suboption code="master.menu.authenticated.announcement.list" action="/authenticated/announcement/list"/>
+			
 
 			<acme:menu-suboption code="master.menu.authenticated.item.list-component" action="/any/item/list-component"/>
 			<acme:menu-suboption code="master.menu.authenticated.item.list-tool" action="/any/item/list-tool"/>
@@ -62,6 +72,11 @@
 		<acme:menu-option code="master.menu.consumer" access="hasRole('Consumer')">
 			<acme:menu-suboption code="master.menu.consumer.favourite-link" action="http://www.example.com/"/>
 		</acme:menu-option>
+		
+		<acme:menu-option code="master.menu.inventor" access="hasRole('Inventor')">
+			<acme:menu-suboption code="master.menu.inventor.item" action="/inventor/item/list"/>
+		</acme:menu-option>
+		
 	</acme:menu-left>
 
 	<acme:menu-right>
