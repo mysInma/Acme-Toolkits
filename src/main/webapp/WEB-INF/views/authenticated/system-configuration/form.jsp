@@ -4,6 +4,6 @@
 <%@taglib prefix="acme" uri="urn:jsptagdir:/WEB-INF/tags"%>
 
 <acme:form>
-	<acme:input-textbox code="authenticated.system-configuration.form.label.system-currency" path="system-currency"/>
-	<acme:input-textbox code="authenticated.system-configuration.form.label.accepted-currencies" path="accepted-Currencies"/>
+	<acme:input-textbox code="authenticated.system-configuration.form.label.system-currency" path="systemCurrency"/>
+	<acme:input-textbox code="authenticated.system-configuration.form.label.accepted-currencies" path="acceptedCurrencies"/>
 </acme:form>
