@@ -21,6 +21,7 @@ master.menu.anonymous = Anonymous
 master.menu.anonymous.favourite-link = Favourite link
 master.menu.anonymus.toolkit.list = List all toolkits
 
+master.menu.any.user-account.list = Lists Users
 master.menu.anonymous.list-chirp = List Chirps
 
 master.menu.anonymous.javpacmar-link = Javpacmar
