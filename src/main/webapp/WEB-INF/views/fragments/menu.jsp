@@ -20,10 +20,11 @@
 	<acme:menu-left>
 		<acme:menu-option code="master.menu.anonymous" access="isAnonymous()">	
 			
+			<acme:menu-suboption code="master.menu.any.user-account.list" action="/any/user-account/list"/>
 			
 			<acme:menu-suboption code="master.menu.anonymous.list-chirp" action="/any/chirp/list"/>
 			
-				
+			<acme:menu-separator/>
 			<acme:menu-suboption code="master.menu.anonymous.javpacmar-link" action="https://github.com/javpacmar"/>
 			<acme:menu-suboption code="master.menu.anonymous.cargarpas1-link" action="https://github.com/cargarpas1"/>
 			<acme:menu-suboption code="master.menu.anonymous.badrijher-link" action="https://github.com/badrijher"/>

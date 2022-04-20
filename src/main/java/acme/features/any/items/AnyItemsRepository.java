@@ -16,7 +16,7 @@ public interface AnyItemsRepository extends AbstractRepository {
 	@Query("select i from Item i WHERE i.type = 1")
 	Collection<Item> findAllTools();
 	
-	@Query("select i from Item i where i.id =: id")
+	@Query("select i from Item i where i.id = :id")
 	Item findOneItemById(int id);
 
 }

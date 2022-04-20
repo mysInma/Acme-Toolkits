@@ -19,6 +19,7 @@ master.menu.sign-out = Sign out
 
 master.menu.anonymous = Anonymous
 
+master.menu.any.user-account.list = Lists Users
 master.menu.anonymous.list-chirp = List Chirps
 
 master.menu.anonymous.javpacmar-link = Javpacmar
