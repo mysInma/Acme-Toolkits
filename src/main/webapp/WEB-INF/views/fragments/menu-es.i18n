@@ -17,6 +17,7 @@ master.menu.sign-out = Salir
 
 # master.menu.anonymous #######################################################
 
+master.menu.anonymous.toolkit.list = Ver los kits de herramientas
 master.menu.anonymous = Anónimo
 
 master.menu.anonymous.list-chirp = Lista Chirps
@@ -27,6 +28,7 @@ master.menu.anonymous.badrijher-link = Badrijher
 master.menu.anonymous.albtinher-link = Albtinher
 master.menu.anonymous.mysInma-link = MysInma
 master.menu.anonymous.carloscg00-link = Carlosgc00
+
 
 # master.menu.administrator ###################################################
 
@@ -66,7 +68,7 @@ master.menu.user-account.consumer = Datos de consumidor
 master.menu.user-account.become-consumer = Hazte consumidor
 
 # master.menu.authenticated #######################################################
-
+master.menu.authenticated.toolkit.list = Ver los kits de herramientas
 master.menu.authenticated = Autentificado
 master.menu.authenticated.announcement.list = Ver anuncios
 
