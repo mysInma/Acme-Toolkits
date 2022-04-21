@@ -26,7 +26,7 @@ public class AdministratorDashboard {
 	protected Map<String, Double> 					minimumRetailPriceOfToolsByCurrency;
 	protected Map<String, Double> 					maximumRetailPriceOfToolsByCurrency;
 
-	protected Integer 								totalNumberOfPatronagesByStatus;
+	protected Map<PatronageStatus, Integer> 		totalNumberOfPatronagesByStatus;
 	protected Map<PatronageStatus, Double> 			averagePatronagesBudgetByStatus;
 	protected Map<PatronageStatus, Double>			deviationPatronagesBudgetByStatu; 
 	protected Map<PatronageStatus, Double> 			minimumPatronagesBudgetByStatus;

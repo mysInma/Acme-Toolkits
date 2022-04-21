@@ -1,0 +1,27 @@
+# i18n-es.i18n
+#
+# Copyright (C) 2012-2022 Rafael Corchuelo.
+#
+# In keeping with the traditional purpose of furthering education and research, it is
+# the policy of the copyright owner to permit non-commercial use and redistribution of
+# this software. It has been tested carefully, but it is not guaranteed for any particular
+# purposes.  The copyright owner does not offer any warranties or representations, nor do
+# they accept any liabilities with respect to them.
+
+patron.patron-dashboard.form.label.total-components = Número Total De Componentes
+patron.patron-dashboard.form.label.average-components = Precio Medio De Venta Al Público De Los Componentes Por Divisa y Tecnología
+patron.patron-dashboard.form.label.deviation-components = Desviación Del Precio De Venta Al Público De Los Componentes Por Divisa y Tecnología
+patron.patron-dashboard.form.label.minimum-components = Precio Mínimo De Venta Al Público De Los Componentes Por Divisa y Tecnológica
+patron.patron-dashboard.form.label.maximum-components = Precio Máximo De Venta Al Público De Los Componentes Por Divisa y Tecnológica
+
+patron.patron-dashboard.form.label.total-tools = Número Total De Herramientas
+patron.patron-dashboard.form.label.average-tools = Precio Medio De Venta Al Público De Los Herramientas Por Divisa
+patron.patron-dashboard.form.label.deviation-tools = Desviación Del Precio De Venta Al Público De Los Herramientas Por Divisa
+patron.patron-dashboard.form.label.minimum-tools = Precio Mínimo De Venta Al Público De Los Herramientas Por Divisa
+patron.patron-dashboard.form.label.maximum-tools = Precio Máximo De Venta Al Público De Los Herramientas Por Divisa
+
+patron.patron-dashboard.form.label.total-patronages = Número Total De Patrocinios Por Estado
+patron.patron-dashboard.form.label.average-patronages = Precio Medio De Venta Al Público De Los Patrocinios Por Estado
+patron.patron-dashboard.form.label.deviation-patronages = Desviación Del Precio De Venta Al Público De Los Patrocinios Por Estado
+patron.patron-dashboard.form.label.minimum-patronages = Precio Mínimo De Venta Al Público De Los Patrocinios Por Estado
+patron.patron-dashboard.form.label.maximum-patronages = Precio Máximo De Venta Al Público De Los Patrocinios Por Estado
