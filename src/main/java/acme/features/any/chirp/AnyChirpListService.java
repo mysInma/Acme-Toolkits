@@ -19,7 +19,7 @@ public class AnyChirpListService implements AbstractListService<Any, Chirp> {
 	// Internal state ---------------------------------------------------------
 
 	@Autowired
-	protected AnyChirpRepository repository;
+	protected AnyChirpRepository chirpRepository;
 
 	// AbstractListService<Administrator, Shout> interface --------------
 
@@ -36,13 +36,13 @@ public class AnyChirpListService implements AbstractListService<Any, Chirp> {
 
 		Collection<Chirp> result;
 		Calendar calendar;
-		Date deadline;
+		final Date timeLimit;
 
 		calendar = Calendar.getInstance();
 		calendar.add(Calendar.MONTH, -1);
-		deadline = calendar.getTime();
+		timeLimit = calendar.getTime();
 
-		result = this.repository.findRecentChirps(deadline);
+		result = this.chirpRepository.findLasthMonthChirps(timeLimit);
 
 		return result;
 	}

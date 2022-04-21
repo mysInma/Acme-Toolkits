@@ -8,8 +8,10 @@
 # purposes.  The copyright owner does not offer any warranties or representations, nor do
 # they accept any liabilities with respect to them.
 
-any.chirp.list.label.creation_moment = Creation moment
-any.chirp.list.label.title = Title
-any.chirp.list.label.author = Author
-any.chirp.list.label.body = Description
-any.chirp.list.label.email = Email
+anonymous.user-account.form.label.name = Name
+anonymous.user-account.form.label.surname = Surname
+anonymous.user-account.form.label.email = Email
+anonymous.user-account.form.label.roles = Roles
+
+anonymous.user-account.form.label.username = Username
+anonymous.user-account.form.label.roles = Roles

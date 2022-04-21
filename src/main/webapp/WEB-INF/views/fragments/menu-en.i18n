@@ -18,7 +18,10 @@ master.menu.sign-out = Sign out
 # master.menu.anonymous #######################################################
 
 master.menu.anonymous = Anonymous
+master.menu.anonymous.favourite-link = Favourite link
+master.menu.anonymus.toolkit.list = List all toolkits
 
+master.menu.any.user-account.list = Lists Users
 master.menu.anonymous.list-chirp = List Chirps
 
 master.menu.anonymous.javpacmar-link = Javpacmar
@@ -27,7 +30,6 @@ master.menu.anonymous.badrijher-link = Badrijher
 master.menu.anonymous.albtinher-link = Albtinher
 master.menu.anonymous.mysInma-link = MysInma
 master.menu.anonymous.carloscg00-link = Carlosgc00
-
 
 # master.menu.administrator ###################################################
 
@@ -56,7 +58,11 @@ master.menu.consumer.favourite-link = Favourite link
 
 master.menu.inventor = Inventor
 master.menu.inventor.item = Item list
+
 master.menu.inventor.patronage-report.list = Patronage reports list
+
+master.menu.patron = Patron
+master.menu.patron.patronages = Patronages list
 
 # master.menu.user-account ####################################################
 
@@ -71,6 +77,7 @@ master.menu.user-account.become-consumer = Become a consumer
 
 master.menu.authenticated = Authenticated
 master.menu.authenticated.announcement.list = List announcements
+master.menu.authenticated.system-configuration.show = Show system configuration
 
 
 # master.menu.anonymous.item #################################################
@@ -83,8 +90,8 @@ master.menu.authenticated.list-chirp = List Chirps
 
 # master.menu.authenticated.item #################################################
 
+master.menu.authenticated.toolkit.list = List all toolkits
+
 master.menu.authenticated.item = Item
 master.menu.authenticated.item.list-component = List Component
 master.menu.authenticated.item.list-tool = List Tools
-
-master.menu.authenticated.system-configuration.show = Show system configuration
