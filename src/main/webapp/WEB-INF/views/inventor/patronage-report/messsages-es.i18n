@@ -11,9 +11,9 @@
 inventor.patronage-report.list.label.creationMoment = Fecha de creación
 inventor.patronage-report.list.label.memorandum = Memorándum
 inventor.patronage-report.list.label.link = Link
-inventor.patronage-report.list.label.patronage = Patrocinio
+inventor.patronage-report.list.label.patronage.code = Código de patrocinio
 
 inventor.patronage-report.form.label.creationMoment = Fecha de creación
 inventor.patronage-report.form.label.memorandum = Memorándum
 inventor.patronage-report.form.label.link = Link
-inventor.patronage-report.form.label.patronage = Patrocinio
+inventor.patronage-report.form.label.patronage.code = Código de patrocinio
