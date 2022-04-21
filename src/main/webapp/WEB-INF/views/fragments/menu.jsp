@@ -24,7 +24,7 @@
 			
 			<acme:menu-suboption code="master.menu.anonymus.toolkit.list" action="/any/toolkit/list"/>
 			<acme:menu-suboption code="master.menu.anonymus.item.list-tool" action="/any/item/list-tool"/>
-	   	<acme:menu-suboption code="master.menu.anonymus.item.list-component" action="/any/item/list-component"/>
+	   		<acme:menu-suboption code="master.menu.anonymus.item.list-component" action="/any/item/list-component"/>
 		
 			<acme:menu-suboption code="master.menu.anonymous.favourite-link" action="http://www.example.com/"/>
 			<acme:menu-suboption code="47268679E: Cano Gomez, Carlos" action="https://github.com/carloscg00"/>
@@ -48,20 +48,16 @@
 		<acme:menu-option code="master.menu.authenticated" access="hasRole('Authenticated')">
 			<acme:menu-suboption code="master.menu.authenticated.announcement.list" action="/authenticated/announcement/list"/>
 			
-		<acme:menu-suboption code="master.menu.authenticated.toolkit.list" action="/any/toolkit/list"/>
-		<acme:menu-suboption code="master.menu.authenticated.item.list-component" action="/any/item/list-component"/>
-		<acme:menu-suboption code="master.menu.authenticated.item.list-tool" action="/any/item/list-tool"/>
-
-		<acme:menu-suboption code="master.menu.authenticated.item.list-component" action="/any/item/list-component"/>
-		<acme:menu-suboption code="master.menu.authenticated.item.list-tool" action="/any/item/list-tool"/>
-		<acme:menu-suboption code="master.menu.authenticated.list-chirp" action="/any/chirp/list"/>
+			<acme:menu-suboption code="master.menu.authenticated.toolkit.list" action="/any/toolkit/list"/>
+			<acme:menu-suboption code="master.menu.authenticated.item.list-component" action="/any/item/list-component"/>
+			<acme:menu-suboption code="master.menu.authenticated.item.list-tool" action="/any/item/list-tool"/>
+	
+			<acme:menu-suboption code="master.menu.authenticated.item.list-component" action="/any/item/list-component"/>
+			<acme:menu-suboption code="master.menu.authenticated.item.list-tool" action="/any/item/list-tool"/>
+			<acme:menu-suboption code="master.menu.authenticated.list-chirp" action="/any/chirp/list"/>
 		
 			<acme:menu-suboption code="master.menu.authenticated.system-configuration.show" action="/authenticated/system-configuration/show"/>
 
-		</acme:menu-option>
-		
-		<acme:menu-option code="master.menu.patron" access="hasRole('Patron')">
-			<acme:menu-suboption code="master.menu.patron.dashboard" action="/patron/patron-dashboard/show"/>
 		</acme:menu-option>
 
 		<acme:menu-option code="master.menu.administrator" access="hasRole('Administrator')">
@@ -94,6 +90,7 @@
 		<acme:menu-option code="master.menu.patron" access="hasRole('Patron')">
 			<acme:menu-suboption code="master.menu.patron.patronage-report.list" action="/patron/patronage-report/list"/>
 			<acme:menu-suboption code="master.menu.patron.patronages" action="/patron/patronage/list"/>
+			<acme:menu-suboption code="master.menu.patron.dashboard" action="/patron/patron-dashboard/show"/>
 		</acme:menu-option>
 	</acme:menu-left>
 
