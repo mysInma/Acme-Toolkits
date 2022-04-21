@@ -1,0 +1,28 @@
+# i18n-en.i18n
+#
+# Copyright (C) 2012-2022 Rafael Corchuelo.
+#
+# In keeping with the traditional purpose of furthering education and research, it is
+# the policy of the copyright owner to permit non-commercial use and redistribution of
+# this software. It has been tested carefully, but it is not guaranteed for any particular
+# purposes.  The copyright owner does not offer any warranties or representations, nor do
+# they accept any liabilities with respect to them.
+
+patron.patron-dashboard.form.label.total-components = Total Number Of Components
+patron.patron-dashboard.form.label.average-components = Average Retail Price Of Components By Technology Currency
+patron.patron-dashboard.form.label.deviation-components = Deviation Retail Price Of Components By Technology Currency
+patron.patron-dashboard.form.label.minimum-components = Minimum Retail Price Of Components By Technology Currency
+patron.patron-dashboard.form.label.maximum-components = Maximum Retail Price Of Components By Technology Currency
+
+patron.patron-dashboard.form.label.total-tools = Total Number Of Tools
+patron.patron-dashboard.form.label.average-tools = Average Retail Price Of Tools By Currency
+patron.patron-dashboard.form.label.deviation-tools = Deviation Retail Price Of Tools By Currency
+patron.patron-dashboard.form.label.minimum-tools = Minimum Retail Price Of Tools By Currency
+patron.patron-dashboard.form.label.maximum-tools = Maximum Retail Price Of Tools By Currency
+
+patron.patron-dashboard.form.label.total-patronages = Total Number Of Patronages By Status
+patron.patron-dashboard.form.label.average-patronages = Average Retail Price Of Patronages By Status
+patron.patron-dashboard.form.label.deviation-patronages = Deviation Retail Price Of Patronages By Status
+patron.patron-dashboard.form.label.minimum-patronages = Minimum Retail Price Of Patronages By Status
+patron.patron-dashboard.form.label.maximum-patronages = Maximum Retail Price Of Patronages By Status
+
