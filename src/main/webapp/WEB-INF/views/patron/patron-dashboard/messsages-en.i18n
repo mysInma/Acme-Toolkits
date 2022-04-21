@@ -9,3 +9,7 @@
 # they accept any liabilities with respect to them.
 
 patron.patron-dashboard.form.label.total = Total Number Of Patronages By Status
+patron.patron-dashboard.form.label.average = Average Budget Of Patronages Status By Currency
+patron.patron-dashboard.form.label.deviation = Deviation Budget Of Patronages Status By Currency
+patron.patron-dashboard.form.label.min = Minimum Budget Of Patronages Status By Currency
+patron.patron-dashboard.form.label.max = Maximum Budget Of Patronages Status By Currency

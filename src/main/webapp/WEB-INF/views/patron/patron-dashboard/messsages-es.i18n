@@ -9,3 +9,7 @@
 # they accept any liabilities with respect to them.
 
 patron.patron-dashboard.form.label.total = Número Total De Patrocinios Por Estado
+patron.patron-dashboard.form.label.average = Presupuesto Medio Del Estado De Los Patrocinios Por Divisa
+patron.patron-dashboard.form.label.deviation = Deviación Del Presupuesto Del Estado De Los Patrocinios Por Divisa
+patron.patron-dashboard.form.label.min = Mínimo Del Presupuesto Del Estado De Los Patrocinios Por Divisa
+patron.patron-dashboard.form.label.max = Máximo Del Presupuesto Del Estado De Los Patrocinios Por Divisa
