@@ -1,5 +1,4 @@
 key,creationMoment,title,description,critical,link
-announcement-01,2022/01/01 00:30,Default announcement,This is a default announcement,false,""
-announcement-02,2022/02/02 12:00,Simple announcement,This is a simple announcement,false,""
-announcement-03,2022/03/17 20:00,Critical announcement,This is a critical announcement,true,http://www.critical-announcement.com
-announcement-04,2022/04/12 12:00,Simple announcement,This is a simple announcement,false,""
+announcement-01,2022/04/21 14:00,Simple announcement,This is a simple announcement,false,""
+announcement-02,2022/04/20 20:00,Critical announcement,This is a critical announcement,true,http://www.critical-announcement.com
+announcement-03,2022/04/12 11:00,Simple announcement,This is a simple announcement,false,""

@@ -58,7 +58,11 @@ master.menu.consumer.favourite-link = Favourite link
 
 master.menu.inventor = Inventor
 master.menu.inventor.item = Item list
-master.menu.inventor.patronages = Patronages list
+
+master.menu.inventor.patronage-report.list = Patronage reports list
+
+master.menu.patron = Patron
+master.menu.patron.patronages = Patronages list
 
 # master.menu.patron ####################################################
 
@@ -78,6 +82,7 @@ master.menu.user-account.become-consumer = Become a consumer
 
 master.menu.authenticated = Authenticated
 master.menu.authenticated.announcement.list = List announcements
+master.menu.authenticated.system-configuration.show = Show system configuration
 
 
 # master.menu.anonymous.item #################################################
@@ -95,5 +100,3 @@ master.menu.authenticated.toolkit.list = List all toolkits
 master.menu.authenticated.item = Item
 master.menu.authenticated.item.list-component = List Component
 master.menu.authenticated.item.list-tool = List Tools
-
-master.menu.authenticated.system-configuration.show = Show system configuration
