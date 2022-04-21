@@ -23,7 +23,7 @@ public class FavouriteLinkTest extends TestHarness {
 
 	@Test
 	@Order(10)
-	public void favouriteLink() {
+	public void checkFavouriteLink() {
 		super.navigateHome();
 		super.clickOnMenu("Anonymous", "Albtinher");		
 		super.checkCurrentUrl("https://github.com/albtinher");
