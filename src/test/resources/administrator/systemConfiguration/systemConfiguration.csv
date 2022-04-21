@@ -1,0 +1,2 @@
+recordIndex,systemCurrency,acceptedCurrencies,strongSpamTerms,strongThreshold,weakSpamTerms,weakThreshold
+0,EUR,"EUR,USD,GBP","sex,sexo,duro,hard core,viagra,cialis",0.10,"sexy,sexi,nigeria,you've won,has ganado,one million,un millon",0.25
