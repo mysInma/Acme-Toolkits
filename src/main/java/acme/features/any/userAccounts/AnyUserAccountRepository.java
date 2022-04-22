@@ -14,9 +14,7 @@ public interface AnyUserAccountRepository extends AbstractRepository {
 	@Query("SELECT user FROM UserAccount user WHERE user.id = :id")
 	UserAccount findOneUserAccountById(int id);
 	
-	@Query("SELECT ua FROM UserAccount ua "
-		+ "join FETCH ua.roles r where ua.enabled = true "
-		+ "and Administrator not in (select type(r) from UserAccount ua2 join ua2.roles r where ua2.id = ua.id)")
-	Collection<UserAccount> findAllPrincipals();
+	@Query("SELECT ua FROM UserAccount ua ")
+	Collection<UserAccount> findAllUserAccounts();
 	
 }
