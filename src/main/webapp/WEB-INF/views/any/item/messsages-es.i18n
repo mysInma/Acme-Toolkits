@@ -14,7 +14,7 @@ any.item.form.label.technology = Tecnología:
 any.item.form.label.description = Descripción:
 any.item.form.label.price = Precio:
 any.item.form.label.link = Enlace:
-any.item.form.button.create = Item!
+
  
 any.item.list.label.name = Nombre
 any.item.list.label.code = Código
@@ -32,4 +32,3 @@ any.item.form.label.price = Precio
 any.item.form.label.link = Enlace
 any.item.form.label.inventor = Inventor
 
-any.item.list.button.create = Item!

@@ -21,6 +21,5 @@
 	<acme:list-column code="inventor.item.list.label.technology" path="technology"/>
 	<acme:list-column code="inventor.item.list.label.description" path="description"/>
 	<acme:list-column code="inventor.item.list.label.price" path="price"/>
-	<acme:list-column code="inventor.item.list.label.type" path="type"/>
 	<acme:list-column code="inventor.item.list.label.link" path="link"/>
 </acme:list>
