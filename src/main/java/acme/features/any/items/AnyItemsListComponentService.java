@@ -30,8 +30,7 @@ public class AnyItemsListComponentService implements AbstractListService<Any, It
 
 		Collection<Item> result;
 
-		result = this.repository.findAllComponents();
-
+		result = this.repository.findComponentsPublished();
 		return result;
 	}
 	

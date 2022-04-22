@@ -62,7 +62,8 @@ master.menu.consumer.favourite-link = Favourite link
 # master.menu.inventor ####################################################
 
 master.menu.inventor = Inventor
-master.menu.inventor.item = Item list
+master.menu.inventor.list-component = Component list
+master.menu.inventor.list-tool = Tool list
 
 master.menu.inventor.patronage-report.list = Patronage reports list
 
