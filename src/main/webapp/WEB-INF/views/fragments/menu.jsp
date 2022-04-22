@@ -37,10 +37,12 @@
 			<acme:menu-suboption code="master.menu.anonymous.mysInma-link" action="http://www.github.com/mysInma"/>
 			<acme:menu-suboption code="master.menu.anonymous.carloscg00-link" action="https://github.com/carloscg00"/>
 		</acme:menu-option>
+		
 
 		<acme:menu-option code="master.menu.authenticated" access="hasRole('Authenticated')">
 			<acme:menu-suboption code="master.menu.authenticated.announcement.list" action="/authenticated/announcement/list"/>
 			
+			<acme:menu-suboption code="master.menu.authenticated.user-account.list" action="/any/user-account/list"/>
 			<acme:menu-suboption code="master.menu.authenticated.toolkit.list" action="/any/toolkit/list"/>
 			<acme:menu-suboption code="master.menu.authenticated.item.list-component" action="/any/item/list-component"/>
 			<acme:menu-suboption code="master.menu.authenticated.item.list-tool" action="/any/item/list-tool"/>

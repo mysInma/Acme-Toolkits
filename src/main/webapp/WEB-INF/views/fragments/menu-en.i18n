@@ -21,7 +21,7 @@ master.menu.anonymous = Anonymous
 master.menu.anonymous.favourite-link = Favourite link
 master.menu.anonymus.toolkit.list = List Toolkits
 
-master.menu.any.user-account.list = Lists Users
+master.menu.any.user-account.list = Lists Users Account
 master.menu.anonymous.list-chirp = List Chirps
 
 master.menu.anonymous.javpacmar-link = Javpacmar
@@ -88,7 +88,13 @@ master.menu.user-account.become-consumer = Become a consumer
 master.menu.authenticated = Authenticated
 master.menu.authenticated.announcement.list = List announcements
 master.menu.authenticated.system-configuration.show = Show system configuration
+master.menu.authenticated.user-account.list = List Users Account
+master.menu.authenticated.toolkit.list = List Toolkits
 
+master.menu.authenticated.item = Item
+master.menu.authenticated.item.list-component = List Component
+master.menu.authenticated.item.list-tool = List Tools
+master.menu.authenticated.list-chirp = List Chirps
 
 # master.menu.anonymous.item #################################################
 
@@ -96,12 +102,6 @@ master.menu.anonymous.item = Item
 master.menu.anonymus.item.list-tool = List Tools
 master.menu.anonymus.item.list-component = List Component
 
-master.menu.authenticated.list-chirp = List Chirps
 
-# master.menu.authenticated.item #################################################
 
-master.menu.authenticated.toolkit.list = List all toolkits
 
-master.menu.authenticated.item = Item
-master.menu.authenticated.item.list-component = List Component
-master.menu.authenticated.item.list-tool = List Tools
