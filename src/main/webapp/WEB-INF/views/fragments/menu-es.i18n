@@ -17,7 +17,7 @@ master.menu.sign-out = Salir
 
 # master.menu.anonymous #######################################################
 
-master.menu.anonymous.toolkit.list = Ver los kits de herramientas
+master.menu.anonymous.toolkit.list = Kits de herramientas
 master.menu.anonymous = Anónimo
 
 master.menu.any.user-account.list = Lista Usuarios
