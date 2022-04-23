@@ -1,0 +1,6 @@
+recordIndex,name,surname,email,username,roles
+0,Inventor01,Acme,inventor01@acme.com,inventor01,"Inventor Authenticated"
+1,Paco,Díaz,paco-diaz@acme.com,inventor02,"Inventor Authenticated"
+2,Fernando,Simón,fernando-simon@acme.com,inventor03,"Inventor Authenticated"
+3,Patron01,Acme,patron01@acme.com,patron01,"Patron Authenticated"
+4,María,Rodríguez,maria-rodriguez@acme.com,patron02,"Patron Authenticated"
