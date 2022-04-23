@@ -71,6 +71,7 @@ public class InventorToolkitShowService implements AbstractShowService<Inventor,
 		request.unbind(entity, model, "code", "title", "description","notes","link","published");
 		
 		
+		
 	}
 
 

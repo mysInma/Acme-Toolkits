@@ -18,14 +18,10 @@ public interface InventorToolkitRepository extends AbstractRepository{
 	@Query("SELECT t FROM Toolkit t WHERE t.id = :id")
 	Toolkit findToolkitById(int id);
 	
-	/*@Query("SELECT q FROM Quantity q WHERE q.toolkit.id = :id")
-	Collection<Quantity> collectPrices(int id);*/
 	
 	@Query("SELECT q.item.price FROM Quantity q WHERE q.toolkit.id = :id")
 	Collection<Money> collectPrices(int id);
 	
-	/*@Query("SELECT q.item FROM Quantity q WHERE q.toolkit.id = :id")
-	Collection<Item> finItemsByToolkit(int id);*/
 	
 	@Query("select c.systemCurrency from SystemConfiguration c")
 	String systemCurrency();
