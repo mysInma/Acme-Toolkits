@@ -11,24 +11,23 @@ public class AnyUserAccountTest extends TestHarness{
 	@ParameterizedTest
 	@CsvFileSource(resources = "/any/userAccount/user-account.csv", encoding = "utf-8", numLinesToSkip = 1)
 	@Order(10)
-	public void positiveTest(final int recordIndex, final String enabled, final String name, 
-		final String surname,final String email ,final String password, final String username, final String roles, final String rolesShow) {
+	public void positiveTest(final int recordIndex, final String name, 
+		final String surname,final String email , final String username, final String roles) {
 		
-		super.clickOnMenu("Anonymous","List User Account");
+		
+		super.clickOnMenu("Anonymous","Lists Users");
 		super.checkListingExists();
 		super.sortListing(0, "asc");
+		super.sortListing(1, "asc");
 		
 		super.checkColumnHasValue(recordIndex, 0, username);
-		super.checkColumnHasValue(recordIndex, 1, roles);
+		
 		
 		super.clickOnListingRecord(recordIndex);
 		super.checkFormExists();
 		super.checkInputBoxHasValue("identity.name", name);
 		super.checkInputBoxHasValue("identity.surname", surname);
 		super.checkInputBoxHasValue("identity.email", email);
-		super.checkInputBoxHasValue("roles", rolesShow);
-		
-
 
 		
 		

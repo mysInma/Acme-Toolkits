@@ -1,7 +1,6 @@
-recordIndex,enabled,name,surname,email,password,username,roles,rolesShow
-0,true,Inventor,One,inventor1@mail.com,inventor1,inventor1,Inventor,Inventor
-1,true,Inventor,Two,inventor2@mail.com,inventor2,inventor2,"Patron, Inventor","Inventor, Patron"
-2,true,Inventor,Three,inventor3@mail.com,inventor3,inventor3,Inventor,Inventor
-3,true,Patron,One,patron1@mail.com,patron1,patron1,Patron,Patron
-4,true,Patron,Two,patron2@mail.com,patron2,patron2,Patron,Patron
-5,true,Patron,Three,patron3@mail.com,patron3,patron3,Patron,Patron
+recordIndex,name,surname,email,username,roles
+0,Inventor01,Acme,inventor01@acme.com,inventor01,"Inventor Authenticated"
+1,Paco,Díaz,paco-diaz@acme.com,inventor02,"Inventor Authenticated"
+2,Fernando,Simón,fernando-simon@acme.com,inventor03,"Inventor Authenticated"
+3,Patron01,Acme,patron01@acme.com,patron01,"Patron Authenticated"
+4,María,Rodríguez,maria-rodriguez@acme.com,patron02,"Patron Authenticated"
