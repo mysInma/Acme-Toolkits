@@ -10,6 +10,11 @@
 	<acme:input-moment code="inventor.patronage.form.label.creationMoment" path="creationMoment"/>
 	<acme:input-moment code="inventor.patronage.form.label.finishDate" path="finishDate"/>
 	<acme:input-url code="inventor.patronage.form.label.link" path="link"/>
-	<acme:input-textbox code="inventor.patronage.form.label.inventor" path="inventor.userAccount.username"/>
-	<acme:input-textbox code="inventor.patronage.form.label.patron" path="patron.userAccount.username"/>
+
+	
+	  <h2><acme:message code="inventor.patronage.form.label.info"/></h2> 
+	 <acme:input-textbox code="inventor.patronage.form.label.patronFullName" path="patronFullName"/>
+    <acme:input-textbox code="inventor.patronage.form.label.name" path="patronName"/>
+    <acme:input-textbox code="inventor.patronage.form.label.surname" path="patronSurname"/>
+    <acme:input-email code="inventor.patronage.form.label.email" path="patronEmail"/>
 </acme:form>
