@@ -16,8 +16,7 @@ patron.patronage.list.label.creationMoment = Creation Moment
 patron.patronage.list.label.startDate = Start Date
 patron.patronage.list.label.finishDate = Finish Date
 patron.patronage.list.label.link = Link
-patron.patronage.list.label.inventor = Inventor
-patron.patronage.list.label.patron = Patron
+
 
 patron.patronage.form.label.code = Code
 patron.patronage.form.label.status = Status
@@ -27,5 +26,8 @@ patron.patronage.form.label.creationMoment = Creation Moment
 patron.patronage.form.label.startDate = Start Date
 patron.patronage.form.label.finishDate = Finish Date
 patron.patronage.form.label.link = Link
-patron.patronage.form.label.inventor = Inventor
-patron.patronage.form.label.patron = Patron
+patron.patronage.form.label.info = Inventor information
+patron.patronage.form.label.inventorFullName = Inventor full name
+patron.patronage.form.label.name = Name
+patron.patronage.form.label.surname = Surname
+patron.patronage.form.label.email = Email
