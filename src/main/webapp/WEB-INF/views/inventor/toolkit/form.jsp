@@ -11,7 +11,9 @@
 	<acme:input-url code="inventor.toolkit.form.label.link" path="link"/>
 	<acme:input-money code="inventor.toolkit.form.label.total-price" path="totalPrice"/> 
 	<acme:input-textarea code="inventor.toolkit.form.label.published" path="published"/> 
-	<!-- Añadir component y tool cuando lo cree en la otra task -->
+	
+	<acme:button code="inventor.toolkit.form.button.tool" action="/inventor/item/list-tool-toolkit?id=${ toolkitId }"/>
+	<acme:button code="inventor.toolkit.form.button.component" action="/inventor/item/list-component-toolkit?id=${ toolkitId }"/>	
 	
 	
 </acme:form>

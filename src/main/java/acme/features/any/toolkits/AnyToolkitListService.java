@@ -34,7 +34,7 @@ public class AnyToolkitListService implements AbstractListService<Any, Toolkit> 
 
 			Collection<Toolkit> result;
 
-			result = this.repository.findMany();
+			result = this.repository.findToolkitsPublished();
 
 			return result;
 		}

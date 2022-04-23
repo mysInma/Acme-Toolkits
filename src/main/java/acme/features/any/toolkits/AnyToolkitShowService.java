@@ -5,7 +5,6 @@ import java.util.Collection;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import acme.entities.toolkits.Quantity;
 import acme.entities.toolkits.Toolkit;
 import acme.features.authenticated.moneyExchange.AuthenticatedMoneyExchangePerformService;
 import acme.framework.components.models.Model;
@@ -30,8 +29,15 @@ public class AnyToolkitShowService  implements AbstractShowService<Any, Toolkit>
 		@Override
 		public boolean authorise(final Request<Toolkit> request) {
 			assert request != null;
-
-			return true;
+			boolean result;
+			
+			final int id = request.getModel().getInteger("id");
+			final Toolkit toolkit = this.repository.findToolkitById(id);
+			
+			
+			result = (toolkit.getPublished() == true);
+			
+			return result;
 		}
 
 		@Override
@@ -42,7 +48,7 @@ public class AnyToolkitShowService  implements AbstractShowService<Any, Toolkit>
 			int id;
 
 			id = request.getModel().getInteger("id");
-			result = this.repository.findOneToolkitById(id);
+			result = this.repository.findToolkitById(id);
 
 			return result;
 		}
@@ -56,11 +62,12 @@ public class AnyToolkitShowService  implements AbstractShowService<Any, Toolkit>
 			
 			final String systemCurrency= this.repository.systemCurrency();
 			
-			final Collection<Quantity> collectedMoneys= this.repository.collectPrices(entity.getId());
-			final Double totalPrice=collectedMoneys.stream().mapToDouble(q->this.moneyService.computeMoneyExchange(q.getItem().getPrice(),systemCurrency ).getTarget().getAmount()*q.getValue()).sum();
+			final Collection<Money> collectedMoneys= this.repository.collectPrices(entity.getId());
+			final Double totalPrice=collectedMoneys.stream().mapToDouble(p->this.moneyService.computeMoneyExchange(p,systemCurrency ).getTarget().getAmount()).sum();
 			final Money money= new Money();
 			money.setAmount(totalPrice);
 			money.setCurrency(systemCurrency);
+			
 			
 			model.setAttribute("totalPrice", money);
 			model.setAttribute("toolkitId", entity.getId());
