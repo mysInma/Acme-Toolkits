@@ -3,7 +3,6 @@ package acme.entities.abstractUserRole;
 import javax.persistence.Entity;
 import javax.validation.Valid;
 
-import acme.entities.specificUserRoles.SpecificUserRole;
 import acme.framework.entities.AbstractEntity;
 import acme.framework.roles.Administrator;
 import acme.framework.roles.Anonymous;
@@ -41,8 +40,7 @@ public class AbstractUserRole extends AbstractEntity {
 		@Valid
 		protected Provider provider; 
 		
-		@Valid
-		protected SpecificUserRole specificUserRole;
+		
 		
 		
 }
