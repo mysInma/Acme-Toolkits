@@ -1,4 +1,4 @@
-package acme.features.any.toolkits;
+package acme.features.inventor.toolkits;
 
 import java.util.Collection;
 
@@ -10,13 +10,14 @@ import acme.framework.datatypes.Money;
 import acme.framework.repositories.AbstractRepository;
 
 @Repository
-public interface AnyToolkitRepository  extends AbstractRepository{
-	
-	@Query("SELECT t FROM Toolkit t WHERE t.published=1")
-	Collection<Toolkit> findToolkitsPublished();
+public interface InventorToolkitRepository extends AbstractRepository{
+		
+	@Query("SELECT t FROM Toolkit t WHERE t.inventor.id = :id")
+	Collection<Toolkit> findToolkitsByInventorId(int id);
 	
 	@Query("SELECT t FROM Toolkit t WHERE t.id = :id")
 	Toolkit findToolkitById(int id);
+	
 	
 	@Query("SELECT q.item.price FROM Quantity q WHERE q.toolkit.id = :id")
 	Collection<Money> collectPrices(int id);
@@ -24,5 +25,6 @@ public interface AnyToolkitRepository  extends AbstractRepository{
 	
 	@Query("select c.systemCurrency from SystemConfiguration c")
 	String systemCurrency();
+
 
 }

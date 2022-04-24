@@ -18,8 +18,15 @@ public class PatronPatronageShowService implements AbstractShowService<Patron, P
 	@Override
 	public boolean authorise(final Request<Patronage> request) {
 		assert request != null;
+		boolean result;
 		
-		return true;
+		final int id = request.getModel().getInteger("id");
+		final Patronage patronage = this.repository.findPatronageById(id);
+		final int myId = request.getPrincipal().getActiveRoleId();
+		
+		result = (patronage.getId() == myId || patronage.getPatron().getId() == myId);
+		
+		return result;
 	}
 
 	@Override
@@ -42,8 +49,12 @@ public class PatronPatronageShowService implements AbstractShowService<Patron, P
 		assert model != null;
 		
 		
-		request.unbind(entity, model, "status", "code", "legalStuff", "budget", "creationMoment", "startDate", "finishDate","link", "inventor.userAccount.username", "patron.userAccount.username");
-		model.setAttribute("readonly", true);
+		request.unbind(entity, model, "status", "code", "legalStuff", "budget", "creationMoment", "startDate", "finishDate","link");
+		
+		model.setAttribute("inventorFullName", entity.getInventor().getUserAccount().getIdentity().getFullName());
+		model.setAttribute("inventorName", entity.getInventor().getUserAccount().getIdentity().getName());
+		model.setAttribute("inventorSurname", entity.getInventor().getUserAccount().getIdentity().getSurname());
+		model.setAttribute("inventorEmail", entity.getInventor().getUserAccount().getIdentity().getEmail());
 		
 		
 		

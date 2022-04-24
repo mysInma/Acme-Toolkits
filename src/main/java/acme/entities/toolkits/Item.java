@@ -57,6 +57,8 @@ public class Item extends AbstractEntity {
 		
 		protected ItemType 						type;
 		
+		
+		
 	// Relations ---------------------------------------------------------
 		
 		@Valid
