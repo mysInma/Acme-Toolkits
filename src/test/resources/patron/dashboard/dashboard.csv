@@ -1,0 +1,2 @@
+totalNumberOfPatronagesByStatus,averageBudgetOfPatronagesStatusByCurrency,deviationBudgetOfPatronagesStatusByCurrency,minimumBudgetOfPatronagesStatusByCurrency,maximumBudgetOfPatronagesStatusByCurrency
+"HashMap{PROPOSED: 400, ACCEPTED: 50, DENIED: 120}","HashMap{PROPOSED: 1000.0, ACCEPTED: 500.9, DENIED: 512.33}","HashMap{PROPOSED: 1000.0, ACCEPTED: 500.9, DENIED: 512.33}","HashMap{PROPOSED: 1000.0, ACCEPTED: 500.9, DENIED: 512.33}","HashMap{PROPOSED: 1000.0, ACCEPTED: 500.9, DENIED: 512.33}"

@@ -190,7 +190,7 @@ public class AdministratorDashboardShowService implements AbstractShowService<Ad
 		
 		result.setTotalNumberOfPatronagesByStatus(totalNumberOfPatronagesByStatus);
 		result.setAveragePatronagesBudgetByStatus(averagePatronagesBudgetByStatus);
-		result.setDeviationPatronagesBudgetByStatu(deviationPatronagesBudgetByStatus);
+		result.setDeviationPatronagesBudgetByStatus(deviationPatronagesBudgetByStatus);
 		result.setMinimumPatronagesBudgetByStatus(minimumPatronagesBudgetByStatus);
 		result.setMaximumPatronagesBudgetByStatus(maximumPatronagesBudgetByStatus);
 		
