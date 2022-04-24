@@ -1,4 +1,4 @@
-package acme.testing.patron.patronages;
+package acme.testing.inventor.patronages;
 
 import org.junit.jupiter.api.Order;
 import org.junit.jupiter.params.ParameterizedTest;
@@ -6,18 +6,19 @@ import org.junit.jupiter.params.provider.CsvFileSource;
 
 import acme.testing.TestHarness;
 
-public class PatronPatronageListTest extends TestHarness{
+public class InventorPatronageTest extends TestHarness{
+
 	
 	@ParameterizedTest
-	@CsvFileSource(resources = "/patron/patronage/patronage.csv", encoding = "utf-8", numLinesToSkip = 1)
+	@CsvFileSource(resources = "/inventor/patronage/patronage.csv", encoding = "utf-8", numLinesToSkip = 1)
 	@Order(10) 
-	public void positiveTest(final int recordIndex, final String status, final String code, 
+	public void positiveTest(final int recordIndex, final String status,  
 		final String legalStuff, final String budget, final String creationMoment, final String startDate, 
-		final String finishDate, final String link,  final String inventorFullName, final String name, final String surname, final String email ) {
+		final String finishDate, final String link,  final String patronFullName, final String name, final String surname, final String email ) {
 		
-		super.signIn("patron01", "patron01");
+		super.signIn("inventor01", "inventor01");
 		
-		super.clickOnMenu("Patron","Patronages list");
+		super.clickOnMenu("Inventor","Patronages list");
 		super.checkListingExists();
 		super.sortListing(1, "asc"); 
 		
@@ -31,21 +32,18 @@ public class PatronPatronageListTest extends TestHarness{
 		
 		super.clickOnListingRecord(recordIndex);
 		super.checkFormExists();
-		super.checkInputBoxHasValue("code", code);
+		
 		super.checkInputBoxHasValue("status", status);
 		super.checkInputBoxHasValue("legalStuff", legalStuff);
 		super.checkInputBoxHasValue("budget", budget);
 		super.checkInputBoxHasValue("creationMoment", creationMoment);
 		super.checkInputBoxHasValue("finishDate", finishDate);
 		super.checkInputBoxHasValue("link", link);
-		super.checkInputBoxHasValue("inventorFullName", inventorFullName);
-		super.checkInputBoxHasValue("inventorName", name);
-		super.checkInputBoxHasValue("inventorSurname", surname);
-		super.checkInputBoxHasValue("inventorEmail", email);
+		super.checkInputBoxHasValue("patronFullName", patronFullName);
+		super.checkInputBoxHasValue("patronName", name);
+		super.checkInputBoxHasValue("patronSurname", surname);
+		super.checkInputBoxHasValue("patronEmail", email);
 		
 		super.signOut();
 	}
-	
-	
-
 }

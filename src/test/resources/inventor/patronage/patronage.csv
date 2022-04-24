@@ -1,0 +1,3 @@
+key,status,legal-stuff,budget,creation-moment,start-date,finish-date,link,patronFullName,name,surname,email
+0,PROPOSED,LegalStuff01,"EUR 120,000.00",2022/03/15 13:50,2022/03/25 00:00,2022/06/25 23:59,http://www.firstpatronage.com,"Acme, Patron01" ,Patron01,Acme, patron01@acme.com
+1,ACCEPTED,LegalStuff06,"USD 440,320.00",2020/02/03 14:00,2022/03/01 00:00,2022/07/01 23:59,http://www.xpatronage.com,"Acme, Patron01",Patron01,Acme, patron01@acme.com
