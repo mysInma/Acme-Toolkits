@@ -1,3 +1,3 @@
-recordIndex,name,code,technology,description,price,link,inventor
-0,Zoolab,ABQ-927-W,Tablet,orci eget orci vehicula,"GBP 1,242.92",http://rakuten.co.jp/rutrum/rutrum.jpg,inventor-03
-1,Bitwolf,AEM-926-V,Tablet,congue vivamus metus arcu adipiscing molestie,"GBP 222.62",https://php.net/nonummy/maecenas/tincidunt.html,inventor-02
+recordIndex,name,code,technology,description,price,link,published,inventor
+0,Zoolab,ABQ-927-W,Tablet,orci eget orci vehicula,"GBP 1,242.92",http://rakuten.co.jp/rutrum/rutrum.jpg,true,inventor-03
+1,Bitwolf,AEM-926-V,Tablet,congue vivamus metus arcu adipiscing molestie,"GBP 222.62",https://php.net/nonummy/maecenas/tincidunt.html,false,inventor-02

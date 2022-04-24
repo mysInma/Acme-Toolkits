@@ -28,7 +28,7 @@ public class AdministratorDashboard {
 
 	protected Map<PatronageStatus, Integer> 		totalNumberOfPatronagesByStatus;
 	protected Map<PatronageStatus, Double> 			averagePatronagesBudgetByStatus;
-	protected Map<PatronageStatus, Double>			deviationPatronagesBudgetByStatu; 
+	protected Map<PatronageStatus, Double>			deviationPatronagesBudgetByStatus; 
 	protected Map<PatronageStatus, Double> 			minimumPatronagesBudgetByStatus;
 	protected Map<PatronageStatus, Double> 			maximumPatronagesBudgetByStatus;
 
