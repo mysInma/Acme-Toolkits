@@ -38,7 +38,9 @@ public class PatronPatronageReportListService implements AbstractListService<Pat
 		assert entity != null;
 		assert model != null;
 
-		request.unbind(entity, model, "creationMoment", "memorandum", "link", "patronage.code");
+		request.unbind(entity, model, "creationMoment", "memorandum", "link");
+		model.setAttribute("readonly", true);
+		model.setAttribute("patronageCode", entity.getPatronage().getCode());
 	}
 
 }
