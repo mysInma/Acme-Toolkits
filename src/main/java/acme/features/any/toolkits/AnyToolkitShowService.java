@@ -35,7 +35,7 @@ public class AnyToolkitShowService  implements AbstractShowService<Any, Toolkit>
 			final Toolkit toolkit = this.repository.findToolkitById(id);
 			
 			
-			result = (toolkit.getPublished() == true);
+			result = toolkit.getPublished();
 			
 			return result;
 		}
