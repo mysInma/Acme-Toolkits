@@ -1,3 +1,4 @@
 key,creation-moment,memorandum,link,key:patronage
 patronage-report-01,2022/03/15 20:00,01: 'Hi! This is my proposal.' ; 02: 'Give us time to reflect on it.',http://www.example.com,patronage-01
 patronage-report-02,2020/01/02 17:00,01: 'Hi! Are you interested on our company?' ; 02: 'No sorry. Thanks to contact us.',http://www.patronagereport02.es,patronage-03
+patronage-report-03,2020/02/01 14:00,01: 'Hello! Do you accept it?' ; 02: 'Yes! We keep in contact.',http://www.example2.com,patronage-06

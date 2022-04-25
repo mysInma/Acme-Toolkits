@@ -7,5 +7,5 @@
 	<acme:input-moment code="inventor.patronage-report.form.label.creationMoment" path="creationMoment"/>
 	<acme:input-textbox code="inventor.patronage-report.form.label.memorandum" path="memorandum"/>
 	<acme:input-url code="inventor.patronage-report.form.label.link" path="link"/>
-	<acme:input-textbox code="inventor.patronage-report.form.label.patronage.code" path="patronage.code"/>
+	<acme:input-textbox code="inventor.patronage-report.form.label.patronage.code" path="patronageCode"/>
 </acme:form>
