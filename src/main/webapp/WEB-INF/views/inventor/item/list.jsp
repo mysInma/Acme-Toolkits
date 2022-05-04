@@ -23,3 +23,4 @@
 	<acme:list-column code="inventor.item.list.label.price" path="price"/>
 	<acme:list-column code="inventor.item.list.label.link" path="link"/>
 </acme:list>
+<acme:button code="inventor.item.form.button.create" action="/inventor/item/create"/>

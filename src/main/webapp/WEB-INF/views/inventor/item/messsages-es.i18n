@@ -26,3 +26,19 @@ inventor.item.form.label.code = Código
 inventor.item.form.label.link = Link
 inventor.item.form.button.inventor = Inventor
 
+inventor.item.form.label.published = ¿Está publicado?
+true = Sí
+false = No
+component = Component
+tool = Tool
+
+inventor.item.form.button.update = Actualizar Invención
+inventor.item.form.button.delete = Borrar Invención
+inventor.item.form.button.publish = Publicar Invención
+inventor.item.form.button.create = Crear Invención
+
+inventor.item.form.error.code.duplicated = Este código está cogido
+inventor.item.form.error.price.invalid = El tipo de moneda no está soportado por el sistema
+
+inventor.item.form.button.create = Crear
+

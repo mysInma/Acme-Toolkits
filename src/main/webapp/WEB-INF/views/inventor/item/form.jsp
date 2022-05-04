@@ -15,7 +15,23 @@
 		<acme:input-option code="inventor.item.form.label.component" value="COMPONENT" selected="${ type == 'COMPONENT' }"/>
 		<acme:input-option code="inventor.item.form.label.tool" value="TOOL" selected="${ type == 'TOOL' }"/>
 	</acme:input-select>
-	<acme:input-url code="inventor.item.form.label.link" path="link"/>
-	
+	<acme:input-select code="inventor.item.form.label.published" path="published">
+		<acme:input-option code="true" value="true" selected="${published == true}"/>
+		<acme:input-option code="false" value="false" selected="${published == false }"/>
+	</acme:input-select>
 	<acme:button code="inventor.item.form.button.inventor" action="/any/user-account/show?id=${ inventorId }"/>
+
+
+	<jstl:choose>
+		<jstl:when test="${acme:anyOf(command, 'show, update, delete, publish') && published == false }">
+			<acme:submit code="inventor.item.form.button.update" action="/inventor/item/update"/>
+			<acme:submit code="inventor.item.form.button.delete" action="/inventor/item/delete"/>
+			<acme:submit code="inventor.item.form.button.publish" action="/inventor/item/publish"/>
+		</jstl:when>
+		<jstl:when test="${command == 'create'}">
+			<acme:submit code="inventor.item.form.button.create" action="/inventor/item/create"/>
+		</jstl:when>
+	</jstl:choose> 
+	
 </acme:form>
+

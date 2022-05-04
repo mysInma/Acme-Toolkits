@@ -7,6 +7,7 @@ import org.springframework.stereotype.Repository;
 
 import acme.entities.toolkits.Item;
 import acme.framework.repositories.AbstractRepository;
+import acme.roles.Inventor;
 
 @Repository
 public interface InventorItemsRepository extends AbstractRepository {
@@ -20,6 +21,9 @@ public interface InventorItemsRepository extends AbstractRepository {
 	@Query("SELECT i FROM Item i WHERE i.id = :id")
 	Item findOneById(int id);
 	
+	@Query("SELECT i FROM Inventor i WHERE i.id = :id")
+	Inventor findOneInventorById(int id);
+	
 	@Query("SELECT i FROM Item i WHERE i.inventor.id = :inventorId and i.type = 0")
 	Collection<Item> findMyOwnsTools(Integer inventorId);
 
@@ -31,5 +35,11 @@ public interface InventorItemsRepository extends AbstractRepository {
 		
 	@Query("select q.item from Quantity q WHERE q.toolkit.id = :id and q.item.type = 1")
 	Collection<Item> findComponentByToolkit(int id);
+
+	@Query("SELECT i FROM Item i WHERE i.code = :code and i.type = 1")
+	Item findOneComponentByCode(String code);
+	
+	@Query("SELECT ac.acceptedCurrencies from SystemConfiguration ac")
+	String findAcceptedCurrencies();
 
 }
