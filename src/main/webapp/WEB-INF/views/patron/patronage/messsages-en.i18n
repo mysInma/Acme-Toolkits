@@ -31,3 +31,8 @@ patron.patronage.form.label.inventorFullName = Inventor full name
 patron.patronage.form.label.name = Name
 patron.patronage.form.label.surname = Surname
 patron.patronage.form.label.email = Email
+
+patron.patronage.form.button.update = Update
+patron.patronage.form.button.delete = Delete
+patron.patronage.form.button.publish = Publish
+patron.patronage.form.button.create = Create
