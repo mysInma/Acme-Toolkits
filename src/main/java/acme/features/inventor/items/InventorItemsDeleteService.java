@@ -40,7 +40,7 @@ public class InventorItemsDeleteService implements AbstractDeleteService<Invento
 		assert request != null;
 		assert entity != null;
 		assert errors != null;
-		request.bind(entity, errors, "name", "code", "technology", "description", "price", "type", "link");
+		request.bind(entity, errors, "name", "code", "technology", "description", "price", "type", "published", "link");
 	}
 
 	@Override
@@ -48,7 +48,7 @@ public class InventorItemsDeleteService implements AbstractDeleteService<Invento
 		assert request != null;
 		assert entity != null;
 		assert model != null;
-		request.unbind(entity, model, "name", "code", "technology", "description", "price", "type", "link");
+		request.unbind(entity, model, "name", "code", "technology", "description", "price", "type", "published", "link");
 	}
 
 	@Override
@@ -69,6 +69,13 @@ public class InventorItemsDeleteService implements AbstractDeleteService<Invento
 		assert request != null;
 		assert entity != null;
 		assert errors != null;
+
+		if (!errors.hasErrors("code")) {
+			Item existing;
+
+			existing = this.repository.findOneComponentByCode(entity.getCode());
+			errors.state(request, existing == null || existing.getId() == entity.getId(), "code", "inventor.item.form.error.code.duplicated");
+		}
 	}
 
 	@Override

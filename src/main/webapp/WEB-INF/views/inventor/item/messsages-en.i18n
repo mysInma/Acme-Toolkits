@@ -9,6 +9,7 @@
 # they accept any liabilities with respect to them.
 
 inventor.item.list.label.name = Name
+inventor.item.list.label.published = Published
 inventor.item.list.label.code = Code
 inventor.item.list.label.technology = Technology
 inventor.item.list.label.description = Description
@@ -33,10 +34,10 @@ false = No
 component = Component
 tool = Tool
 
-inventor.item.form.button.create = Create Invention
-inventor.item.form.button.update = Update Invention
-inventor.item.form.button.delete = Delete Invention
-inventor.item.form.button.publish = Publish Invention
+inventor.item.form.button.create = Create
+inventor.item.form.button.update = Update
+inventor.item.form.button.delete = Delete
+inventor.item.form.button.publish = Publish
 
 
 inventor.item.form.error.code.duplicated = This code is taken
