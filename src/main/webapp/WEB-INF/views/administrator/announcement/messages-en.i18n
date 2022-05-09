@@ -1,0 +1,13 @@
+# i18n-en.i18n
+
+administrator.announcement.form.label.title = Title:
+administrator.announcement.form.label.description = Description:
+administrator.announcement.form.label.link = Link:
+administrator.announcement.form.label.critical = Critical:
+administrator.announcement.form.label.confirmation = Confirm that the announcement is correct
+
+administrator.announcement.form.button.create = Create
+ 
+administrator.announcement.description.error = The maximum length is 255 characters
+administrator.announcement.confirmation.error = Mark the checkbox
+

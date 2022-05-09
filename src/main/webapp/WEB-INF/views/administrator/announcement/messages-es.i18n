@@ -1,0 +1,12 @@
+# i18n-es.i18n
+
+administrator.announcement.form.label.title = Título:
+administrator.announcement.form.label.description = Descripción:
+administrator.announcement.form.label.link = Enlace:
+administrator.announcement.form.label.critical = Crítico:
+administrator.announcement.form.label.confirmation = Confirme que el anuncio es correcto
+
+administrator.announcement.form.button.create = Crear
+ 
+administrator.announcement.description.error = La longitud máxima es de 255 caracteres
+administrator.announcement.confirmation.error = Marque la casilla

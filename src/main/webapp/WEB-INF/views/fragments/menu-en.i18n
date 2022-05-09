@@ -34,6 +34,7 @@ master.menu.anonymous.carloscg00-link = Carlosgc00
 # master.menu.administrator ###################################################
 
 master.menu.administrator = Administrator
+master.menu.administrator.announcement.create = Create an announcement
 master.menu.administrator.announcement.list-all = List all announcements
 master.menu.administrator.announcement.list-recent = List recent announcements
 master.menu.administrator.announcement.create = Create announcement
