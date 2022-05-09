@@ -9,6 +9,7 @@
 # they accept any liabilities with respect to them.
 
 inventor.item.list.label.name = Name
+inventor.item.list.label.published = Published
 inventor.item.list.label.code = Code
 inventor.item.list.label.technology = Technology
 inventor.item.list.label.description = Description
@@ -20,9 +21,26 @@ inventor.item.form.label.name = Name
 inventor.item.form.label.type = Type
 inventor.item.form.label.technology = Technology
 inventor.item.form.label.description = Description
-inventor.item.form.label.price = price
+inventor.item.form.label.price = Price
 inventor.item.form.label.tool = TOOL
 inventor.item.form.label.component = COMPONENT
 inventor.item.form.label.code = Code
 inventor.item.form.label.link = Link
 inventor.item.form.button.inventor = Inventor
+
+inventor.item.form.label.published = Is it published?
+true = Yes
+false = No
+component = Component
+tool = Tool
+
+inventor.item.form.button.create = Create
+inventor.item.form.button.update = Update
+inventor.item.form.button.delete = Delete
+inventor.item.form.button.publish = Publish
+
+
+inventor.item.form.error.code.duplicated = This code is taken
+inventor.item.form.error.price.invalid = The currency is not support by the system
+
+inventor.item.form.button.create = Create

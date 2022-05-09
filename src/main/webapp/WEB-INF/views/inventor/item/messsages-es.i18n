@@ -9,6 +9,7 @@
 # they accept any liabilities with respect to them.
 
 inventor.item.list.label.name = Nombre
+inventor.item.list.label.published = Publicado
 inventor.item.list.label.code = Código
 inventor.item.list.label.technology = Tecnología
 inventor.item.list.label.description = Descripción
@@ -25,4 +26,20 @@ inventor.item.form.label.tool = HERRAMIENTA
 inventor.item.form.label.code = Código
 inventor.item.form.label.link = Link
 inventor.item.form.button.inventor = Inventor
+
+inventor.item.form.label.published = ¿Está publicado?
+true = Sí
+false = No
+component = Component
+tool = Tool
+
+inventor.item.form.button.update = Actualizar
+inventor.item.form.button.delete = Borrar
+inventor.item.form.button.publish = Publicar
+inventor.item.form.button.create = Crear
+
+inventor.item.form.error.code.duplicated = Este código está cogido
+inventor.item.form.error.price.invalid = El tipo de moneda no está soportado por el sistema
+
+inventor.item.form.button.create = Crear
 
