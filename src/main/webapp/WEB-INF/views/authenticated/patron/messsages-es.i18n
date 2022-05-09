@@ -8,11 +8,11 @@
 # purposes.  The copyright owner does not offer any warranties or representations, nor do
 # they accept any liabilities with respect to them.
 
-authenticated.provider.provider.form.title.create = Hazte proveedor
-authenticated.provider.provider.form.title.update = Actualizar datos de proveedor
+authenticated.patron.patron.form.title.create = Hazte trabajador
+authenticated.patron.patron.form.title.update = Actualiza tus datos de trabajador
 
-authenticated.provider.form.label.company = Compañía: 
-authenticated.provider.form.label.sector = Sector:
+authenticated.patron.patron.form.label.compañía = Compañía
+authenticated.patron.patron.form.label.sector = Sector
 
-authenticated.provider.form.button.create = Registrar
-authenticated.provider.form.button.update = Actualizar
+authenticated.patron.patron.form.button.create = Registrar
+authenticated.patron.patron.form.button.update = Actualizar

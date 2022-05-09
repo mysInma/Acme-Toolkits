@@ -1,5 +1,5 @@
 /*
- * AuthenticatedProviderRepository.java
+ * AuthenticatedConsumerRepository.java
  *
  * Copyright (C) 2012-2022 Rafael Corchuelo.
  *
@@ -10,22 +10,22 @@
  * they accept any liabilities with respect to them.
  */
 
-package acme.features.authenticated.provider;
+package acme.features.authenticated.inventor;
 
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 
 import acme.framework.entities.UserAccount;
 import acme.framework.repositories.AbstractRepository;
-import acme.roles.Provider;
+import acme.roles.Inventor;
 
 @Repository
-public interface AuthenticatedProviderRepository extends AbstractRepository {
-
-	@Query("select p from Provider p where p.userAccount.id = :id")
-	Provider findOneProviderByUserAccountId(int id);
+public interface AuthenticatedInventorRepository extends AbstractRepository {
 
 	@Query("select ua from UserAccount ua where ua.id = :id")
 	UserAccount findOneUserAccountById(int id);
+
+	@Query("select i from Inventor i where i.userAccount.id = :id")
+	Inventor findOneInventorByUserAccountId(int id);
 
 }
