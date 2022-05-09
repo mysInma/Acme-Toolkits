@@ -67,7 +67,6 @@ master.menu.inventor.list-tool = Tool list
 master.menu.inventor.toolkit.list = Toolkit list
 master.menu.inventor.patronages = Patronages list
 master.menu.inventor.patronage-report.list = Patronage reports list
-master.menu.inventor.item.create = Crear invención
 
 # master.menu.patron ####################################################
 master.menu.patron = Patron

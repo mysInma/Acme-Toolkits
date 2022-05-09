@@ -19,7 +19,6 @@
 		<acme:input-option code="true" value="true" selected="${published == true}"/>
 		<acme:input-option code="false" value="false" selected="${published == false }"/>
 	</acme:input-select>
-	<acme:button code="inventor.item.form.button.inventor" action="/any/user-account/show?id=${ inventorId }"/>
 
 
 	<jstl:choose>
