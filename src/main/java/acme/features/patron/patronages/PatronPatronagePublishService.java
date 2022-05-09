@@ -79,7 +79,7 @@ public class PatronPatronagePublishService implements AbstractUpdateService<Patr
 		assert entity != null;
 		assert errors != null;
 		
-		if (!errors.hasErrors("reference")) {
+		if (!errors.hasErrors("code")) {
 			Patronage existing;
 
 			existing = this.repository.findPatronageByCode(entity.getCode());

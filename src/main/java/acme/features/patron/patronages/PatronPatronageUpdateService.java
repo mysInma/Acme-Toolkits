@@ -101,7 +101,7 @@ public class PatronPatronageUpdateService implements AbstractUpdateService<Patro
 			errors.state(request, entity.getFinishDate().after(minimumFinishDate), "finishDate", "patron.patronage.form.error.too-close");
 		}
 		
-		if (!errors.hasErrors("reference")) {
+		if (!errors.hasErrors("code")) {
 			Patronage existing;
 
 			existing = this.repository.findPatronageByCode(entity.getCode());
