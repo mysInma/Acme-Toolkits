@@ -44,7 +44,7 @@ public class PatronPatronageUpdateService implements AbstractUpdateService<Patro
 		assert entity != null;
 		assert errors != null;
 		
-		request.bind(entity, errors, "status", "draftMode", "code", "legalStuff", "budget", "creationMoment", "startDate", "finishDate", "link");
+		request.bind(entity, errors, "status", "code", "legalStuff", "budget", "creationMoment", "startDate", "finishDate", "link");
 	}
 
 	@Override
@@ -112,7 +112,10 @@ public class PatronPatronageUpdateService implements AbstractUpdateService<Patro
 
 	@Override
 	public void update(final Request<Patronage> request, final Patronage entity) {
-		// TODO Auto-generated method stub
+		assert request != null;
+		assert entity != null;
+		
+		this.repository.save(entity);
 		
 	}
 

@@ -14,10 +14,10 @@
 	<acme:input-url code="patron.patronage.form.label.link" path="link"/>
 	
 	<h2><acme:message code="patron.patronage.form.label.info"/></h2>
-	<acme:input-textbox code="patron.patronage.form.label.inventorFullName" path="inventorFullName"/>
-    <acme:input-textbox code="patron.patronage.form.label.name" path="inventorName"/>
-    <acme:input-textbox code="patron.patronage.form.label.surname" path="inventorSurname"/>
-    <acme:input-email code="patron.patronage.form.label.email" path="inventorEmail"/>
+	<acme:input-textbox readonly="true" code="patron.patronage.form.label.inventorFullName" path="inventorFullName"/>
+    <acme:input-textbox readonly="true" code="patron.patronage.form.label.name" path="inventorName"/>
+    <acme:input-textbox readonly="true" code="patron.patronage.form.label.surname" path="inventorSurname"/>
+    <acme:input-email readonly="true" code="patron.patronage.form.label.email" path="inventorEmail"/>
     
     <jstl:choose>
 		<jstl:when test="${acme:anyOf(command, 'show, update, delete, publish') && draftMode == true}">
