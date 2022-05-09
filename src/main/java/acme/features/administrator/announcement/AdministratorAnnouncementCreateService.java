@@ -3,6 +3,7 @@ package acme.features.administrator.announcement;
 import java.util.Date;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import acme.entities.announcements.Announcement;
 import acme.framework.components.models.Model;
@@ -11,6 +12,7 @@ import acme.framework.controllers.Request;
 import acme.framework.roles.Administrator;
 import acme.framework.services.AbstractCreateService;
 
+@Service
 public class AdministratorAnnouncementCreateService implements AbstractCreateService<Administrator, Announcement>{
 
 		// Internal state ---------------------------------------------------------
