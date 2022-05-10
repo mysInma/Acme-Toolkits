@@ -7,3 +7,4 @@ administrator.system-configuration.form.label.strong-spam-terms = Términos fuer
 administrator.system-configuration.form.label.strong-threshold= Umbral fuerte
 administrator.system-configuration.form.label.weak-spam-terms = Términos débiles de spam
 administrator.system-configuration.form.label.weak-threshold = Umbral débil
+administrator.system-configuration.form.button.update = Actualizar Configuración

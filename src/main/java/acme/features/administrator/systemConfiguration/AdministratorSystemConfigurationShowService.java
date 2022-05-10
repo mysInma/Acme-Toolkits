@@ -31,7 +31,7 @@ public class AdministratorSystemConfigurationShowService implements AbstractShow
 		public SystemConfiguration findOne(final Request<SystemConfiguration> request) {
 			assert request != null;
 
-			return this.repository.findSystemConfiguration();
+			return this.repository.findSystemConfiguration().iterator().next();
 			
 		
 
