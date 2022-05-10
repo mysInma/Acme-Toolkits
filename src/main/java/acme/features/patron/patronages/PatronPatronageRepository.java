@@ -8,6 +8,8 @@ import org.springframework.stereotype.Repository;
 import acme.entities.patronages.Patronage;
 import acme.entities.patronages.PatronageReport;
 import acme.framework.repositories.AbstractRepository;
+import acme.roles.Inventor;
+import acme.roles.Patron;
 
 @Repository
 public interface PatronPatronageRepository extends AbstractRepository {
@@ -23,5 +25,11 @@ public interface PatronPatronageRepository extends AbstractRepository {
 	
 	@Query("SELECT pr FROM PatronageReport pr WHERE pr.patronage.id = :id")
 	Collection<PatronageReport> findPatronageReportsByPatronageId(int id);
+	
+	@Query("SELECT p FROM Patron p WHERE p.id = :id")
+	Patron findOnePatronById(int id);
+	
+	@Query("SELECT i FROM Inventor i")
+	Collection<Inventor> getAllInventors();
 
 }
