@@ -23,5 +23,3 @@
 	<acme:list-column code="any.chirp.list.label.email" path="email" />
 	<acme:list-column code="any.chirp.list.label.creation_moment" path="creationMoment" />
 </acme:list>
-
-<acme:button code="any.chirp.list.button.create" action="/any/chirp/create"/>
