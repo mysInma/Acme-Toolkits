@@ -25,7 +25,12 @@ inventor.item.form.label.component = COMPONENTE
 inventor.item.form.label.tool = HERRAMIENTA
 inventor.item.form.label.code = Código
 inventor.item.form.label.link = Link
-inventor.item.form.button.inventor = Inventor
+
+inventor.item.form.label.info = Informaciónd del inventor
+inventor.item.form.label.fullName = Nombre Completo
+inventor.item.form.label.name = Nombre
+inventor.item.form.label.surname = Apellido
+inventor.item.form.label.email = Correo
 
 inventor.item.form.label.published = ¿Está publicado?
 true = Sí

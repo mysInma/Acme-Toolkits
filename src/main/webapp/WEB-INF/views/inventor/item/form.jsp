@@ -19,7 +19,12 @@
 		<acme:input-option code="true" value="true" selected="${published == true}"/>
 		<acme:input-option code="false" value="false" selected="${published == false }"/>
 	</acme:input-select>
-	<acme:button code="inventor.item.form.button.inventor" action="/any/user-account/show?id=${ inventorId }"/>
+	
+	 <h2><acme:message code="inventor.item.form.label.info"/></h2> 
+	 <acme:input-textbox code="inventor.item.form.label.fullName" path="inventorFullName"/>
+    <acme:input-textbox code="inventor.item.form.label.name" path="inventorName"/>
+    <acme:input-textbox code="inventor.item.form.label.surname" path="inventorSurname"/>
+    <acme:input-textbox code="inventor.item.form.label.email" path="inventorEmail"/>
 
 
 	<jstl:choose>
