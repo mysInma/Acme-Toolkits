@@ -1,0 +1,7 @@
+recordIndex,title,description,link,critical,confirmation
+0,"Anuncio 1","Esto es un anuncio de prueba",https://www.youtube.com/,true,true
+1,"Anuncio 2","Esto otro anuncio de prueba","",false,true
+2,"Anuncio 3","Esto es un anuncio","",false,true
+3,"Anuncio 4","Un gran producto para usted",https://www.youtube.com/,false,true
+4,"Anuncio 5","Esto es lo mejor que vas a encontrar",https://www.youtube.com/,true,true
+5,"Anuncio 6","Vas a flipar","",true,true
