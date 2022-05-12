@@ -12,7 +12,7 @@
 	</acme:input-select>
 	<acme:input-textbox code="patron.patronage.form.label.legalStuff" path="legalStuff"/>
 	<acme:input-money code="patron.patronage.form.label.budget" path="budget"/>
-	<acme:input-moment readonly="${command == 'create'}" code="patron.patronage.form.label.creationMoment" path="creationMoment"/>
+	<acme:input-moment readonly="true" code="patron.patronage.form.label.creationMoment" path="creationMoment"/>
 	<acme:input-moment code="patron.patronage.form.label.startDate" path="startDate"/>
 	<acme:input-moment code="patron.patronage.form.label.finishDate" path="finishDate"/>
 	<acme:input-url code="patron.patronage.form.label.link" path="link"/>
@@ -30,9 +30,9 @@
 			<acme:submit code="patron.patronage.form.button.publish" action="/patron/patronage/publish"/>
 		</jstl:when>
 		<jstl:when test="${command == 'create'}">
-			<acme:input-select code="patron.patronage.form.label.inventor-select" path="inventorId">
-				<jstl:forEach items="${inventors}" var="inventor">
-					<acme:input-option code="${inventor.userAccount.identity.fullName}" value="${inventor.id}"/>
+			<acme:input-select code="patron.patronage.form.label.inventor-select" path="inventor">
+				<jstl:forEach items="${inventors}" var="inventorIt">
+					<acme:input-option code="${inventorIt.userAccount.identity.fullName}" value="${inventorIt.id}" selected="${inventorIt.id == inventor.id}"/>
 				</jstl:forEach>
 			</acme:input-select>
 		

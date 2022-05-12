@@ -11,8 +11,12 @@ import acme.entities.patronages.Patronage;
 import acme.entities.patronages.PatronageStatus;
 import acme.framework.components.models.Model;
 import acme.framework.controllers.Errors;
+import acme.framework.controllers.HttpMethod;
 import acme.framework.controllers.Request;
+import acme.framework.controllers.Response;
+import acme.framework.helpers.PrincipalHelper;
 import acme.framework.services.AbstractCreateService;
+import acme.roles.Inventor;
 import acme.roles.Patron;
 
 @Service
@@ -34,7 +38,10 @@ public class PatronPatronageCreateService implements AbstractCreateService<Patro
 		assert entity != null;
 		assert errors != null;
 		
-		request.bind(entity, errors, "status", "code", "legalStuff", "budget", "creationMoment", "startDate", "finishDate", "link", "inventorId");
+		request.bind(entity, errors, "status", "code", "legalStuff", "budget", "creationMoment", "startDate", "finishDate", "link");
+		final int inventorId = Integer.parseInt((String) request.getModel().getAttribute("inventor"));
+		final Inventor inventor = this.repository.findInventorById(inventorId);
+		entity.setInventor(inventor);
 		
 	}
 
@@ -45,7 +52,7 @@ public class PatronPatronageCreateService implements AbstractCreateService<Patro
 		assert model != null;
 		
 		
-		request.unbind(entity, model, "status", "draftMode", "code", "legalStuff", "budget", "creationMoment", "startDate", "finishDate", "link");
+		request.unbind(entity, model, "status", "draftMode", "code", "legalStuff", "budget", "creationMoment", "startDate", "finishDate", "link", "inventor");
 		
 		model.setAttribute("inventors", this.repository.getAllInventors());
 		
@@ -62,6 +69,7 @@ public class PatronPatronageCreateService implements AbstractCreateService<Patro
 		
 		result = new Patronage();
 		result.setPatron(patron);
+		result.setDraftMode(true);
 		result.setStatus(PatronageStatus.PROPOSED);
 		result.setCreationMoment(new Date());
 		
@@ -107,10 +115,18 @@ public class PatronPatronageCreateService implements AbstractCreateService<Patro
 		assert request != null;
 		assert entity != null;
 		
-		entity.setDraftMode(true);
-		
 		this.repository.save(entity);
 		
+	}
+	
+	@Override
+	public void onSuccess(final Request<Patronage> request, final Response<Patronage> response) {
+		assert request != null;
+		assert response != null;
+
+		if (request.isMethod(HttpMethod.POST)) {
+			PrincipalHelper.handleUpdate();
+		}
 	}
 
 }

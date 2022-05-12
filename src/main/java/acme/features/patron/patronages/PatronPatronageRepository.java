@@ -31,5 +31,8 @@ public interface PatronPatronageRepository extends AbstractRepository {
 	
 	@Query("SELECT i FROM Inventor i")
 	Collection<Inventor> getAllInventors();
+	
+	@Query("SELECT i FROM Inventor i WHERE i.id = :id")
+	Inventor findInventorById(int id);
 
 }
