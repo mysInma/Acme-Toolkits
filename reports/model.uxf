@@ -235,7 +235,7 @@ Announcement
 bg=green
 + creationMoment: Date {NotNull, Temporal{TIMESTAMP}, Past}
 + title: String {NotBlank, Length(1, 100)}
-+ body: String {NotBlank, Length(1, 255)}
++ description: String {NotBlank, Length(1, 255)}
 + critical: Boolean
 + link: String {URL}</panel_attributes>
     <additional_attributes/>
@@ -326,7 +326,7 @@ bg=green
     <coordinates>
       <x>666</x>
       <y>48</y>
-      <w>414</w>
+      <w>354</w>
       <h>72</h>
     </coordinates>
     <panel_attributes>&lt;&lt;Entity&gt;&gt;
@@ -562,9 +562,9 @@ is owned by v</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1128</x>
+      <x>1056</x>
       <y>48</y>
-      <w>168</w>
+      <w>240</w>
       <h>90</h>
     </coordinates>
     <panel_attributes>&lt;&lt;Entity&gt;&gt;
@@ -574,9 +574,9 @@ bg=green
 + systemCurrency: String {NotBlank}
 + acceptedCurrencies: String {NotBlank}
 + strongSpamTerms: String {NotBlank}
-+ strongThreshold: Double {Range(0,100)} 
++ strongThreshold: Double {Range(0,100),NotNull,Digits(1,2)} 
 + weakSpamTerms: String {NotBlank}
-+ weakThreshold: Double {Range(0,100)}
++ weakThreshold: Double {Range(0,100),NotNull,Digits(1,2)}
 
 
 </panel_attributes>
