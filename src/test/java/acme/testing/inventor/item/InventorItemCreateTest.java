@@ -12,8 +12,7 @@ public class InventorItemCreateTest extends TestHarness {
 	@ParameterizedTest
 	@CsvFileSource(resources = "/inventor/item/createComponent.csv", encoding = "utf-8", numLinesToSkip = 1)
 	@Order(10)
-	public void positiveComponentTest(final int recordIndex, final String name, final String code, final String technology, final String description, final String price, final String link, final String type, final String published, final String typeC,
-		final String publishedC) {
+	public void positiveComponentTest(final int recordIndex, final String name, final String code, final String technology, final String description, final String price, final String link, final String type, final String typeC) {
 
 		super.signIn("inventor01", "inventor01");
 		super.clickOnMenu("Inventor", "Component list");
@@ -30,7 +29,6 @@ public class InventorItemCreateTest extends TestHarness {
 		super.fillInputBoxIn("price", price);
 		super.fillInputBoxIn("link", link);
 		super.fillInputBoxIn("type", type);
-		super.fillInputBoxIn("published", published);
 
 		super.clickOnSubmit("Create");
 
@@ -45,7 +43,6 @@ public class InventorItemCreateTest extends TestHarness {
 		super.checkFormExists();
 
 		super.checkInputBoxHasValue("name", name);
-		super.checkInputBoxHasValue("published", publishedC);
 		super.checkInputBoxHasValue("code", code);
 		super.checkInputBoxHasValue("technology", technology);
 		super.checkInputBoxHasValue("description", description);
@@ -57,7 +54,7 @@ public class InventorItemCreateTest extends TestHarness {
 	@ParameterizedTest
 	@CsvFileSource(resources = "/inventor/item/negativeCreateComponent.csv", encoding = "utf-8", numLinesToSkip = 1)
 	@Order(10)
-	public void negativeComponentTest(final int recordIndex, final String name, final String code, final String technology, final String description, final String price, final String link, final String type, final String published) {
+	public void negativeComponentTest(final int recordIndex, final String name, final String code, final String technology, final String description, final String price, final String link, final String type) {
 
 		super.signIn("inventor01", "inventor01");
 		super.clickOnMenu("Inventor", "Component list");
@@ -74,7 +71,6 @@ public class InventorItemCreateTest extends TestHarness {
 		super.fillInputBoxIn("price", price);
 		super.fillInputBoxIn("link", link);
 		super.fillInputBoxIn("type", type);
-		super.fillInputBoxIn("published", published);
 
 		super.clickOnSubmit("Create");
 		super.checkErrorsExist();
@@ -85,8 +81,7 @@ public class InventorItemCreateTest extends TestHarness {
 	@ParameterizedTest
 	@CsvFileSource(resources = "/inventor/item/createTool.csv", encoding = "utf-8", numLinesToSkip = 1)
 	@Order(10)
-	public void positiveToolTest(final int recordIndex, final String name, final String code, final String technology, final String description, final String price, final String link, final String type, final String published, final String typeC,
-		final String publishedC) {
+	public void positiveToolTest(final int recordIndex, final String name, final String code, final String technology, final String description, final String price, final String link, final String type, final String typeC) {
 
 		super.signIn("inventor01", "inventor01");
 		super.clickOnMenu("Inventor", "Tool list");
@@ -103,7 +98,6 @@ public class InventorItemCreateTest extends TestHarness {
 		super.fillInputBoxIn("price", price);
 		super.fillInputBoxIn("link", link);
 		super.fillInputBoxIn("type", type);
-		super.fillInputBoxIn("published", published);
 
 		super.clickOnSubmit("Create");
 
@@ -118,7 +112,6 @@ public class InventorItemCreateTest extends TestHarness {
 		super.checkFormExists();
 
 		super.checkInputBoxHasValue("name", name);
-		super.checkInputBoxHasValue("published", publishedC);
 		super.checkInputBoxHasValue("code", code);
 		super.checkInputBoxHasValue("technology", technology);
 		super.checkInputBoxHasValue("description", description);
@@ -130,7 +123,7 @@ public class InventorItemCreateTest extends TestHarness {
 	@ParameterizedTest
 	@CsvFileSource(resources = "/inventor/item/negativeCreateTool.csv", encoding = "utf-8", numLinesToSkip = 1)
 	@Order(10)
-	public void negativeToolTest(final int recordIndex, final String name, final String code, final String technology, final String description, final String price, final String link, final String type, final String published) {
+	public void negativeToolTest(final int recordIndex, final String name, final String code, final String technology, final String description, final String price, final String link, final String type) {
 
 		super.signIn("inventor01", "inventor01");
 		super.clickOnMenu("Inventor", "Component list");
@@ -147,7 +140,6 @@ public class InventorItemCreateTest extends TestHarness {
 		super.fillInputBoxIn("price", price);
 		super.fillInputBoxIn("link", link);
 		super.fillInputBoxIn("type", type);
-		super.fillInputBoxIn("published", published);
 
 		super.clickOnSubmit("Create");
 		super.checkErrorsExist();

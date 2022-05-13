@@ -15,20 +15,16 @@
 		<acme:input-option code="inventor.item.form.label.component" value="COMPONENT" selected="${ type == 'COMPONENT' }"/>
 		<acme:input-option code="inventor.item.form.label.tool" value="TOOL" selected="${ type == 'TOOL' }"/>
 	</acme:input-select>
-	<acme:input-select code="inventor.item.form.label.published" path="published">
-		<acme:input-option code="true" value="true" selected="${published == true}"/>
-		<acme:input-option code="false" value="false" selected="${published == false }"/>
-	</acme:input-select>
+
 	
-	 <h2><acme:message code="inventor.item.form.label.info"/></h2> 
-	 <acme:input-textbox code="inventor.item.form.label.fullName" path="inventorFullName"/>
-    <acme:input-textbox code="inventor.item.form.label.name" path="inventorName"/>
-    <acme:input-textbox code="inventor.item.form.label.surname" path="inventorSurname"/>
-    <acme:input-textbox code="inventor.item.form.label.email" path="inventorEmail"/>
-
-
 	<jstl:choose>
 		<jstl:when test="${acme:anyOf(command, 'show, update, delete, publish') && published == false }">
+			<h2><acme:message code="inventor.item.form.label.info"/></h2> 
+	 		<acme:input-textbox readonly="true" code="inventor.item.form.label.fullName" path="inventorFullName"/>
+    		<acme:input-textbox readonly="true" code="inventor.item.form.label.name" path="inventorName"/>
+    		<acme:input-textbox readonly="true" code="inventor.item.form.label.surname" path="inventorSurname"/>
+    		<acme:input-email readonly="true" code="inventor.item.form.label.email" path="inventorEmail"/>
+		
 			<acme:submit code="inventor.item.form.button.update" action="/inventor/item/update?id=${id}"/>
 			<acme:submit code="inventor.item.form.button.delete" action="/inventor/item/delete"/>
 			<acme:submit code="inventor.item.form.button.publish" action="/inventor/item/publish"/>
