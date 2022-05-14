@@ -13,3 +13,8 @@ any.chirp.list.label.title = Title
 any.chirp.list.label.author = Author
 any.chirp.list.label.body = Description
 any.chirp.list.label.email = Email
+
+any.chirp.list.button.create = Create chirp
+
+any.chirp.form.label.confirmation = Confirm the creation of chirp
+any.chrip.form.button.create = Create 
