@@ -49,12 +49,7 @@ public class AuthenticatedPatronCreateService implements AbstractCreateService<A
 		return result;
 	}
 
-	@Override
-	public void validate(final Request<Patron> request, final Patron entity, final Errors errors) {
-		assert request != null;
-		assert entity != null;
-		assert errors != null;
-	}
+	
 
 	@Override
 	public void bind(final Request<Patron> request, final Patron entity, final Errors errors) {
@@ -62,7 +57,7 @@ public class AuthenticatedPatronCreateService implements AbstractCreateService<A
 		assert entity != null;
 		assert errors != null;
 
-		request.bind(entity, errors, "company", "sector");
+		request.bind(entity, errors, "company", "statement", "link");
 	}
 
 	@Override
@@ -71,7 +66,14 @@ public class AuthenticatedPatronCreateService implements AbstractCreateService<A
 		assert entity != null;
 		assert model != null;
 
-		request.unbind(entity, model, "company", "sector");
+		request.unbind(entity, model, "company", "statement", "link");
+	}
+	
+	@Override
+	public void validate(final Request<Patron> request, final Patron entity, final Errors errors) {
+		assert request != null;
+		assert entity != null;
+		assert errors != null;
 	}
 
 	@Override
