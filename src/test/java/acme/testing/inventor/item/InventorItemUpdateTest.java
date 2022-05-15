@@ -33,7 +33,6 @@ public class InventorItemUpdateTest extends TestHarness {
 		super.fillInputBoxIn("price", price);
 		super.fillInputBoxIn("link", link);
 		super.fillInputBoxIn("type", type);
-		super.fillInputBoxIn("published", published);
 
 		super.clickOnSubmit("Update");
 
@@ -110,7 +109,6 @@ public class InventorItemUpdateTest extends TestHarness {
 		super.fillInputBoxIn("price", price);
 		super.fillInputBoxIn("link", link);
 		super.fillInputBoxIn("type", type);
-		super.fillInputBoxIn("published", published);
 
 		super.clickOnSubmit("Update");
 		super.clickOnMenu("Inventor", "Tool list");

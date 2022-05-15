@@ -32,9 +32,6 @@ inventor.item.form.label.name = Nombre
 inventor.item.form.label.surname = Apellido
 inventor.item.form.label.email = Correo
 
-inventor.item.form.label.published = ¿Está publicado?
-true = Sí
-false = No
 component = Component
 tool = Tool
 
@@ -44,7 +41,6 @@ inventor.item.form.button.publish = Publicar
 inventor.item.form.button.create = Crear
 
 inventor.item.form.error.code.duplicated = Este código está cogido
-inventor.item.form.error.price.invalid = El tipo de moneda no está soportado por el sistema
 
 inventor.item.form.button.create = Crear
 
