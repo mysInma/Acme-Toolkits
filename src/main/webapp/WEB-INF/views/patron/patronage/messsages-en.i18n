@@ -32,6 +32,7 @@ patron.patronage.form.label.name = Name
 patron.patronage.form.label.surname = Surname
 patron.patronage.form.label.email = Email
 patron.patronage.form.label.inventor-select = Inventor
+patron.patronage.list.label.draftMode = Draft
 
 patron.patronage.form.button.update = Update
 patron.patronage.form.button.delete = Delete

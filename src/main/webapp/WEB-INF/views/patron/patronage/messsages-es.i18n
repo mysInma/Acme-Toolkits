@@ -31,6 +31,7 @@ patron.patronage.form.label.name = Nombre
 patron.patronage.form.label.surname = Apellido
 patron.patronage.form.label.email = Correo electrónico
 patron.patronage.form.label.inventor-select = Inventor
+patron.patronage.list.label.draftMode = Borrador
 
 patron.patronage.form.button.update = Actualizar
 patron.patronage.form.button.delete = Borrar
