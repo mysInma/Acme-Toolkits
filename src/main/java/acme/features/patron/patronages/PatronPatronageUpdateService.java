@@ -99,6 +99,8 @@ public class PatronPatronageUpdateService implements AbstractUpdateService<Patro
 			calendar.add(Calendar.MONTH, 1);
 			minimumFinishDate = calendar.getTime();
 			
+			errors.state(request, entity.getStartDate().after(entity.getCreationMoment()), "startDate", "patron.patronage.form.error.date-creation");
+			errors.state(request, entity.getFinishDate().after(entity.getStartDate()), "finishDate", "patron.patronage.form.error.date-start");
 			errors.state(request, entity.getStartDate().after(minimumStartDate), "startDate", "patron.patronage.form.error.too-close");
 			errors.state(request, entity.getFinishDate().after(minimumFinishDate), "finishDate", "patron.patronage.form.error.too-close");
 		}

@@ -42,3 +42,5 @@ patron.patronage.form.error.duplicated = Este código no está libre
 patron.patronage.form.error.too-close = El período debe ser un mes mínimo
 patron.patronage.form.error.negative = El presupuesto debe tener cantidad positiva
 patron.patronage.form.error.currency = Divisa no aceptada
+patron.patronage.form.error.date-creation = La fecha debe ser después de la creación
+patron.patronage.form.error.date-start = La fecha debe ser después del comienzo
