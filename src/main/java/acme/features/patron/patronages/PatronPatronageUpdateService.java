@@ -1,13 +1,16 @@
 package acme.features.patron.patronages;
 
+import java.util.Arrays;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.GregorianCalendar;
+import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import acme.entities.patronages.Patronage;
+import acme.entities.patronages.PatronageStatus;
 import acme.framework.components.models.Model;
 import acme.framework.controllers.Errors;
 import acme.framework.controllers.Request;
@@ -82,6 +85,10 @@ public class PatronPatronageUpdateService implements AbstractUpdateService<Patro
 		assert entity != null;
 		assert errors != null;
 		
+		if(!errors.hasErrors("status")) {
+			errors.state(request, entity.getStatus() == PatronageStatus.PROPOSED && entity.isDraftMode(), "status", "patron.patronage.form.error.status");
+		}
+		
 		if (!errors.hasErrors("creationMoment") && !errors.hasErrors("startDate") && !errors.hasErrors("finishDate")) {
 			Calendar calendar;
 			final Date minimumStartDate;
@@ -97,8 +104,16 @@ public class PatronPatronageUpdateService implements AbstractUpdateService<Patro
 			calendar.add(Calendar.MONTH, 1);
 			minimumFinishDate = calendar.getTime();
 			
+			errors.state(request, entity.getStartDate().after(entity.getCreationMoment()), "startDate", "patron.patronage.form.error.date-creation");
+			errors.state(request, entity.getFinishDate().after(entity.getStartDate()), "finishDate", "patron.patronage.form.error.date-start");
 			errors.state(request, entity.getStartDate().after(minimumStartDate), "startDate", "patron.patronage.form.error.too-close");
 			errors.state(request, entity.getFinishDate().after(minimumFinishDate), "finishDate", "patron.patronage.form.error.too-close");
+		}
+		
+		if(!errors.hasErrors("budget")) {
+			final List<String> acceptedCurrencies = Arrays.asList(this.repository.getAcceptedCurrencies().split(","));
+			errors.state(request, entity.getBudget().getAmount() > 0, "budget", "patron.patronage.form.error.negative");
+			errors.state(request, acceptedCurrencies.contains(entity.getBudget().getCurrency()), "budget", "patron.patronage.form.error.currency");
 		}
 		
 		if (!errors.hasErrors("code")) {

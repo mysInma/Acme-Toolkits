@@ -31,11 +31,18 @@ patron.patronage.form.label.name = Nombre
 patron.patronage.form.label.surname = Apellido
 patron.patronage.form.label.email = Correo electrónico
 patron.patronage.form.label.inventor-select = Inventor
+patron.patronage.list.label.draftMode = Borrador
 
 patron.patronage.form.button.update = Actualizar
 patron.patronage.form.button.delete = Borrar
 patron.patronage.form.button.publish = Publicar
 patron.patronage.form.button.create = Crear
+patron.patronage.list.button.create = Crear
 
 patron.patronage.form.error.duplicated = Este código no está libre
 patron.patronage.form.error.too-close = El período debe ser un mes mínimo
+patron.patronage.form.error.negative = El presupuesto debe tener cantidad positiva
+patron.patronage.form.error.currency = Divisa no aceptada
+patron.patronage.form.error.date-creation = La fecha debe ser después de la creación
+patron.patronage.form.error.date-start = La fecha debe ser después del comienzo
+patron.patronage.form.error.status = No debe estar en modo borrador para cambiar el estado
