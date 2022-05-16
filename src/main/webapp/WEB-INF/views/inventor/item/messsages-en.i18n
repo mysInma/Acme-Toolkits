@@ -43,5 +43,7 @@ inventor.item.form.button.publish = Publish
 
 
 inventor.item.form.error.code.duplicated = This code is taken
+inventor.item.form.error.negative = Money must be positive
+inventor.item.form.error.currency = Currency not accepted
 
 inventor.item.form.button.create = Create
