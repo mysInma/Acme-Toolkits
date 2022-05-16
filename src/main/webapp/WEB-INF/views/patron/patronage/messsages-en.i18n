@@ -46,3 +46,4 @@ patron.patronage.form.error.negative = Money must be positive
 patron.patronage.form.error.currency = Currency not accepted
 patron.patronage.form.error.date-creation = Date must be after creation moment
 patron.patronage.form.error.date-start = Date must be after start moment
+patron.patronage.form.error.status = Must not be in draft mode to change the status

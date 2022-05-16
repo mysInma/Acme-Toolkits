@@ -84,6 +84,10 @@ public class PatronPatronageCreateService implements AbstractCreateService<Patro
 		assert entity != null;
 		assert errors != null;
 		
+		if(!errors.hasErrors("status")) {
+			errors.state(request, entity.getStatus() == PatronageStatus.PROPOSED && entity.isDraftMode() , "status", "patron.patronage.form.error.status");
+		}
+		
 		if (!errors.hasErrors("creationMoment") && !errors.hasErrors("startDate") && !errors.hasErrors("finishDate")) {
 			Calendar calendar;
 			final Date minimumStartDate;
