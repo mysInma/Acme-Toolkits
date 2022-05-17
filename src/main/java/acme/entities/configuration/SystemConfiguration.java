@@ -1,7 +1,9 @@
 package acme.entities.configuration;
 
 import javax.persistence.Entity;
+import javax.validation.constraints.Digits;
 import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotNull;
 
 import org.hibernate.validator.constraints.Range;
 
@@ -31,13 +33,17 @@ public class SystemConfiguration extends AbstractEntity {
 		@NotBlank
 		protected String 				strongSpamTerms;
 		
-		@Range(min=0,max=100)
+		@Range(min=0,max=1)
+		@NotNull
+		@Digits(integer = 1, fraction = 2)
 		protected Double 				strongThreshold;
 		
 		@NotBlank
 		protected String 				weakSpamTerms;
 		
-		@Range(min=0,max=100)
+		@Range(min=0,max=1)
+		@NotNull
+		@Digits(integer = 1, fraction = 2)
 		protected Double 				weakThreshold;
 		
 		

@@ -12,5 +12,10 @@
 	<acme:input-textarea code="administrator.system-configuration.form.label.weak-spam-terms" path="weakSpamTerms"/>
 	<acme:input-double code="administrator.system-configuration.form.label.weak-threshold" path="weakThreshold"/>
 	
+	<jstl:choose>	 
+		<jstl:when test="${acme:anyOf(command, 'show, update')}">
+			<acme:submit code="administrator.system-configuration.form.button.update" action="/administrator/system-configuration/update"/>
+		</jstl:when>	
+	</jstl:choose>
 
 </acme:form>

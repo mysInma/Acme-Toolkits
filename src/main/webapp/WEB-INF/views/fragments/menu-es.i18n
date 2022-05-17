@@ -68,12 +68,11 @@ master.menu.inventor.list-tool = Lista de herramientas
 master.menu.inventor.patronage-report.list = Lista de informes de patrocinios
 master.menu.inventor.patronages = Lista de Patrocinios
 master.menu.inventor.toolkit.list = Lista de Kit de herramientas
-master.menu.inventor.item.create = Crear invención
+
 
 # master.menu.patron ####################################################
 
 master.menu.patron.patronage-report.list = Lista de informes de patrocinios
-
 master.menu.patron = Patrocinador
 master.menu.patron.patronages = Lista de patrocinios
 
@@ -106,3 +105,4 @@ master.menu.authenticated.user-account.list = Lista Usuarios
 master.menu.authenticated.item = Ítem
 master.menu.authenticated.item.list-component =  Lista de Componentes
 master.menu.authenticated.item.list-tool = Lista de Herramientas
+

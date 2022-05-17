@@ -1,0 +1,7 @@
+recordIndex,title,description,link,critical,confirmation
+0,"","Esto es un anuncio de prueba","",true,true
+1,"Anuncio 2","","",false,true
+2,"Otro anuncio","Esto es un anuncio","",false,false
+3,"Nuevo producto","Un gran producto para usted",https://www.youtube.com/,false,false
+4,!,"",https://www.youtube.com/,true,false
+5,"","","",true,true
