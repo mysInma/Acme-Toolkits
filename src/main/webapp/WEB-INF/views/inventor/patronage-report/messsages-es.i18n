@@ -15,5 +15,22 @@ inventor.patronage-report.list.label.patronage.code = Código de patrocinio
 
 inventor.patronage-report.form.label.creationMoment = Fecha de creación
 inventor.patronage-report.form.label.memorandum = Memorándum
-inventor.patronage-report.form.label.link = Link
-inventor.patronage-report.form.label.patronage.code = Código de patrocinio
+inventor.patronage-report.form.label.link = Enlace
+inventor.patronage-report.form.button.patronage = Patrocinio
+inventor.patronage-report.form.button.create = Crear informe de patrocinio
+inventor.patronage-report.form.button.confirmation = Confirme que el informe de patrocinio es correcto
+inventor.patronage-report.form.label.patronage.info = Información del patrocinio
+inventor.patronage-report.form.label.patronage.status = Estado
+inventor.patronage-report.form.label.patronage.status.proposed = PROPUESTO
+inventor.patronage-report.form.label.patronage.status.accepted = ACEPTADO
+inventor.patronage-report.form.label.patronage.status.denied = DENEGADO
+inventor.patronage-report.form.label.patronage.legalStuff = Asuntos legales
+inventor.patronage-report.form.label.patronage.budget = Presupuesto
+inventor.patronage-report.form.label.patronage.creationMoment = Fecha de creación
+inventor.patronage-report.form.label.patronage.startDate = Fecha de inicio
+inventor.patronage-report.form.label.patronage.finishDate = Fecha de finalización
+inventor.patronage-report.form.label.patronage.link = Enlace
+inventor.patronage-report.form.label.patronageCollection = Patrocinios
+
+inventor.patronage-report.memorandum.error = La longitud máxima es de 255 caracteres
+inventor.patronage-report.confirmation.error = Mark the checkbox

@@ -7,5 +7,4 @@
 	<acme:list-column code="inventor.patronage-report.list.label.creationMoment" path="creationMoment" width="10%"/>
 	<acme:list-column code="inventor.patronage-report.list.label.memorandum" path="memorandum" width="10%"/>
 	<acme:list-column code="inventor.patronage-report.list.label.link" path="link" width="20%"/>
-	<acme:list-column code="inventor.patronage-report.list.label.patronage.code" path="patronageCode" width="10%"/>
 </acme:list>
