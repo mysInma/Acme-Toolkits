@@ -15,6 +15,7 @@
 		<acme:input-option code="inventor.patronage-report.form.label.patronage.status.accepted" value="ACCEPTED" selected="${ type == 'ACCEPTED' }"/>
 		<acme:input-option code="inventor.patronage-report.form.label.patronage.status.denied" value="DENIED" selected="${ type == 'DENIED' }"/>
 	</acme:input-select>
+	<acme:input-textbox code="inventor.patronage-report.form.label.patronage.code" path="patronageCode"/>
 	<acme:input-textbox code="inventor.patronage-report.form.label.patronage.legalStuff" path="patronageLegalStuff"/>
 	<acme:input-money code="inventor.patronage-report.form.label.patronage.budget" path="patronageBudget"/>
 	<acme:input-moment code="inventor.patronage-report.form.label.patronage.creationMoment" path="patronageCreationMoment"/>
@@ -26,7 +27,7 @@
 	<jstl:if test="${!readonly}">
 		<acme:input-select code="inventor.patronage-report.form.label.patronageCollection" path="patronage">
 			<jstl:forEach items="${patronageCollection}" var="patronage">
-				<acme:input-option code="${patronage.id}" value="${patronage.id}"/>
+				<acme:input-option code="${patronage.code}" value="${patronage.id}"/>
 			</jstl:forEach>
 		</acme:input-select>
 	

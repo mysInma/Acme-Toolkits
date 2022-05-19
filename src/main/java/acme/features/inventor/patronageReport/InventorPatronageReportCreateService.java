@@ -37,7 +37,6 @@ public class InventorPatronageReportCreateService implements AbstractCreateServi
 
 		request.unbind(entity, model, "creationMoment", "memorandum", "link", "patronage");
 		model.setAttribute("readonly", false);
-		//model.setAttribute("patronageCode", entity.getPatronage().getCode());
 		model.setAttribute("confirmation", false);
 		model.setAttribute("patronageCollection", this.patronageRepository.findPatronagesByInventorId(request.getPrincipal().getActiveRoleId()));
 	}

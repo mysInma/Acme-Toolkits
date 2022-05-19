@@ -24,6 +24,7 @@ inventor.patronage-report.form.label.patronage.status = Estado
 inventor.patronage-report.form.label.patronage.status.proposed = PROPUESTO
 inventor.patronage-report.form.label.patronage.status.accepted = ACEPTADO
 inventor.patronage-report.form.label.patronage.status.denied = DENEGADO
+inventor.patronage-report.form.label.patronage.code = Código
 inventor.patronage-report.form.label.patronage.legalStuff = Asuntos legales
 inventor.patronage-report.form.label.patronage.budget = Presupuesto
 inventor.patronage-report.form.label.patronage.creationMoment = Fecha de creación
