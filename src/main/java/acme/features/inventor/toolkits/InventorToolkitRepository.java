@@ -8,6 +8,7 @@ import org.springframework.stereotype.Repository;
 import acme.entities.toolkits.Toolkit;
 import acme.framework.datatypes.Money;
 import acme.framework.repositories.AbstractRepository;
+import acme.roles.Inventor;
 
 @Repository
 public interface InventorToolkitRepository extends AbstractRepository{
@@ -26,5 +27,13 @@ public interface InventorToolkitRepository extends AbstractRepository{
 	@Query("select c.systemCurrency from SystemConfiguration c")
 	String systemCurrency();
 
+	@Query("SELECT i FROM Inventor i WHERE i.id = :id")
+	Inventor findInventorById(int id);
+
+	@Query("SELECT t FROM Toolkit t WHERE t.code = :code")
+	Toolkit findToolkitByCode(String code);
+
+	@Query("SELECT acceptedCurrencies FROM SystemConfiguration")
+	String getAcceptedCurrencies();
 
 }

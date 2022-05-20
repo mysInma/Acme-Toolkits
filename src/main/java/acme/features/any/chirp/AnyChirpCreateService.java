@@ -61,10 +61,6 @@ public class AnyChirpCreateService  implements AbstractCreateService<Any, Chirp>
 
 		result = new Chirp();
 		result.setCreationMoment(moment);
-		result.setTitle("Chirp-10");
-		result.setAuthor("G1-14");
-		result.setBody("Lorem ipsum!");
-		result.setEmail("example@gmail.com");
 
 		return result;	
 	}

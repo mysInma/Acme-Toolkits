@@ -12,6 +12,7 @@ inventor.toolkit.list.label.code = Code:
 inventor.toolkit.list.label.title = Title:
 inventor.toolkit.list.label.description = Description:
 inventor.toolkit.list.label.published=Published 
+inventor.toolkit.form.button.create = Create
 
 inventor.toolkit.form.label.code = Code:
 inventor.toolkit.form.label.title = Title:
@@ -23,3 +24,6 @@ inventor.toolkit.form.button.items = Items
 inventor.toolkit.form.label.published=Published
 inventor.toolkit.form.button.tool = Tool
 inventor.toolkit.form.button.component = Component
+inventor.toolkit.form.button.update = Update
+inventor.toolkit.form.button.delete = Delete
+inventor.toolkit.form.button.publish = Publish
