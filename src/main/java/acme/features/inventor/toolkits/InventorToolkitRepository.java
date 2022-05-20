@@ -19,10 +19,8 @@ public interface InventorToolkitRepository extends AbstractRepository{
 	@Query("SELECT t FROM Toolkit t WHERE t.id = :id")
 	Toolkit findToolkitById(int id);
 	
-	
 	@Query("SELECT q.item.price FROM Quantity q WHERE q.toolkit.id = :id")
 	Collection<Money> collectPrices(int id);
-	
 	
 	@Query("select c.systemCurrency from SystemConfiguration c")
 	String systemCurrency();
@@ -35,5 +33,17 @@ public interface InventorToolkitRepository extends AbstractRepository{
 
 	@Query("SELECT acceptedCurrencies FROM SystemConfiguration")
 	String getAcceptedCurrencies();
+	
+	@Query("SELECT strongSpamTerms FROM SystemConfiguration")
+	String getStrongSpamTerms();
+	
+	@Query("SELECT weakSpamTerms FROM SystemConfiguration")
+	String getWeakSpamTerms();
+	
+	@Query("SELECT strongThreshold FROM SystemConfiguration")
+	Double getStrongThreshold();
+	
+	@Query("SELECT weakThreshold FROM SystemConfiguration")
+	Double getWeakThreshold();
 
 }

@@ -31,3 +31,5 @@ inventor.toolkit.form.button.publish = Publicar
 inventor.toolkit.form.button.tool = Herramienta
 inventor.toolkit.form.button.component = Componente
 
+inventor.toolkit.form.error.spam = Spam detectado
+
