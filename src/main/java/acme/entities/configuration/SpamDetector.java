@@ -11,8 +11,10 @@ public class SpamDetector {
     public static Boolean detectSpam(final List<String> text, final List<String> spamTerms, final Double threshold) {
         Double cont = 0.;
         for(final String word: text) {
-            if(spamTerms.contains(word))
-                cont++;
+        	for(final String term: spamTerms) {
+	            if(word.toLowerCase().contains(term.toLowerCase()))
+	                cont++;
+        	}
         }
         final Double x = cont / spamTerms.size();
         return x >= threshold;
