@@ -46,3 +46,5 @@ inventor.item.form.error.currency = Divisa no aceptada
 
 inventor.item.form.button.create = Crear
 
+inventor.items.form.error.spam = Spam detectado
+
