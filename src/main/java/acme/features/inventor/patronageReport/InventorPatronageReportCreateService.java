@@ -93,8 +93,8 @@ public class InventorPatronageReportCreateService implements AbstractCreateServi
 			final Double weakThreshold = this.repository.getWeakThreshold();
 			
 			
-			errors.state(request, !SpamDetector.detectSpam(memorandumWords, weakSpamTerms, weakThreshold), "memorandum", "inventor.patronage.form.error.spam");
-			errors.state(request, !SpamDetector.detectSpam(memorandumWords, strongSpamTerms, strongThreshold), "memorandum", "inventor.patronage.form.error.spam");
+			errors.state(request, !SpamDetector.detectSpam(memorandumWords, weakSpamTerms, weakThreshold), "memorandum", "inventor.patronage-report.form.error.spam");
+			errors.state(request, !SpamDetector.detectSpam(memorandumWords, strongSpamTerms, strongThreshold), "memorandum", "inventor.patronage-report.form.error.spam");
 		}
 		
 		boolean confirmation;
