@@ -1,0 +1,2 @@
+recordIndex,systemCurrency,acceptedCurrencies,strongSpamTerms,strongThreshold,weakSpamTerms,weakThreshold
+0,EUR,"","sex,sexo,duro,hard core,viagra,cialis",0.10,"",0.25

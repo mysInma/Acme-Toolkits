@@ -1,6 +1,9 @@
 
 package acme.features.inventor.items;
 
+import java.util.Arrays;
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -39,7 +42,7 @@ public class InventorItemsUpdateService implements AbstractUpdateService<Invento
 		assert request != null;
 		assert entity != null;
 		assert errors != null;
-		request.bind(entity, errors, "name", "code", "technology", "description", "price", "type", "published", "link");
+		request.bind(entity, errors, "name", "code", "technology", "description", "price", "type", "link");
 	}
 
 	@Override
@@ -47,7 +50,7 @@ public class InventorItemsUpdateService implements AbstractUpdateService<Invento
 		assert request != null;
 		assert entity != null;
 		assert model != null;
-		request.unbind(entity, model, "name", "code", "technology", "description", "price", "type", "published", "link");
+		request.unbind(entity, model, "name", "code", "technology", "description", "price", "type", "link");
 	}
 
 	@Override
@@ -69,6 +72,13 @@ public class InventorItemsUpdateService implements AbstractUpdateService<Invento
 		assert request != null;
 		assert entity != null;
 		assert errors != null;
+
+		if (!errors.hasErrors("price")) {
+			final List<String> acceptedCurrencies = Arrays.asList(this.repository.getAcceptedCurrencies().split(","));
+			errors.state(request, entity.getPrice().getAmount() > 0, "price", "inventor.item.form.error.negative");
+			errors.state(request, acceptedCurrencies.contains(entity.getPrice().getCurrency()), "price", "inventor.item.form.error.currency");
+		}
+
 		if (!errors.hasErrors("code")) {
 			Item existing;
 

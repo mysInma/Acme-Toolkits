@@ -26,11 +26,13 @@ inventor.item.form.label.tool = TOOL
 inventor.item.form.label.component = COMPONENT
 inventor.item.form.label.code = Code
 inventor.item.form.label.link = Link
-inventor.item.form.button.inventor = Inventor
 
-inventor.item.form.label.published = Is it published?
-true = Yes
-false = No
+inventor.item.form.label.info = Inventor information
+inventor.item.form.label.fullName = Full Name
+inventor.item.form.label.name = Name
+inventor.item.form.label.surname = Surname
+inventor.item.form.label.email = Email
+
 component = Component
 tool = Tool
 
@@ -41,6 +43,7 @@ inventor.item.form.button.publish = Publish
 
 
 inventor.item.form.error.code.duplicated = This code is taken
-inventor.item.form.error.price.invalid = The currency is not support by the system
+inventor.item.form.error.negative = Money must be positive
+inventor.item.form.error.currency = Currency not accepted
 
 inventor.item.form.button.create = Create

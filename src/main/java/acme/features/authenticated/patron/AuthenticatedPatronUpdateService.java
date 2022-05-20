@@ -57,7 +57,7 @@ public class AuthenticatedPatronUpdateService implements AbstractUpdateService<A
 		assert entity != null;
 		assert errors != null;
 
-		request.bind(entity, errors, "company", "sector");
+		request.bind(entity, errors, "company", "statement", "link");
 	}
 
 	@Override
@@ -66,7 +66,7 @@ public class AuthenticatedPatronUpdateService implements AbstractUpdateService<A
 		assert entity != null;
 		assert model != null;
 
-		request.unbind(entity, model, "company", "sector");
+		request.unbind(entity, model, "company", "statement", "link");
 	}
 
 	@Override
