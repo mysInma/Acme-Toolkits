@@ -75,39 +75,39 @@ public class InventorToolkitCreateService implements AbstractCreateService<Inven
 		assert errors != null;
 		
 		if(!errors.hasErrors("title")) {
-			final List<String> legalStuffWords = Arrays.asList(entity.getTitle().split(" "));
+			final List<String> titleWords = Arrays.asList(entity.getTitle().split(" "));
 			final List<String> strongSpamTerms = Arrays.asList(this.repository.getStrongSpamTerms().split(","));
 			final List<String> weakSpamTerms = Arrays.asList(this.repository.getWeakSpamTerms().split(","));
 			final Double strongThreshold = this.repository.getStrongThreshold();
 			final Double weakThreshold = this.repository.getWeakThreshold();
 			
 			
-			errors.state(request, !SpamDetector.detectSpam(legalStuffWords, weakSpamTerms, weakThreshold), "title", "inventor.toolkit.form.error.spam");
-			errors.state(request, !SpamDetector.detectSpam(legalStuffWords, strongSpamTerms, strongThreshold), "title", "inventor.toolkit.form.error.spam");
+			errors.state(request, !SpamDetector.detectSpam(titleWords, weakSpamTerms, weakThreshold), "title", "inventor.toolkit.form.error.spam");
+			errors.state(request, !SpamDetector.detectSpam(titleWords, strongSpamTerms, strongThreshold), "title", "inventor.toolkit.form.error.spam");
 		}
 		
 		if(!errors.hasErrors("description")) {
-			final List<String> legalStuffWords = Arrays.asList(entity.getDescription().split(" "));
+			final List<String> descriptionWords = Arrays.asList(entity.getDescription().split(" "));
 			final List<String> strongSpamTerms = Arrays.asList(this.repository.getStrongSpamTerms().split(","));
 			final List<String> weakSpamTerms = Arrays.asList(this.repository.getWeakSpamTerms().split(","));
 			final Double strongThreshold = this.repository.getStrongThreshold();
 			final Double weakThreshold = this.repository.getWeakThreshold();
 			
 			
-			errors.state(request, !SpamDetector.detectSpam(legalStuffWords, weakSpamTerms, weakThreshold), "description", "inventor.toolkit.form.error.spam");
-			errors.state(request, !SpamDetector.detectSpam(legalStuffWords, strongSpamTerms, strongThreshold), "description", "inventor.toolkit.form.error.spam");
+			errors.state(request, !SpamDetector.detectSpam(descriptionWords, weakSpamTerms, weakThreshold), "description", "inventor.toolkit.form.error.spam");
+			errors.state(request, !SpamDetector.detectSpam(descriptionWords, strongSpamTerms, strongThreshold), "description", "inventor.toolkit.form.error.spam");
 		}
 		
 		if(!errors.hasErrors("notes")) {
-			final List<String> legalStuffWords = Arrays.asList(entity.getNotes().split(" "));
+			final List<String> notesWords = Arrays.asList(entity.getNotes().split(" "));
 			final List<String> strongSpamTerms = Arrays.asList(this.repository.getStrongSpamTerms().split(","));
 			final List<String> weakSpamTerms = Arrays.asList(this.repository.getWeakSpamTerms().split(","));
 			final Double strongThreshold = this.repository.getStrongThreshold();
 			final Double weakThreshold = this.repository.getWeakThreshold();
 			
 			
-			errors.state(request, !SpamDetector.detectSpam(legalStuffWords, weakSpamTerms, weakThreshold), "notes", "inventor.toolkit.form.error.spam");
-			errors.state(request, !SpamDetector.detectSpam(legalStuffWords, strongSpamTerms, strongThreshold), "notes", "inventor.toolkit.form.error.spam");
+			errors.state(request, !SpamDetector.detectSpam(notesWords, weakSpamTerms, weakThreshold), "notes", "inventor.toolkit.form.error.spam");
+			errors.state(request, !SpamDetector.detectSpam(notesWords, strongSpamTerms, strongThreshold), "notes", "inventor.toolkit.form.error.spam");
 		}
 		
 		if (!errors.hasErrors("code")) {

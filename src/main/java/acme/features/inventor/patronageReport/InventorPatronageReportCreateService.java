@@ -1,10 +1,13 @@
 package acme.features.inventor.patronageReport;
 
+import java.util.Arrays;
 import java.util.Date;
+import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import acme.entities.configuration.SpamDetector;
 import acme.entities.patronages.Patronage;
 import acme.entities.patronages.PatronageReport;
 import acme.features.inventor.patronages.InventorPatronageRepository;
@@ -82,6 +85,16 @@ public class InventorPatronageReportCreateService implements AbstractCreateServi
 		if(!errors.hasErrors("memorandum")) {
 			final boolean maxLong = memorandum.length() < 256;
 			errors.state(request, maxLong, "memorandum", "inventor.patronage-report.memorandum.error");
+			
+			final List<String> memorandumWords = Arrays.asList(entity.getMemorandum().split(" "));
+			final List<String> strongSpamTerms = Arrays.asList(this.repository.getStrongSpamTerms().split(","));
+			final List<String> weakSpamTerms = Arrays.asList(this.repository.getWeakSpamTerms().split(","));
+			final Double strongThreshold = this.repository.getStrongThreshold();
+			final Double weakThreshold = this.repository.getWeakThreshold();
+			
+			
+			errors.state(request, !SpamDetector.detectSpam(memorandumWords, weakSpamTerms, weakThreshold), "memorandum", "inventor.patronage.form.error.spam");
+			errors.state(request, !SpamDetector.detectSpam(memorandumWords, strongSpamTerms, strongThreshold), "memorandum", "inventor.patronage.form.error.spam");
 		}
 		
 		boolean confirmation;
