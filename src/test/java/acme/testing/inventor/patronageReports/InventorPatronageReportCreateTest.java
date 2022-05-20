@@ -2,6 +2,7 @@
 package acme.testing.inventor.patronageReports;
 
 import org.junit.jupiter.api.Order;
+import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvFileSource;
 
@@ -49,7 +50,42 @@ public class InventorPatronageReportCreateTest extends TestHarness {
 		super.checkInputBoxHasValue("patronageLink", patronageLink);
 		
 		super.signOut();
+	}
+	
+	@ParameterizedTest
+	@CsvFileSource(resources = "/inventor/patronageReport/create-negative.csv", encoding = "utf-8", numLinesToSkip = 1)
+	@Order(20)
+	public void negativeTest(final int recordIndex, final String memorandum, final String link, final String confirmation) {
+		super.signIn("inventor01", "inventor01");
 
+		super.clickOnMenu("Inventor", "Patronage reports list");
+		super.checkListingExists();
+
+		super.clickOnButton("Create patronage report");
+
+		super.checkFormExists();
+
+		super.fillInputBoxIn("memorandum", memorandum);
+		super.fillInputBoxIn("link", link);
+		super.fillInputBoxIn("confirmation", confirmation);
+		super.clickOnSubmit("Create Patronage Report");
+		
+		super.checkErrorsExist();
+		
+		super.signOut();
+	}
+	
+	@Test
+	@Order(30)
+	public void hackingTest() {
+		super.checkNotLinkExists("Account");
+		super.navigate("/inventor/patronage-report/create");
+		super.checkPanicExists();
+		
+		super.signIn("patron01", "patron01");
+		super.navigate("/inventor/patronage-report/create");
+		super.checkPanicExists();
+		super.signOut();
 	}
 
 }
