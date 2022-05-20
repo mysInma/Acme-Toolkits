@@ -33,22 +33,13 @@ public class AnyCreateChirpsTest extends TestHarness {
 		super.checkListingExists();
 		super.checkNotListingEmpty();
 
-		super.sortListing(0, "asc");
-
-		//super.clickOnListingRecord(recordIndex);
-		//super.checkFormExists();
-
-		//super.checkInputBoxHasValue("title", title);
-		//super.checkInputBoxHasValue("author", author);
-		//super.checkInputBoxHasValue("body", body);
-		//super.checkInputBoxHasValue("email", email);
+		super.sortListing(4, "desc");
 		
 		super.checkColumnHasValue(recordIndex, 0, title);
 		super.checkColumnHasValue(recordIndex, 1, author);
 		super.checkColumnHasValue(recordIndex, 2, body);
 		super.checkColumnHasValue(recordIndex, 3, email);
 
-		super.signOut();
 	}
 
 
