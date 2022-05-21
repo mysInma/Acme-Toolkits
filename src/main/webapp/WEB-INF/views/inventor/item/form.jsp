@@ -11,7 +11,7 @@
 	<acme:input-textbox code="inventor.item.form.label.description" path="description"/>
 	
 	<jstl:choose>
-		<jstl:when test="${acme:anyOf(command, 'show, update, delete, publish') && published == false }">
+		<jstl:when test="${acme:anyOf(command, 'show, update, delete, publish')}">
 			<acme:input-money readonly="true" code="inventor.item.form.label.price" path="price"/>
 		</jstl:when>
 		<jstl:when test="${command == 'create'}">
