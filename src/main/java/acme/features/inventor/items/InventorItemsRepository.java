@@ -39,6 +39,9 @@ public interface InventorItemsRepository extends AbstractRepository {
 
 	@Query("SELECT i FROM Item i WHERE i.code = :code and i.type = 1")
 	Item findOneComponentByCode(String code);
+	
+	@Query("SELECT i FROM Item i WHERE i.code = :code")
+	Item findOneByCode(String code);
 
 	@Query("SELECT acceptedCurrencies FROM SystemConfiguration")
 	String getAcceptedCurrencies();
