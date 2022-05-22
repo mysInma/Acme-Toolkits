@@ -1,5 +1,5 @@
 key,status,code,legal-stuff,budget,creation-moment,start-date,finish-date,link,inventorFullName,name,surname,email
-0,PROPOSED,PAT-012-A,LegalStuff01,"EUR 120,000.00",2022/03/15 13:50,2022/03/25 00:00,2022/06/25 23:59,http://www.firstpatronage.com,"Acme, Inventor01" ,Inventor01,Acme, inventor01@acme.com
-1,PROPOSED,PAT-022-A,LegalStuff04,"EUR 220,000.00",2020/02/02 17:00,2022/03/01 00:00,2022/04/28 23:59,http://www.xpatronage.com,"Simón, Fernando" , Fernando, Simón,fernando-simon@acme.com
-2,ACCEPTED,PAT-245-D,LegalStuff06,"USD 440,320.00",2020/02/03 14:00,2022/03/01 00:00,2022/07/01 23:59,http://www.xpatronage.com,"Acme, Inventor01",Inventor01,Acme, inventor01@acme.com
-3,DENIED,PAT-698-E,LegalStuff08,"GBP 30,000.00",2020/01/02 17:00,2022/02/01 00:00,2022/02/28 23:59,http://www.deniedpatronage.com,"Díaz, Paco" ,Paco, Díaz, paco-diaz@acme.com
+0,PROPOSED,PAT-012-A,LegalStuff01,"EUR 120,000.00",2022/03/15 13:50,2022/03/25 00:00,2022/06/25 23:59,http://www.firstpatronage.com,"Acme, Inventor01",Inventor01,Acme,inventor01@acme.com
+1,PROPOSED,PAT-022-A,LegalStuff04,"EUR 220,000.00",2020/02/02 17:00,2022/03/01 00:00,2022/04/28 23:59,http://www.xpatronage.com,"Simón, Fernando",Fernando,Simón,fernando-simon@acme.com
+2,PROPOSED,PAT-245-D,LegalStuff06,"USD 440,320.00",2020/02/03 14:00,2022/03/01 00:00,2022/07/01 23:59,http://www.xpatronage.com,"Acme, Inventor01",Inventor01,Acme,inventor01@acme.com
+3,PROPOSED,PAT-698-E,LegalStuff08,"GBP 30,000.00",2020/01/02 17:00,2022/02/01 00:00,2022/02/28 23:59,http://www.deniedpatronage.com,"Díaz, Paco",Paco,Díaz,paco-diaz@acme.com
