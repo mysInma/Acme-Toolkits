@@ -11,12 +11,11 @@ public class AnyCreateChirpsTest extends TestHarness {
 	@ParameterizedTest
 	@CsvFileSource(resources = "/any/chirp/chirpCreate.csv", encoding = "utf-8", numLinesToSkip = 1)
 	@Order(10)
-	public void positiveChirpTest(final int recordIndex, final String title, final String author, final String body, final String email, final Boolean confirmation) {
+	public void positiveChirpTest(final int recordIndex, final String title, final String author, final String body, final String email) {
 
 		super.clickOnMenu("Anonymous", "List Chirps");
 
 		super.checkListingExists();
-		super.checkNotListingEmpty();
 
 		super.clickOnButton("Create chirp");
 
@@ -33,7 +32,8 @@ public class AnyCreateChirpsTest extends TestHarness {
 		super.checkListingExists();
 		super.checkNotListingEmpty();
 
-		super.sortListing(4, "desc");
+		//super.sortListing(5, "desc");
+		super.sortListing(0, "asc");
 		
 		super.checkColumnHasValue(recordIndex, 0, title);
 		super.checkColumnHasValue(recordIndex, 1, author);
