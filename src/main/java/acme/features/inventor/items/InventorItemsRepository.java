@@ -45,5 +45,17 @@ public interface InventorItemsRepository extends AbstractRepository {
 
 	@Query("SELECT acceptedCurrencies FROM SystemConfiguration")
 	String getAcceptedCurrencies();
+	
+	@Query("SELECT strongSpamTerms FROM SystemConfiguration")
+	String getStrongSpamTerms();
+	
+	@Query("SELECT weakSpamTerms FROM SystemConfiguration")
+	String getWeakSpamTerms();
+	
+	@Query("SELECT strongThreshold FROM SystemConfiguration")
+	Double getStrongThreshold();
+	
+	@Query("SELECT weakThreshold FROM SystemConfiguration")
+	Double getWeakThreshold();
 
 }

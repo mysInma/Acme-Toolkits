@@ -35,3 +35,5 @@ inventor.patronage-report.form.label.patronageCollection = Patrocinios
 
 inventor.patronage-report.memorandum.error = La longitud máxima es de 255 caracteres
 inventor.patronage-report.confirmation.error = Mark the checkbox
+
+inventor.patronage-report.form.error.spam = Spam detectado

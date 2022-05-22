@@ -47,3 +47,5 @@ inventor.item.form.error.negative = Money must be positive
 inventor.item.form.error.currency = Currency not accepted
 
 inventor.item.form.button.create = Create
+
+inventor.items.form.error.spam = Spam detector

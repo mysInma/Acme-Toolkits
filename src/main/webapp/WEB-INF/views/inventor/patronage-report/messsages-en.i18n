@@ -35,3 +35,5 @@ inventor.patronage-report.form.label.patronageCollection = Patronages
 
 inventor.patronage-report.memorandum.error = The maximum length is 255 characters
 inventor.patronage-report.confirmation.error = Marque la casilla
+
+inventor.patronage-report.form.error.spam = Spam detected

@@ -7,6 +7,7 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import acme.entities.configuration.SpamDetector;
 import acme.entities.toolkits.Item;
 import acme.framework.components.models.Model;
 import acme.framework.controllers.Errors;
@@ -68,6 +69,32 @@ public class InventorItemsCreateService implements AbstractCreateService<Invento
 		assert request != null;
 		assert entity != null;
 		assert errors != null;
+		
+		if(!errors.hasErrors("technology")) {
+			
+			final List<String> technologyWords = Arrays.asList(entity.getTechnology().split(" "));
+			final List<String> strongSpamTerms = Arrays.asList(this.repository.getStrongSpamTerms().split(","));
+			final List<String> weakSpamTerms = Arrays.asList(this.repository.getWeakSpamTerms().split(","));
+			final Double strongThreshold = this.repository.getStrongThreshold();
+			final Double weakThreshold = this.repository.getWeakThreshold();
+			
+			
+			errors.state(request, !SpamDetector.detectSpam(technologyWords, weakSpamTerms, weakThreshold), "technology", "inventor.items.form.error.spam");
+			errors.state(request, !SpamDetector.detectSpam(technologyWords, strongSpamTerms, strongThreshold), "technology", "inventor.items.form.error.spam");
+		}
+		
+		if(!errors.hasErrors("description")) {
+			
+			final List<String> descriptionWords = Arrays.asList(entity.getDescription().split(" "));
+			final List<String> strongSpamTerms = Arrays.asList(this.repository.getStrongSpamTerms().split(","));
+			final List<String> weakSpamTerms = Arrays.asList(this.repository.getWeakSpamTerms().split(","));
+			final Double strongThreshold = this.repository.getStrongThreshold();
+			final Double weakThreshold = this.repository.getWeakThreshold();
+			
+			
+			errors.state(request, !SpamDetector.detectSpam(descriptionWords, weakSpamTerms, weakThreshold), "description", "inventor.items.form.error.spam");
+			errors.state(request, !SpamDetector.detectSpam(descriptionWords, strongSpamTerms, strongThreshold), "description", "inventor.items.form.error.spam");
+		}
 
 		if (!errors.hasErrors("price")) {
 			final List<String> acceptedCurrencies = Arrays.asList(this.repository.getAcceptedCurrencies().split(","));

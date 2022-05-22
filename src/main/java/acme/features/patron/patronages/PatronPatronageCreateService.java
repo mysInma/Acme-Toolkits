@@ -9,6 +9,7 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import acme.entities.configuration.SpamDetector;
 import acme.entities.patronages.Patronage;
 import acme.entities.patronages.PatronageStatus;
 import acme.framework.components.models.Model;
@@ -83,6 +84,19 @@ public class PatronPatronageCreateService implements AbstractCreateService<Patro
 		assert request != null;
 		assert entity != null;
 		assert errors != null;
+		
+		if(!errors.hasErrors("legalStuff")) {
+			
+			final List<String> legalStuffWords = Arrays.asList(entity.getLegalStuff().split(" "));
+			final List<String> strongSpamTerms = Arrays.asList(this.repository.getStrongSpamTerms().split(","));
+			final List<String> weakSpamTerms = Arrays.asList(this.repository.getWeakSpamTerms().split(","));
+			final Double strongThreshold = this.repository.getStrongThreshold();
+			final Double weakThreshold = this.repository.getWeakThreshold();
+			
+			
+			errors.state(request, !SpamDetector.detectSpam(legalStuffWords, weakSpamTerms, weakThreshold), "legalStuff", "patron.patronage.form.error.spam");
+			errors.state(request, !SpamDetector.detectSpam(legalStuffWords, strongSpamTerms, strongThreshold), "legalStuff", "patron.patronage.form.error.spam");
+		}
 		
 		if(!errors.hasErrors("status")) {
 			errors.state(request, entity.getStatus() == PatronageStatus.PROPOSED && entity.isDraftMode() , "status", "patron.patronage.form.error.status");

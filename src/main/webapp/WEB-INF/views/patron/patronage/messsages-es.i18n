@@ -46,3 +46,4 @@ patron.patronage.form.error.currency = Divisa no aceptada
 patron.patronage.form.error.date-creation = La fecha debe ser después de la creación
 patron.patronage.form.error.date-start = La fecha debe ser después del comienzo
 patron.patronage.form.error.status = No debe estar en modo borrador para cambiar el estado
+patron.patronage.form.error.spam = Spam detectado
