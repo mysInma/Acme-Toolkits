@@ -19,15 +19,15 @@ public class PatronPatronageTest extends TestHarness{
 		
 		super.clickOnMenu("Patron","Patronages list");
 		super.checkListingExists();
-		super.sortListing(1, "asc"); 
+		super.sortListing(2, "asc"); 
 		
 		super.checkColumnHasValue(recordIndex, 0, status);
-		super.checkColumnHasValue(recordIndex, 1, legalStuff);
-		super.checkColumnHasValue(recordIndex, 2, budget);
-		super.checkColumnHasValue(recordIndex, 3, creationMoment);
-		super.checkColumnHasValue(recordIndex, 4, startDate);
-		super.checkColumnHasValue(recordIndex, 5, finishDate);
-		super.checkColumnHasValue(recordIndex, 6, link);
+		super.checkColumnHasValue(recordIndex, 2, legalStuff);
+		super.checkColumnHasValue(recordIndex, 3, budget);
+		super.checkColumnHasValue(recordIndex, 4, creationMoment);
+		super.checkColumnHasValue(recordIndex, 5, startDate);
+		super.checkColumnHasValue(recordIndex, 6, finishDate);
+		super.checkColumnHasValue(recordIndex, 7, link);
 		
 		super.clickOnListingRecord(recordIndex);
 		super.checkFormExists();
