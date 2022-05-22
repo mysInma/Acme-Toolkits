@@ -1,4 +1,3 @@
-recordIndex,name,code,technology,description,price,link,type,published,type-c,published-c
-0,aaaaaa,HHV-926-J,PC,ligula sit amet eleifend pede libero quis orci,USD 222.72,http://ehow.com/elit/proin/interdum/mauris/non/ligula/pellentesque.aspx,TOOL,false
-1,abbbbb,ATP-193-S,SmartWatch,consectetuer eget,null,http://fotki.com/suspendisse/potenti.json,TOOL,true,Tool
-2,,,Tablet,,"GBP 1,242.42",http://ifeng.com/luctus/nec/molestie/sed/justo/pellentesque.jpg,TOOL,true
+recordIndex,name,code,technology,description,link,type,published,type-c,published-c
+0,aaaaaa,HHV-926-J,PC,ligula sit amet eleifend pede libero quis orci,http://ehow.com/elit/proin/interdum/mauris/non/ligula/pellentesque.aspx,TOOL,false
+1,,,Tablet,,http://ifeng.com/luctus/nec/molestie/sed/justo/pellentesque.jpg,TOOL,true

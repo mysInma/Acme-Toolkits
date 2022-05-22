@@ -82,8 +82,8 @@ public class InventorItemsUpdateService implements AbstractUpdateService<Invento
 		if (!errors.hasErrors("code")) {
 			Item existing;
 
-			existing = this.repository.findOneComponentByCode(entity.getCode());
-			errors.state(request, existing == null || existing.getId() == entity.getId(), "code", "inventor.item.form.error.code.duplicated");
+			existing = this.repository.findOneByCode(entity.getCode());
+			errors.state(request, existing == null || existing.getId() == entity.getId(), "code", "inventor.item.form.error.duplicated");
 		}
 
 	}

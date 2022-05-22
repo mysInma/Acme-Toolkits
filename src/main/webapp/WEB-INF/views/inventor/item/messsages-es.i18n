@@ -40,7 +40,7 @@ inventor.item.form.button.delete = Borrar
 inventor.item.form.button.publish = Publicar
 inventor.item.form.button.create = Crear
 
-inventor.item.form.error.code.duplicated = Este código está cogido
+inventor.item.form.error.duplicated = Este código está cogido
 inventor.item.form.error.negative = El presupuesto debe tener cantidad positiva
 inventor.item.form.error.currency = Divisa no aceptada
 
