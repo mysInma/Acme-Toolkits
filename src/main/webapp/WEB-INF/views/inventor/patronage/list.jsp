@@ -5,6 +5,7 @@
 
 <acme:list>
 	<acme:list-column code="inventor.patronage.list.label.status" path="status" width="10%"/>
+	<acme:list-column code="inventor.patronage.list.label.draftMode" path="draftMode" width="10%"/>
 	<acme:list-column code="inventor.patronage.list.label.legalStuff" path="legalStuff" width="10%"/>
 	<acme:list-column code="inventor.patronage.list.label.budget" path="budget" width="10%"/>
 	<acme:list-column code="inventor.patronage.list.label.creationMoment" path="creationMoment" width="10%"/>
