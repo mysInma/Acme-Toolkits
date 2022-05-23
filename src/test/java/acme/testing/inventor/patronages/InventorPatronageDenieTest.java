@@ -50,7 +50,7 @@ public class InventorPatronageDenieTest  extends TestHarness {
 
 		super.sortListing(0, "asc");
 
-		super.checkColumnHasValue(recordIndex, 0, "PROPOSED");
+		super.checkColumnHasValue(recordIndex, 0, "DENIED");
 		super.clickOnListingRecord(recordIndex);
 		super.checkFormExists();
 		super.checkNotButtonExists("Denie");
