@@ -27,6 +27,7 @@ inventor.patronage-report.form.label.patronage.status.denied = DENEGADO
 inventor.patronage-report.form.label.patronage.code = Código
 inventor.patronage-report.form.label.patronage.legalStuff = Asuntos legales
 inventor.patronage-report.form.label.patronage.budget = Presupuesto
+inventor.patronage-report.form.label.patronage.exchangeBudget = Presupuesto en la divisa del sistema
 inventor.patronage-report.form.label.patronage.creationMoment = Fecha de creación
 inventor.patronage-report.form.label.patronage.startDate = Fecha de inicio
 inventor.patronage-report.form.label.patronage.finishDate = Fecha de finalización

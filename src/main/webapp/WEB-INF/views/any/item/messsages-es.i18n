@@ -13,6 +13,7 @@ any.item.form.label.code = Código:
 any.item.form.label.technology = Tecnología:
 any.item.form.label.description = Descripción:
 any.item.form.label.price = Precio:
+any.item.form.label.exchange = Precio en la divisa del sistema:
 any.item.form.label.link = Enlace:
 
  
@@ -29,6 +30,7 @@ any.item.form.label.code = Código
 any.item.form.label.technology = Tecnología
 any.item.form.label.description = Descripción
 any.item.form.label.price = Precio
+any.item.form.label.exchange = Precio en la divisa del sistema
 any.item.form.label.link = Enlace
 any.item.form.label.inventor = Inventor
 
