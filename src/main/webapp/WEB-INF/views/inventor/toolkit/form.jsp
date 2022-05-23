@@ -9,11 +9,23 @@
 	<acme:input-textbox code="inventor.toolkit.form.label.description" path="description"/>
 	<acme:input-textarea code="inventor.toolkit.form.label.notes" path="notes"/>
 	<acme:input-url code="inventor.toolkit.form.label.link" path="link"/>
-	<acme:input-money code="inventor.toolkit.form.label.total-price" path="totalPrice"/> 	
-	<acme:input-select code="inventor.toolkit.form.label.published" path="published">
-		<acme:input-option code="true" value="true" selected="${published == true}"/>
-		<acme:input-option code="false" value="false" selected="${published == false }"/>
-	</acme:input-select>
+
+		
+	
+	
+		<jstl:choose>
+		<jstl:when test="${acme:anyOf(command, 'show, update, delete, publish')}">
+				<acme:input-money readonly="true" code="inventor.toolkit.form.label.total-price" path="totalPrice"/>
+				<acme:input-textarea readonly="true" code="inventor.toolkit.form.label.published" path="published"/> 
+		</jstl:when>
+		<jstl:when test="${command == 'create'}">
+			<acme:input-select code="inventor.toolkit.form.label.published" path="published">
+				<acme:input-option code="true" value="true" selected="${published == true}"/>
+				<acme:input-option code="false" value="false" selected="${published == false }"/>
+		</acme:input-select>
+		</jstl:when>
+		
+	</jstl:choose> 
 	
 	<acme:button code="inventor.toolkit.form.button.tool" action="/inventor/item/list-tool-toolkit?id=${ toolkitId }"/>
 	<acme:button code="inventor.toolkit.form.button.component" action="/inventor/item/list-component-toolkit?id=${ toolkitId }"/>	
