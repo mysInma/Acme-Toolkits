@@ -44,12 +44,6 @@ public class InventorToolkitCreateTest extends TestHarness{
 		super.clickOnListingRecord(recordIndex);
 		super.checkFormExists();
 
-		super.fillInputBoxIn("code", code);
-		super.fillInputBoxIn("title", title);
-		super.fillInputBoxIn("description", description);
-		super.fillInputBoxIn("notes", notes);
-		super.fillInputBoxIn("link", link);
-		super.fillInputBoxIn("published", "false");
 
 		super.signOut();
 	}
