@@ -42,7 +42,7 @@ public class PatronPatronageUpdateTest extends TestHarness {
 		super.checkListingExists();
 		super.checkNotListingEmpty();
 
-		super.clickOnListingRecord(recordIndex);
+		super.clickOnListingRecord(recordIndex-1);
 		super.checkFormExists();
 		
 		super.checkInputBoxHasValue("legalStuff", legalStuff);

@@ -11,7 +11,7 @@ public class PatronPatronageTest extends TestHarness{
 	@ParameterizedTest
 	@CsvFileSource(resources = "/patron/patronage/patronage.csv", encoding = "utf-8", numLinesToSkip = 1)
 	@Order(10) 
-	public void positiveTest(final int recordIndex, final String status, final String code, 
+	public void positiveTest(final int recordIndex, final int draftMode, final String status, final String code, 
 		final String legalStuff, final String budget, final String creationMoment, final String startDate, 
 		final String finishDate, final String link,  final String inventorFullName, final String name, final String surname, final String email ) {
 		
@@ -38,10 +38,13 @@ public class PatronPatronageTest extends TestHarness{
 		super.checkInputBoxHasValue("creationMoment", creationMoment);
 		super.checkInputBoxHasValue("finishDate", finishDate);
 		super.checkInputBoxHasValue("link", link);
-		super.checkInputBoxHasValue("inventorFullName", inventorFullName);
-		super.checkInputBoxHasValue("inventorName", name);
-		super.checkInputBoxHasValue("inventorSurname", surname);
-		super.checkInputBoxHasValue("inventorEmail", email);
+		
+		if(draftMode == 1) {
+			super.checkInputBoxHasValue("inventorFullName", inventorFullName);
+			super.checkInputBoxHasValue("inventorName", name);
+			super.checkInputBoxHasValue("inventorSurname", surname);
+			super.checkInputBoxHasValue("inventorEmail", email);
+		}
 		
 		super.signOut();
 	}
