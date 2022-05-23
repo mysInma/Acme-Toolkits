@@ -16,5 +16,9 @@ any.chirp.list.label.email = Correo electrónico
 
 any.chirp.list.button.create = Crear chirp
 
+any.chirp.form.label.title = Título
+any.chirp.form.label.author = Autor
+any.chirp.form.label.body = Descripción
+any.chirp.form.label.email = Correo electrónico
 any.chirp.form.label.confirmation = Confirme la creación del chirp
 any.chrip.form.button.create = Crear 
