@@ -1,0 +1,2 @@
+key,memorandum, link, confirmation, patronageCode, patronageLegalStuff, patronageBudget, patronageCreationMoment, patronageStartDate, patronageFinishDate, patronageLink
+0,01: 'Example.', https://www.examplelink.com, true, PAT-245-D, LegalStuff06, "USD 440,320.00", 2020/02/03 14:00, 2022/03/01 00:00, 2022/07/01 23:59, http://www.xpatronage.com

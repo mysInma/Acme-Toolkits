@@ -12,7 +12,7 @@ public class InventorPatronageReportTest extends TestHarness {
 	@ParameterizedTest
 	@CsvFileSource(resources = "/inventor/patronageReport/patronageReport.csv", encoding = "utf-8", numLinesToSkip = 1)
 	@Order(10)
-	public void positiveTest(final int recordIndex, final String creationMoment, final String memorandum, final String link, final String patronageCode) {
+	public void positiveTest(final int recordIndex, final String creationMoment, final String memorandum, final String link, final String patronageStatus, final String patronageCode, final String patronageLegalStuff, final String patronageBudget, final String patronageCreationMoment, final String patronageStartDate, final String patronageFinishDate, final String patronageLink) {
 
 		super.signIn("inventor01", "inventor01");
 
@@ -23,7 +23,6 @@ public class InventorPatronageReportTest extends TestHarness {
 		super.checkColumnHasValue(recordIndex, 0, creationMoment);
 		super.checkColumnHasValue(recordIndex, 1, memorandum);
 		super.checkColumnHasValue(recordIndex, 2, link);
-		super.checkColumnHasValue(recordIndex, 3, patronageCode);
 
 		super.clickOnListingRecord(recordIndex);
 		super.checkFormExists();
@@ -32,6 +31,12 @@ public class InventorPatronageReportTest extends TestHarness {
 		super.checkInputBoxHasValue("memorandum", memorandum);
 		super.checkInputBoxHasValue("link", link);
 		super.checkInputBoxHasValue("patronageCode", patronageCode);
+		super.checkInputBoxHasValue("patronageLegalStuff", patronageLegalStuff);
+		super.checkInputBoxHasValue("patronageBudget", patronageBudget);
+		super.checkInputBoxHasValue("patronageCreationMoment", patronageCreationMoment);
+		super.checkInputBoxHasValue("patronageStartDate", patronageStartDate);
+		super.checkInputBoxHasValue("patronageFinishDate", patronageFinishDate);
+		super.checkInputBoxHasValue("patronageLink", patronageLink);
 
 		super.signOut();
 	}
