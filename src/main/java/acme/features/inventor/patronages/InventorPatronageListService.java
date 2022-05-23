@@ -28,7 +28,7 @@ public class InventorPatronageListService implements AbstractListService<Invento
 		assert request!=null;
 		final Integer id = request.getPrincipal().getActiveRoleId();
 		Collection<Patronage> result;
-		result = this.repository.findPatronagesByInventorId(id);
+		result = this.repository.findTruePatronagesByInventorId(id);
 		return result;
 	}
 
@@ -38,7 +38,7 @@ public class InventorPatronageListService implements AbstractListService<Invento
 		assert entity != null;
 		assert model != null;
 
-		request.unbind(entity, model, "status", "legalStuff", "budget", "creationMoment", "startDate", "finishDate", "link");
+		request.unbind(entity, model, "status","draftMode", "legalStuff", "budget", "creationMoment", "startDate", "finishDate", "link");
 		
 	}
 

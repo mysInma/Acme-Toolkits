@@ -9,6 +9,7 @@
 # they accept any liabilities with respect to them.
 
 inventor.patronage.list.label.status = Estado
+inventor.patronage.list.label.draftMode = Modo borrador
 inventor.patronage.list.label.legalStuff = Asuntos legales
 inventor.patronage.list.label.budget = Presupuesto
 inventor.patronage.list.label.creationMoment = Fecha de creación
