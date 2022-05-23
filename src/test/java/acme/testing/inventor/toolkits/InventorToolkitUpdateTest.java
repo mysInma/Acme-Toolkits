@@ -33,7 +33,7 @@ public class InventorToolkitUpdateTest extends TestHarness {
 		super.fillInputBoxIn("description", description);
 		super.fillInputBoxIn("notes", notes);
 		super.fillInputBoxIn("link", link);
-		super.fillInputBoxIn("published", published);
+		
 
 		super.clickOnSubmit("Update");
 
@@ -66,7 +66,7 @@ public class InventorToolkitUpdateTest extends TestHarness {
 		super.fillInputBoxIn("description", description);
 		super.fillInputBoxIn("notes", notes);
 		super.fillInputBoxIn("link", link);
-		super.fillInputBoxIn("published", published);
+		
 
 
 		super.clickOnSubmit("Update");

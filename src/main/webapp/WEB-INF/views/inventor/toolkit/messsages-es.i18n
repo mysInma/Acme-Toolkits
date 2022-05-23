@@ -32,4 +32,5 @@ inventor.toolkit.form.button.tool = Herramienta
 inventor.toolkit.form.button.component = Componente
 
 inventor.toolkit.form.error.spam = Spam detectado
+inventor.toolkit.form.error.code.duplicated = Codigo duplicado
 
