@@ -29,3 +29,7 @@ inventor.patronage.form.label.patronFullName = Nombre completo del patrocinador
 inventor.patronage.form.label.name = Nombre
 inventor.patronage.form.label.surname = Apellido
 inventor.patronage.form.label.email = Correo electrónico
+
+inventor.patronage.form.button.accept = Aceptar
+inventor.patronage.form.button.denie = Denegar
+

@@ -30,3 +30,6 @@ inventor.patronage.form.label.name = Name
 inventor.patronage.form.label.surname = Surname
 inventor.patronage.form.label.email = Email
 
+inventor.patronage.form.button.accept = Accept
+inventor.patronage.form.button.denie = Denie
+

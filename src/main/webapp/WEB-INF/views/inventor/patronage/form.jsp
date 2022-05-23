@@ -12,9 +12,23 @@
 	<acme:input-url code="inventor.patronage.form.label.link" path="link"/>
 
 	
-	  <h2><acme:message code="inventor.patronage.form.label.info"/></h2> 
+	<h2><acme:message code="inventor.patronage.form.label.info"/></h2> 
 	 <acme:input-textbox code="inventor.patronage.form.label.patronFullName" path="patronFullName"/>
     <acme:input-textbox code="inventor.patronage.form.label.name" path="patronName"/>
     <acme:input-textbox code="inventor.patronage.form.label.surname" path="patronSurname"/>
-    <acme:input-email code="inventor.patronage.form.label.email" path="patronEmail"/>
+    <acme:input-email code="inventor.patronage.form.label.email" path="patronEmail"/> 
+    
+    <jstl:choose>
+		<jstl:when test="${acme:anyOf(command, 'show, accept, denie') && status == 'PROPOSED'}">
+			<acme:submit code="inventor.patronage.form.button.accept" action="/inventor/patronage/accept" />
+			<acme:submit code="inventor.patronage.form.button.denie" action="/inventor/patronage/denie" />
+												
+		</jstl:when>
+	</jstl:choose>
 </acme:form>
+
+
+
+
+			
+		
