@@ -18,6 +18,7 @@
 	<acme:input-textbox code="inventor.patronage-report.form.label.patronage.code" path="patronageCode"/>
 	<acme:input-textbox code="inventor.patronage-report.form.label.patronage.legalStuff" path="patronageLegalStuff"/>
 	<acme:input-money code="inventor.patronage-report.form.label.patronage.budget" path="patronageBudget"/>
+	<acme:input-money code="inventor.patronage-report.form.label.patronage.exchangeBudget" path="patronageExchangeBudget"/>
 	<acme:input-moment code="inventor.patronage-report.form.label.patronage.creationMoment" path="patronageCreationMoment"/>
 	<acme:input-moment code="inventor.patronage-report.form.label.patronage.startDate" path="patronageStartDate"/>
 	<acme:input-moment code="inventor.patronage-report.form.label.patronage.finishDate" path="patronageFinishDate"/>

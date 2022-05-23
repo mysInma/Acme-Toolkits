@@ -21,6 +21,7 @@ inventor.patronage.list.label.link = Enlace
 inventor.patronage.form.label.status = Estado
 inventor.patronage.form.label.legalStuff = Asuntos legales
 inventor.patronage.form.label.budget = Presupuesto
+inventor.patronage.form.label.exchange = Presupuesto en la divisa del sistema
 inventor.patronage.form.label.creationMoment = Fecha de creación
 inventor.patronage.form.label.startDate = Fecha de comienzo
 inventor.patronage.form.label.finishDate = Fecha de finalización

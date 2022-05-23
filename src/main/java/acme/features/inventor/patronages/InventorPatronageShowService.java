@@ -4,6 +4,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import acme.entities.patronages.Patronage;
+import acme.features.authenticated.moneyExchange.AuthenticatedMoneyExchangePerformService;
+import acme.features.authenticated.systemConfiguration.AuthenticatedSystemConfigurationRepository;
 import acme.framework.components.models.Model;
 import acme.framework.controllers.Request;
 import acme.framework.services.AbstractShowService;
@@ -16,6 +18,12 @@ public class InventorPatronageShowService implements AbstractShowService<Invento
 
 		@Autowired
 		protected InventorPatronageRepository repository;
+		
+		@Autowired
+		protected AuthenticatedSystemConfigurationRepository systemConfigurationRepository;
+		
+		@Autowired
+		protected AuthenticatedMoneyExchangePerformService exchangeService;
 
 		// AbstractShowService<Employer, Patronage> interface ---------------------------
 
@@ -60,5 +68,7 @@ public class InventorPatronageShowService implements AbstractShowService<Invento
 	        model.setAttribute("patronName", entity.getPatron().getUserAccount().getIdentity().getName());
 	        model.setAttribute("patronSurname", entity.getPatron().getUserAccount().getIdentity().getSurname());
 	        model.setAttribute("patronEmail", entity.getPatron().getUserAccount().getIdentity().getEmail());
+	        model.setAttribute("exchangeBudget", this.exchangeService
+	        	.computeMoneyExchange(entity.getBudget(), this.systemConfigurationRepository.findSystemConfiguration().getSystemCurrency()).getTarget());
 		}
 }
