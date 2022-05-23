@@ -20,6 +20,7 @@ inventor.patronage.list.label.link = Link
 inventor.patronage.form.label.status = Status
 inventor.patronage.form.label.legalStuff = Legal Stuff
 inventor.patronage.form.label.budget = Budget
+inventor.patronage.form.label.exchange = Budget in system currency
 inventor.patronage.form.label.creationMoment = Creation Moment
 inventor.patronage.form.label.startDate = Start Date
 inventor.patronage.form.label.finishDate = Finish Date

@@ -13,6 +13,7 @@
 	<jstl:choose>
 		<jstl:when test="${acme:anyOf(command, 'show, update, delete, publish')}">
 			<acme:input-money readonly="true" code="inventor.item.form.label.price" path="price"/>
+			<acme:input-money readonly="true" code="inventor.item.form.label.exchange" path="exchangePrice"/>
 		</jstl:when>
 		<jstl:when test="${command == 'create'}">
 		<acme:input-money code="inventor.item.form.label.price" path="price"/>

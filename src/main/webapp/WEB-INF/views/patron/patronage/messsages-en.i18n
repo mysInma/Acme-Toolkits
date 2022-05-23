@@ -22,6 +22,7 @@ patron.patronage.form.label.code = Code
 patron.patronage.form.label.status = Status
 patron.patronage.form.label.legalStuff = Legal Stuff
 patron.patronage.form.label.budget = Budget
+patron.patronage.form.label.exchange = Budget in system currency
 patron.patronage.form.label.creationMoment = Creation Moment
 patron.patronage.form.label.startDate = Start Date
 patron.patronage.form.label.finishDate = Finish Date
