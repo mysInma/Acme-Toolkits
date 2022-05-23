@@ -14,7 +14,7 @@ public class PatronPatronageDeleteTest extends TestHarness {
 		super.checkListingExists();
 		super.checkNotListingEmpty();
 		
-		super.clickOnListingRecord(0);
+		super.clickOnListingRecord(1);
 		
 		final String deleted = super.getCurrentPath();
 		

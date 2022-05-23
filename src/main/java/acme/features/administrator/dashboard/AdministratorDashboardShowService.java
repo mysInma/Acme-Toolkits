@@ -216,7 +216,7 @@ public class AdministratorDashboardShowService implements AbstractShowService<Ad
 			"maximumRetailPriceOfToolsByCurrency", 
 			"totalNumberOfPatronagesByStatus", 
 			"averagePatronagesBudgetByStatus",
-			"deviationPatronagesBudgetByStatu", 
+			"deviationPatronagesBudgetByStatus", 
 			"minimumPatronagesBudgetByStatus",
 			"maximumPatronagesBudgetByStatus");
 	}
