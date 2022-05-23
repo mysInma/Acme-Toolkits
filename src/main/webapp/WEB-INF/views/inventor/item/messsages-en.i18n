@@ -22,6 +22,7 @@ inventor.item.form.label.type = Type
 inventor.item.form.label.technology = Technology
 inventor.item.form.label.description = Description
 inventor.item.form.label.price = Price
+inventor.item.form.label.exchange = Price in system currency
 inventor.item.form.label.tool = TOOL
 inventor.item.form.label.component = COMPONENT
 inventor.item.form.label.code = Code

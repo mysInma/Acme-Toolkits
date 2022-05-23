@@ -27,6 +27,7 @@ inventor.patronage-report.form.label.patronage.status.denied = DENIED
 inventor.patronage-report.form.label.patronage.code = Code
 inventor.patronage-report.form.label.patronage.legalStuff = Legal Stuff
 inventor.patronage-report.form.label.patronage.budget = Budget
+inventor.patronage-report.form.label.patronage.exchangeBudget = Budget in system currency
 inventor.patronage-report.form.label.patronage.creationMoment = Creation Moment
 inventor.patronage-report.form.label.patronage.startDate = Start Date
 inventor.patronage-report.form.label.patronage.finishDate = Finish Date

@@ -4,6 +4,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import acme.entities.toolkits.Item;
+import acme.features.authenticated.moneyExchange.AuthenticatedMoneyExchangePerformService;
+import acme.features.authenticated.systemConfiguration.AuthenticatedSystemConfigurationRepository;
 import acme.framework.components.models.Model;
 import acme.framework.controllers.Request;
 import acme.framework.services.AbstractShowService;
@@ -14,6 +16,12 @@ public class InventorItemsShowService implements AbstractShowService<Inventor, I
 
 	@Autowired
 	protected InventorItemsRepository repository;
+	
+	@Autowired
+	protected AuthenticatedSystemConfigurationRepository systemConfigurationRepository;
+	
+	@Autowired
+	protected AuthenticatedMoneyExchangePerformService exchangeService;
 	
 	@Override
 	public boolean authorise(final Request<Item> request) {
@@ -55,6 +63,8 @@ public class InventorItemsShowService implements AbstractShowService<Inventor, I
 		model.setAttribute("inventorName", entity.getInventor().getUserAccount().getIdentity().getName());
 		model.setAttribute("inventorSurname", entity.getInventor().getUserAccount().getIdentity().getSurname());
 		model.setAttribute("inventorEmail", entity.getInventor().getUserAccount().getIdentity().getEmail());
+		model.setAttribute("exchangePrice", this.exchangeService
+        	.computeMoneyExchange(entity.getPrice(), this.systemConfigurationRepository.findSystemConfiguration().getSystemCurrency()).getTarget());
 		
 		
 		

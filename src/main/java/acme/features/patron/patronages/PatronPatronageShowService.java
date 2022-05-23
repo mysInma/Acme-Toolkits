@@ -4,6 +4,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import acme.entities.patronages.Patronage;
+import acme.features.authenticated.moneyExchange.AuthenticatedMoneyExchangePerformService;
+import acme.features.authenticated.systemConfiguration.AuthenticatedSystemConfigurationRepository;
 import acme.framework.components.models.Model;
 import acme.framework.controllers.Request;
 import acme.framework.services.AbstractShowService;
@@ -14,6 +16,12 @@ public class PatronPatronageShowService implements AbstractShowService<Patron, P
 	
 	@Autowired
 	protected PatronPatronageRepository repository;
+	
+	@Autowired
+	protected AuthenticatedSystemConfigurationRepository systemConfigurationRepository;
+	
+	@Autowired
+	protected AuthenticatedMoneyExchangePerformService exchangeService;
 	
 	@Override
 	public boolean authorise(final Request<Patronage> request) {
@@ -55,6 +63,8 @@ public class PatronPatronageShowService implements AbstractShowService<Patron, P
 		model.setAttribute("inventorName", entity.getInventor().getUserAccount().getIdentity().getName());
 		model.setAttribute("inventorSurname", entity.getInventor().getUserAccount().getIdentity().getSurname());
 		model.setAttribute("inventorEmail", entity.getInventor().getUserAccount().getIdentity().getEmail());
+		model.setAttribute("exchangeBudget", this.exchangeService
+        	.computeMoneyExchange(entity.getBudget(), this.systemConfigurationRepository.findSystemConfiguration().getSystemCurrency()).getTarget());
 		
 	}
 

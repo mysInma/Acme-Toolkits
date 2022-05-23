@@ -8,6 +8,7 @@
 	<acme:input-textbox readonly="true" code="patron.patronage.form.label.status" path="status" />
 	<acme:input-textbox code="patron.patronage.form.label.legalStuff" path="legalStuff"/>
 	<acme:input-money code="patron.patronage.form.label.budget" path="budget"/>
+	<acme:input-money readonly="true" code="patron.patronage.form.label.exchange" path="exchangeBudget" />
 	<acme:input-moment code="patron.patronage.form.label.creationMoment" path="creationMoment"/>
 	<acme:input-moment code="patron.patronage.form.label.startDate" path="startDate"/>
 	<acme:input-moment code="patron.patronage.form.label.finishDate" path="finishDate"/>
