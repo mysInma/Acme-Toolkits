@@ -13,7 +13,7 @@ public class InventorPatronageTest extends TestHarness{
 	@CsvFileSource(resources = "/inventor/patronage/patronage.csv", encoding = "utf-8", numLinesToSkip = 1)
 	@Order(10) 
 	public void positiveTest(final int recordIndex, final String status,  
-		final String legalStuff, final String budget, final String creationMoment, final String startDate, 
+		final String draftMode,final String legalStuff, final String budget, final String creationMoment, final String startDate, 
 		final String finishDate, final String link,  final String patronFullName, final String name, final String surname, final String email ) {
 		
 		super.signIn("inventor01", "inventor01");
@@ -23,17 +23,19 @@ public class InventorPatronageTest extends TestHarness{
 		super.sortListing(1, "asc"); 
 		
 		super.checkColumnHasValue(recordIndex, 0, status);
-		super.checkColumnHasValue(recordIndex, 1, legalStuff);
-		super.checkColumnHasValue(recordIndex, 2, budget);
-		super.checkColumnHasValue(recordIndex, 3, creationMoment);
-		super.checkColumnHasValue(recordIndex, 4, startDate);
-		super.checkColumnHasValue(recordIndex, 5, finishDate);
-		super.checkColumnHasValue(recordIndex, 6, link);
+		super.checkColumnHasValue(recordIndex, 1, draftMode);
+		super.checkColumnHasValue(recordIndex, 2, legalStuff);
+		super.checkColumnHasValue(recordIndex, 3, budget);
+		super.checkColumnHasValue(recordIndex, 4, creationMoment);
+		super.checkColumnHasValue(recordIndex, 5, startDate);
+		super.checkColumnHasValue(recordIndex, 6, finishDate);
+		super.checkColumnHasValue(recordIndex, 7, link);
 		
 		super.clickOnListingRecord(recordIndex);
 		super.checkFormExists();
 		
 		super.checkInputBoxHasValue("status", status);
+		super.checkInputBoxHasValue("draftMode", draftMode);
 		super.checkInputBoxHasValue("legalStuff", legalStuff);
 		super.checkInputBoxHasValue("budget", budget);
 		super.checkInputBoxHasValue("creationMoment", creationMoment);
