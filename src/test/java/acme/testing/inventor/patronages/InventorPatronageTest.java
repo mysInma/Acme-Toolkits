@@ -35,7 +35,6 @@ public class InventorPatronageTest extends TestHarness{
 		super.checkFormExists();
 		
 		super.checkInputBoxHasValue("status", status);
-		super.checkInputBoxHasValue("draftMode", draftMode);
 		super.checkInputBoxHasValue("legalStuff", legalStuff);
 		super.checkInputBoxHasValue("budget", budget);
 		super.checkInputBoxHasValue("creationMoment", creationMoment);
