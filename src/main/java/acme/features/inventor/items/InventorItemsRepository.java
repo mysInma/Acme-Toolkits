@@ -7,6 +7,7 @@ import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 
 import acme.entities.toolkits.Item;
+import acme.entities.toolkits.Quantity;
 import acme.framework.repositories.AbstractRepository;
 import acme.roles.Inventor;
 
@@ -57,5 +58,8 @@ public interface InventorItemsRepository extends AbstractRepository {
 	
 	@Query("SELECT weakThreshold FROM SystemConfiguration")
 	Double getWeakThreshold();
+
+	@Query("SELECT q FROM Quantity q WHERE q.item.id = :id")
+	Collection<Quantity> getQuantityByItem(int id);
 
 }
