@@ -30,3 +30,5 @@ inventor.toolkit.form.button.publish = Publish
 
 inventor.toolkit.form.error.spam = Spam detected
 inventor.toolkit.form.error.code.duplicated =Duplicated Code
+
+inventor.toolkit.form.button.quantity = Quantity
