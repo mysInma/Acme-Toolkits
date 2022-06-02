@@ -27,11 +27,11 @@
 		
 	</jstl:choose> 
 	
-	<acme:button code="inventor.toolkit.form.button.tool" action="/inventor/item/list-tool-toolkit?id=${ toolkitId }"/>
-	<acme:button code="inventor.toolkit.form.button.component" action="/inventor/item/list-component-toolkit?id=${ toolkitId }"/>	
-	
 	<jstl:choose>
 		<jstl:when test="${acme:anyOf(command, 'show, update, delete, publish') && published == false }">
+			<acme:button code="inventor.toolkit.form.button.quantity" action="/inventor/quantity/list?toolkitId=${id}"/>
+			<acme:button code="inventor.toolkit.form.button.tool" action="/inventor/item/list-tool-toolkit?id=${ toolkitId }"/>
+			<acme:button code="inventor.toolkit.form.button.component" action="/inventor/item/list-component-toolkit?id=${ toolkitId }"/>
 			<acme:submit code="inventor.toolkit.form.button.update" action="/inventor/toolkit/update?id=${id}"/>
 			<acme:submit code="inventor.toolkit.form.button.delete" action="/inventor/toolkit/delete"/>
 			<acme:submit code="inventor.toolkit.form.button.publish" action="/inventor/toolkit/publish"/>
