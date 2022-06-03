@@ -1,0 +1,39 @@
+# i18n-es.i18n
+#
+# Copyright (C) 2012-2022 Rafael Corchuelo.
+#
+# In keeping with the traditional purpose of furthering education and research, it is
+# the policy of the copyright owner to permit non-commercial use and redistribution of
+# this software. It has been tested carefully, but it is not guaranteed for any particular
+# purposes.  The copyright owner does not offer any warranties or representations, nor do
+# they accept any liabilities with respect to them.
+
+inventor.xustemu.list.label.code = Codigo
+inventor.xustemu.list.label.creationMoment = Momento de Creacion
+inventor.xustemu.list.label.subject = Sucject
+inventor.xustemu.list.label.codeItem = Codigo Item
+
+inventor.xustemu.form.label.code = Codigo
+inventor.xustemu.form.label.creationMoment = Momento de Creacion
+inventor.xustemu.form.label.subject = Titulo
+inventor.xustemu.form.label.summary = Descripcion
+inventor.xustemu.form.label.startDate = Fecha Inicio
+inventor.xustemu.form.label.finishDate = Fecha Finalizacion
+inventor.xustemu.form.label.amount = Presupuesto
+inventor.xustemu.form.label.moreInfo = Link
+inventor.xustemu.form.label.codeItem = Codigo Item
+inventor.xustemu.form.label.item = Item
+
+inventor.xustemu.form.button.create = Crear
+inventor.xustemu.form.button.update = Actualizar
+inventor.xustemu.form.button.delete = Borrar
+
+inventor.xustemu.form.error.duplicated = Este código no está libre
+inventor.xustemu.form.error.too-close = El periodo esta muy cerca
+inventor.xustemu.form.error.too-far = El periodo esta muy lejos
+inventor.xustemu.form.error.negative-amount = El presupuesto debe tener cantidad positiva
+inventor.xustemu.form.error.non-accepted-currency = Divisa no aceptada
+inventor.patronage.form.error.date-creation = La fecha debe ser después de la creación
+inventor.patronage.form.error.date-start = La fecha debe ser después del comienzo
+inventor.xustemu.form.error.duplicatedItem = Esta item no está libre
+

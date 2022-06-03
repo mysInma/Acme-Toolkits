@@ -14,6 +14,7 @@ import org.hibernate.validator.constraints.URL;
 import acme.framework.datatypes.Money;
 import acme.framework.entities.AbstractEntity;
 import acme.roles.Inventor;
+import acme.roles.Patron;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -65,5 +66,10 @@ public class Item extends AbstractEntity {
 		@NotNull
 		@ManyToOne(optional = false)
 		protected Inventor inventor;
+		
+		@Valid
+		@NotNull
+		@ManyToOne(optional = false)
+		protected Patron patron;
 		
 }

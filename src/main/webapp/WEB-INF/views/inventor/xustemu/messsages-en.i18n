@@ -1,0 +1,39 @@
+# i18n-en.i18n
+#
+# Copyright (C) 2012-2022 Rafael Corchuelo.
+#
+# In keeping with the traditional purpose of furthering education and research, it is
+# the policy of the copyright owner to permit non-commercial use and redistribution of
+# this software. It has been tested carefully, but it is not guaranteed for any particular
+# purposes.  The copyright owner does not offer any warranties or representations, nor do
+# they accept any liabilities with respect to them.
+
+inventor.xustemu.list.label.code = Code
+inventor.xustemu.list.label.creationMoment = Creation Moment 
+inventor.xustemu.list.label.subject = Subject
+inventor.xustemu.list.label.codeItem = Code Item
+
+inventor.xustemu.form.label.code = Code
+inventor.xustemu.form.label.creationMoment = Creation Moment
+inventor.xustemu.form.label.subject = Subject
+inventor.xustemu.form.label.summary = Summary
+inventor.xustemu.form.label.startDate = Start Date
+inventor.xustemu.form.label.finishDate = Finish Date
+inventor.xustemu.form.label.amount = Amount
+inventor.xustemu.form.label.moreInfo = more Info
+inventor.xustemu.form.label.codeItem = Code Item
+inventor.xustemu.form.label.item = Item
+
+inventor.xustemu.form.button.create = Create
+inventor.xustemu.form.button.update = Update
+inventor.xustemu.form.button.delete = Delete
+
+inventor.xustemu.form.error.duplicated = This code is taken
+inventor.xustemu.form.error.too-close = The period is too close
+inventor.xustemu.form.error.too-far = The period is too far
+inventor.xustemu.form.error.negative-amount = Money must be positive
+inventor.xustemu.form.error.non-accepted-currency = Currency not accepted
+inventor.patronage.form.error.date-creation = Date must be after creation moment
+inventor.patronage.form.error.date-start = Date must be after start moment
+inventor.xustemu.form.error.duplicatedItem = This item is taken
+

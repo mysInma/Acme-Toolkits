@@ -20,6 +20,7 @@ master.menu.sign-out = Sign out
 master.menu.anonymous = Anonymous
 master.menu.anonymous.favourite-link = Favourite link
 master.menu.anonymus.toolkit.list = List Toolkits
+master.menu.any.xustemu.dashboard = Xustemu Dashboard
 
 master.menu.any.user-account.list = Lists Users Account
 master.menu.anonymous.list-chirp = List Chirps
@@ -63,6 +64,7 @@ master.menu.consumer.favourite-link = Favourite link
 # master.menu.inventor ####################################################
 
 master.menu.inventor = Inventor
+master.menu.inventor.xustemu.list = Xustemu list
 master.menu.inventor.list-component = Component list
 master.menu.inventor.list-tool = Tool list
 master.menu.inventor.toolkit.list = Toolkit list
@@ -75,6 +77,7 @@ master.menu.patron = Patron
 master.menu.patron.patronages = Patronages list
 master.menu.patron = Patron
 master.menu.patron.patronage-report.list = Patronage reports list
+master.menu.patron.xustemu.list = Xustemu list
 
 # master.menu.user-account ####################################################
 

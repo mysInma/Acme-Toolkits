@@ -1,0 +1,42 @@
+# i18n-en.i18n
+#
+# Copyright (C) 2012-2022 Rafael Corchuelo.
+#
+# In keeping with the traditional purpose of furthering education and research, it is
+# the policy of the copyright owner to permit non-commercial use and redistribution of
+# this software. It has been tested carefully, but it is not guaranteed for any particular
+# purposes.  The copyright owner does not offer any warranties or representations, nor do
+# they accept any liabilities with respect to them.
+
+patron.chimpum.list.label.code = Code
+patron.chimpum.list.label.creationMoment = Creation Moment 
+patron.chimpum.list.label.title = Title
+patron.chimpum.list.label.codeItem = Code Item
+
+patron.chimpum.form.label.code = Code
+patron.chimpum.form.label.creationMoment = Creation Moment
+patron.chimpum.form.label.title = Title
+patron.chimpum.form.label.description = Description
+patron.chimpum.form.label.startDate = Start Date
+patron.chimpum.form.label.finishDate = Finish Date
+patron.chimpum.form.label.budget = Budget
+patron.chimpum.form.label.link = Link
+patron.chimpum.form.label.codeItem = Code Item
+patron.chimpum.form.label.item = Item
+
+patron.chimpum.form.button.create = Create
+patron.chimpum.form.button.update = Update
+patron.chimpum.form.button.delete = Delete
+
+
+patron.chimpum.form.error.duplicated = This code is taken
+patron.chimpum.form.error.too-close = The period is too close
+patron.chimpum.form.error.too-far = The period is too far
+patron.chimpum.form.error.negative-budget = Money must be positive
+patron.chimpum.form.error.non-accepted-currency = Currency not accepted
+patron.patronage.form.error.date-creation = Date must be after creation moment
+patron.patronage.form.error.date-start = Date must be after start moment
+patron.chimpum.form.error.duplicatedItem = This item is taken
+
+
+

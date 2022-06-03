@@ -1,0 +1,47 @@
+# i18n-es.i18n
+#
+# Copyright (C) 2012-2022 Rafael Corchuelo.
+#
+# In keeping with the traditional purpose of furthering education and research, it is
+# the policy of the copyright owner to permit non-commercial use and redistribution of
+# this software. It has been tested carefully, but it is not guaranteed for any particular
+# purposes.  The copyright owner does not offer any warranties or representations, nor do
+# they accept any liabilities with respect to them.
+
+administartor.dashboard.form.label.title = PANEL DEL ADMINISTRADOR
+administrator.dashboard.form.title.about-proposed-patronages = Patrones Propuestos
+administrator.dashboard.form.title.about-accepted-patronages = Patrones Aceptados
+administrator.dashboard.form.title.about-denied-patronages = Patrones Denegados
+administrator.dashboard.form.title.patronages-by-status = Patrones Por Estado
+
+administrator.dashboard.form.label.totalNumberOfComponents =  Numero Total de Comnponentes
+administrator.dashboard.form.label.averageRetailPriceOfComponentsByTechnologyCurrency = Precio Medio de los Componentes por Tecnología Y Divisa
+administrator.dashboard.form.label.deviationRetailPriceOfComponentsByTechnologyCurrency =  Desviación de los Componentes por Tecnología Y Divisa
+administrator.dashboard.form.label.minimumRetailPriceOfComponentsByTechnologyCurrency =  Mínimo de los Componentes por Tecnología Y Divisa
+administrator.dashboard.form.label.maximumRetailPriceOfComponentsByTechnologyCurrency =  Máximo de los Componentes por Tecnología Y Divisa
+
+administrator.dashboard.form.label.totalNumberOfTools =  Número Total de Herramientas
+administrator.dashboard.form.label.averageRetailPriceOfToolsByCurrency =  Precio Medio de las Herramientas por Divisa
+administrator.dashboard.form.label.deviationRetailPriceOfToolsByCurrency = Desviación de las Herramientas por Divisa
+administrator.dashboard.form.label.minimumRetailPriceOfToolsByCurrency =  Mínimo de las Herramientas por Divisa
+administrator.dashboard.form.label.maximumRetailPriceOfToolsByCurrency =  Máximo de las Herramientas por Divisa
+
+administrator.dashboard.form.label.averageAmountOfProposedPatronages =  Presupuesto Medio de los Patrones Propuestos
+administrator.dashboard.form.label.deviationAmountOfProposedPatronages =  Desviación de los Patrones Propuestos
+administrator.dashboard.form.label.minimumAmountOfProposedPatronages =  Mínimo de los Patrones Propuestos
+administrator.dashboard.form.label.maximumAmountOfProposedPatronages = Máximo de los Patrones Propuestos
+
+administrator.dashboard.form.label.averageAmountOfAcceptedPatronages =  Presupuesto Medio de los Patrones Aceptados
+administrator.dashboard.form.label.deviationAmountOfAcceptedPatronages =  Desviación de los Patrones Aceptados
+administrator.dashboard.form.label.minimumAmountOfAcceptedPatronages =  Mínimo de los Patrones Aceptados
+administrator.dashboard.form.label.maximumAmountOfAcceptedPatronages =  Máximo de los Patrones Aceptados
+
+administrator.dashboard.form.label.averageAmountOfDeniedPatronages =  Presupuesto Medio de los Patrones Denegados
+administrator.dashboard.form.label.deviationAmountOfDeniedPatronages = Desviación de los Patrones Denegados
+administrator.dashboard.form.label.minimumAmountOfDeniedPatronages =  Mínimo de los Patrones Denegados
+administrator.dashboard.form.label.maximumAmountOfDeniedPatronages = Máximo de los Patrones Denegados
+
+administrator.dashboard.form.technology.technology1 = Tecnología 1
+administrator.dashboard.form.technology.technology2 = Tecnología 2
+administrator.dashboard.form.technology.technology3 = Tecnología 3
+administrator.dashboard.form.technology.technology4 = Tecnología 4

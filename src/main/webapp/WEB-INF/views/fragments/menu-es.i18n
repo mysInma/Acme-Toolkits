@@ -19,7 +19,7 @@ master.menu.sign-out = Salir
 
 master.menu.anonymous.toolkit.list = Kits de herramientas
 master.menu.anonymous = Anónimo
-
+master.menu.any.xustemu.dashboard = Dashboard de Xustemu
 master.menu.any.user-account.list = Lista Usuarios
 master.menu.anonymous.list-chirp = Lista Chirps
 
@@ -63,6 +63,7 @@ master.menu.consumer.favourite-link = Enlace favorito
 # master.menu.inventor ####################################################
 
 master.menu.inventor = Inventor
+master.menu.inventor.xustemu.list = Lista de Chimpum 
 master.menu.inventor.list-component = Lista de componentes
 master.menu.inventor.list-tool = Lista de herramientas
 master.menu.inventor.patronage-report.list = Lista de informes de patrocinios
@@ -76,6 +77,8 @@ master.menu.inventor.patronage-report.create = Crear informe de patrocinio
 master.menu.patron.patronage-report.list = Lista de informes de patrocinios
 master.menu.patron = Patrocinador
 master.menu.patron.patronages = Lista de patrocinios
+
+master.menu.patron.xustemu.list = Lista de Xustemu 
 
 # master.menu.user-account ####################################################
 

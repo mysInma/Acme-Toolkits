@@ -21,7 +21,7 @@
 		<acme:menu-option code="master.menu.anonymous" access="isAnonymous()">	
 			
 			<acme:menu-suboption code="master.menu.any.user-account.list" action="/any/user-account/list"/>
-			
+			<acme:menu-suboption code="master.menu.any.xustemu.dashboard" action="/any/xustemu-dashboard/show"/>
 			<acme:menu-suboption code="master.menu.anonymus.toolkit.list" action="/any/toolkit/list"/>
 			<acme:menu-suboption code="master.menu.anonymus.item.list-tool" action="/any/item/list-tool"/>
 	   		<acme:menu-suboption code="master.menu.anonymus.item.list-component" action="/any/item/list-component"/>
@@ -72,6 +72,7 @@
 			<acme:menu-suboption code="master.menu.inventor.patronage-report.list" action="/inventor/patronage-report/list"/>
 			<acme:menu-suboption code="master.menu.inventor.patronages" action="/inventor/patronage/list"/>
 			<acme:menu-suboption code="master.menu.inventor.toolkit.list" action="/inventor/toolkit/list"/>
+			<acme:menu-suboption code="master.menu.inventor.xustemu.list" action="/inventor/xustemu/list"/>
 		</acme:menu-option>
 		
 		<acme:menu-option code="master.menu.patron" access="hasRole('Patron')">
